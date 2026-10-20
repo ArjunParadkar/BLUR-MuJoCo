@@ -1,0 +1,215 @@
+<title>BLUR Wrist Upgrade Test</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a single reading column (72ch) for the report; tables and figures may break out to the full width of the viewport. */
+:root {
+  --bg: #f7f7f5; --surface: #ffffff; --fg: #1d2129; --fg-2: #555b66; --line: #d9dce2;
+  --accent: #256abf; --accent-soft: #dde9f9; --fail: #a93226; --fail-soft: #f7e1de; --pass: #1f7a4d; --pass-soft: #dcf0e4; --warn: #8a6200; --warn-soft: #f6ecd0;
+  --font-body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #15171b; --surface: #1d2026; --fg: #e6e8ec; --fg-2: #a3a8b3; --line: #343842;
+  --accent: #6da7ec; --accent-soft: #1d2f47; --fail: #ef8a7d; --fail-soft: #3d2320; --pass: #6fcf97; --pass-soft: #1f3529; --warn: #e3b74a; --warn-soft: #3a2f14;
+  color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #15171b; --surface: #1d2026; --fg: #e6e8ec; --fg-2: #a3a8b3; --line: #343842;
+  --accent: #6da7ec; --accent-soft: #1d2f47; --fail: #ef8a7d; --fail-soft: #3d2320; --pass: #6fcf97; --pass-soft: #1f3529; --warn: #e3b74a; --warn-soft: #3a2f14;
+  color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 15px; line-height: 1.55;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 0 48px; }
+.wrap { max-width: 72ch; margin: 0 auto; }
+header { padding-block: 40px 20px; border-bottom: 1px solid var(--line); margin-bottom: 28px; }
+.eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--fg-2); }
+h1 { font-size: 30px; line-height: 1.15; font-weight: 600; margin: 8px 0 14px; text-wrap: balance; letter-spacing: -.01em; }
+h2 { font-size: 20px; font-weight: 600; margin: 40px 0 10px; text-wrap: balance; }
+h3 { font-size: 15px; font-weight: 600; margin: 22px 0 8px; color: var(--fg); }
+p { margin: 0 0 12px; }
+.lede { font-size: 17px; color: var(--fg); }
+.verdict { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); margin: 18px 0 0; }
+.tile { background: var(--surface); border: 1px solid var(--line); padding: 12px 14px; }
+.tile .k { font-family: var(--font-mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--fg-2); }
+.tile .v { font-size: 22px; font-weight: 600; margin-top: 4px; font-variant-numeric: tabular-nums; }
+.tile .s { font-size: 12.5px; color: var(--fg-2); margin-top: 2px; }
+ul { padding-left: 1.2em; margin: 0 0 12px; } li { margin-bottom: 5px; }
+code, pre { font-family: var(--font-mono); font-size: 13px; }
+code { background: var(--accent-soft); padding: 1px 5px; border-radius: 3px; }
+pre { background: var(--surface); border: 1px solid var(--line); padding: 12px 14px; overflow-x: auto; margin: 0 0 14px; line-height: 1.5; }
+pre code { background: none; padding: 0; }
+.tbl { overflow-x: auto; margin: 0 0 16px; border: 1px solid var(--line); background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 13.5px; font-variant-numeric: tabular-nums; }
+th, td { padding: 6px 10px; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; white-space: nowrap; }
+td.wrap-ok, th.wrap-ok { white-space: normal; min-width: 18ch; }
+th { font-weight: 600; font-size: 12.5px; color: var(--fg-2); background: var(--bg); }
+tbody tr:last-child td { border-bottom: 0; }
+td.num { text-align: right; }
+.pill { display: inline-block; font-family: var(--font-mono); font-size: 11.5px; padding: 1px 7px; border-radius: 3px; }
+.p-fail { background: var(--fail-soft); color: var(--fail); } .p-pass { background: var(--pass-soft); color: var(--pass); } .p-ctrl { background: var(--warn-soft); color: var(--warn); }
+.hi { color: var(--fail); font-weight: 500; }
+.wide { width: min(1200px, 100%); margin: 0 auto 8px; }
+figure { margin: 0 0 24px; }
+figure img { width: 100%; max-width: 100%; display: block; border: 1px solid var(--line); background: #fcfcfb; }
+figcaption { font-size: 13px; color: var(--fg-2); margin-top: 8px; max-width: 72ch; }
+.callout { border-left: 3px solid var(--accent); background: var(--surface); padding: 12px 16px; margin: 16px 0; }
+.callout.fail { border-color: var(--fail); }
+.note { font-size: 13px; color: var(--fg-2); }
+a { color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+@media (max-width: 520px) { h1 { font-size: 24px; } body { font-size: 14.5px; } }
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">BLUR · MuJoCo · 2026-10-20 · mujoco 3.16.0, Python 3.12</div>
+  <h1>Does a bigger wrist/hock motor fix BLUR's dynamic moves? No.</h1>
+  <p class="lede">The 0.8 N·m 2204 wrists are the first motors to saturate in every dynamic move, so I rebuilt the model with 1.5, 2.5 and 4.0 N·m wrists (plus two control variants) and reran all 14 moves. Not one verdict changed. The wrist saturation was a symptom of open-loop replay fighting the ground, and the spine cable drums are the motor at its limit most of the time.</p>
+  <div class="verdict">
+    <div class="tile"><div class="k">variants run</div><div class="v">6</div><div class="s">196 simulations, no NaN</div></div>
+    <div class="tile"><div class="k">verdicts changed</div><div class="v">0 / 14</div><div class="s">in every variant</div></div>
+    <div class="tile"><div class="k">walk residual</div><div class="v">80 %</div><div class="s">body weight, all six variants</div></div>
+    <div class="tile"><div class="k">new bottleneck</div><div class="v">spine drums</div><div class="s">1.0 N·m, at limit 93 % of gallop</div></div>
+  </div>
+</header>
+
+<h2>1. What I ran</h2>
+<p>Everything lives in <code>~/Desktop/Arenda_Projects/BLUR/</code>. The original model in <code>blur_mujoco/</code> is byte-identical to the zip, report.json included (the rerun rewrote it with the same content).</p>
+<div class="tbl"><table>
+<thead><tr><th>step</th><th class="wrap-ok">command (from blur_mujoco/)</th><th class="wrap-ok">result</th></tr></thead>
+<tbody>
+<tr><td>env</td><td class="wrap-ok"><code>uv venv --python 3.12 .venv</code>, <code>uv pip install mujoco numpy matplotlib</code></td><td class="wrap-ok">mujoco 3.16.0, numpy 2.5.4, matplotlib 3.11.2. No admin install needed.</td></tr>
+<tr><td>verify</td><td class="wrap-ok"><code>MjModel.from_xml_path('scene_flat.xml')</code></td><td class="wrap-ok"><strong>77 bodies, 63 joints, 26 actuators</strong> (pounce / tailgrab: 78, 64, 26 with the ball)</td></tr>
+<tr><td>viewer</td><td class="wrap-ok"><code>python replay.py</code>, <code>python replay.py --move gallop --kinematic</code></td><td class="wrap-ok">both open and run; only a harmless Wayland libdecor-gtk warning</td></tr>
+<tr><td>baseline</td><td class="wrap-ok"><code>python replay.py --report</code> (about 3 min)</td><td class="wrap-ok"><strong>identical to the shipped report.json</strong>, every field of every move</td></tr>
+<tr><td>upgrade</td><td class="wrap-ok"><code>experiments/run_all.sh</code> (replay_exp.py, 14 processes, about 1 min per variant)</td><td class="wrap-ok">7 reports, 196 simulations, no NaN, timestep unchanged at 0.5 ms</td></tr>
+</tbody></table></div>
+<p class="note">One tooling bug on my side: the parallel runner first shared numpy's lazy npz handle across forked workers and crashed with "overlapped entries". Fixed by loading eagerly; the parallel path then reproduces report.json exactly for both the original model and the base variant copy.</p>
+
+<h3>Open the viewers yourself (Linux, so plain python, not mjpython)</h3>
+<pre><code>cd ~/Desktop/Arenda_Projects/BLUR/blur_mujoco &amp;&amp; source .venv/bin/activate
+python replay.py                              # physics, standing on its own motors
+python replay.py --move gallop --kinematic    # the rig animation, no physics
+python replay.py --move walk --guide 1        # physics + the soft body guide
+python -m mujoco.viewer --mjcf scene_flat.xml # plain viewer, drag it around
+python ../experiments/replay_exp.py --move gallop --model ../experiments/variants/w40   # any variant</code></pre>
+
+<h2>2. Baseline</h2>
+<p>Peak |torque| / limit for all 26 actuators across the 14 moves, motors alone (A) and with the body guided along the rig path (B). Red outline = saturated; the number inside is the share of samples at the limit.</p>
+</div>
+<figure class="wide"><img src="baseline.png" alt="Heatmap of peak torque over limit for 26 actuators and 14 moves, two panels: motors alone and guided."><figcaption>Static moves (stand, sit, lay, tgrab) keep every motor clear of its limit except spine twist in lay. Every dynamic move saturates the 2204 wrists/hocks and, at the same time, the spine drums, spine twist and the front knees. The wrists rail first but never alone.</figcaption></figure>
+<div class="wrap">
+
+<h2>3. The wrist/hock upgrade</h2>
+<p>Variants are edited copies under <code>experiments/variants/</code>. Only the four <code>*_dist</code> actuators, joints and the bodies that carry those motors change.</p>
+<div class="tbl"><table>
+<thead><tr><th>variant</th><th>limit</th><th class="wrap-ok">dist-body mass</th><th>armature</th><th>servo kp / kd</th><th class="wrap-ok">note</th></tr></thead>
+<tbody>
+<tr><td>base</td><td class="num">0.8</td><td class="wrap-ok">as shipped (0.056–0.059 kg)</td><td>5e-4</td><td>15 / 0.3</td><td class="wrap-ok">control copy, reproduces report.json</td></tr>
+<tr><td>w15</td><td class="num">1.5</td><td class="wrap-ok">unchanged</td><td>5e-4</td><td>15 / 0.3</td><td class="wrap-ok">limit only</td></tr>
+<tr><td>w25</td><td class="num">2.5</td><td class="wrap-ok">unchanged</td><td>5e-4</td><td>15 / 0.3</td><td class="wrap-ok">limit only</td></tr>
+<tr><td><strong>w40</strong></td><td class="num">4.0</td><td class="wrap-ok"><strong>+0.051 kg each</strong> (2806.5 module 0.099 vs 2204 0.048 kg; inertia recomputed with a 16.75 × 20.2 mm cylinder at the housing)</td><td><strong>1e-3</strong></td><td>15 / 0.3</td><td class="wrap-ok">the real 2806.5 swap; robot 3.245 → 3.449 kg</td></tr>
+<tr><td>w40_light</td><td class="num">4.0</td><td class="wrap-ok">unchanged</td><td>5e-4</td><td>15 / 0.3</td><td class="wrap-ok">extra: isolates the mass cost</td></tr>
+<tr><td>w40_kp60</td><td class="num">4.0</td><td class="wrap-ok">+0.051 kg</td><td>1e-3</td><td><strong>60 / 1.5</strong></td><td class="wrap-ok">extra: is the 2204's soft servo gain the limit?</td></tr>
+</tbody></table></div>
+
+<h3>Verdict, move × variant</h3>
+<div class="tbl"><table>
+<thead><tr><th>move</th><th>base 0.8</th><th>1.5</th><th>2.5</th><th>4.0 +mass</th><th>4.0 light</th><th>4.0 kp60</th></tr></thead>
+<tbody>
+<tr><td>stand, lay, tgrab</td><td><span class="pill p-pass">PASS</span></td><td><span class="pill p-pass">PASS</span></td><td><span class="pill p-pass">PASS</span></td><td><span class="pill p-pass">PASS</span></td><td><span class="pill p-pass">PASS</span></td><td><span class="pill p-pass">PASS</span></td></tr>
+<tr><td>sit</td><td><span class="pill p-ctrl">PASS/ctrl</span></td><td><span class="pill p-ctrl">PASS/ctrl</span></td><td><span class="pill p-ctrl">PASS/ctrl</span></td><td><span class="pill p-ctrl">PASS/ctrl</span></td><td><span class="pill p-ctrl">PASS/ctrl</span></td><td><span class="pill p-ctrl">PASS/ctrl</span></td></tr>
+<tr><td class="wrap-ok">walk, happy, stairs, couch, hop, jump, flip, pounce, gallop, sweep</td><td><span class="pill p-fail">FAIL</span></td><td><span class="pill p-fail">FAIL</span></td><td><span class="pill p-fail">FAIL</span></td><td><span class="pill p-fail">FAIL</span></td><td><span class="pill p-fail">FAIL</span></td><td><span class="pill p-fail">FAIL</span></td></tr>
+</tbody></table></div>
+<p>Open-loop, walk / happy / gallop / sweep still fall in all six variants; path errors move by a few percent either way.</p>
+
+<h3>Residual peak, % of body weight the guide still has to add (below 35 % would be "PASS w/ controller")</h3>
+<div class="tbl"><table>
+<thead><tr><th>move</th><th>base 0.8</th><th>1.5</th><th>2.5</th><th>4.0 +mass</th><th>4.0 light</th><th>4.0 kp60</th></tr></thead>
+<tbody>
+<tr><td>stand</td><td class="num">4</td><td class="num">4</td><td class="num">4</td><td class="num">2</td><td class="num">4</td><td class="num">2</td></tr>
+<tr><td>sit</td><td class="num">21</td><td class="num">21</td><td class="num">21</td><td class="num">21</td><td class="num">21</td><td class="num">23</td></tr>
+<tr><td>lay</td><td class="num">83</td><td class="num">83</td><td class="num">83</td><td class="num">82</td><td class="num">83</td><td class="num">82</td></tr>
+<tr><td>tgrab</td><td class="num">6</td><td class="num">6</td><td class="num">6</td><td class="num">5</td><td class="num">6</td><td class="num">4</td></tr>
+<tr><td>walk</td><td class="num">80</td><td class="num">80</td><td class="num">80</td><td class="num">81</td><td class="num">80</td><td class="num">81</td></tr>
+<tr><td>happy</td><td class="num">80</td><td class="num">80</td><td class="num">80</td><td class="num">81</td><td class="num">80</td><td class="num">79</td></tr>
+<tr><td>stairs</td><td class="num">73</td><td class="num hi">129</td><td class="num hi">302</td><td class="num hi">198</td><td class="num hi">309</td><td class="num hi">211</td></tr>
+<tr><td>couch</td><td class="num">198</td><td class="num">207</td><td class="num">208</td><td class="num">176</td><td class="num">208</td><td class="num">182</td></tr>
+<tr><td>hop</td><td class="num">228</td><td class="num">215</td><td class="num">215</td><td class="num">213</td><td class="num">215</td><td class="num">215</td></tr>
+<tr><td>jump</td><td class="num">301</td><td class="num">299</td><td class="num">299</td><td class="num">289</td><td class="num">299</td><td class="num">286</td></tr>
+<tr><td>flip</td><td class="num">334</td><td class="num">335</td><td class="num">335</td><td class="num">334</td><td class="num">335</td><td class="num">322</td></tr>
+<tr><td>pounce</td><td class="num">192</td><td class="num">194</td><td class="num">194</td><td class="num">182</td><td class="num">194</td><td class="num">185</td></tr>
+<tr><td>gallop</td><td class="num">364</td><td class="num hi">794</td><td class="num hi">810</td><td class="num">402</td><td class="num hi">773</td><td class="num">325</td></tr>
+<tr><td>sweep</td><td class="num">435</td><td class="num hi">662</td><td class="num hi">584</td><td class="num">378</td><td class="num hi">789</td><td class="num">382</td></tr>
+</tbody></table></div>
+</div>
+<figure class="wide"><img src="upgrade_residual.png" alt="Dot chart of residual peak per move for each of the six variants, log scale."><figcaption>Residual peak per move and variant on a log scale. Nothing crosses the 35 % line that it did not already cross; stairs, gallop and sweep get worse with 1.5 and 2.5 N·m wrists.</figcaption></figure>
+<figure class="wide"><img src="upgrade.png" alt="Six heatmaps, one per variant, of leg and spine actuator loading in the guided run."><figcaption>Leg and spine actuator loading per variant (guided run). The dist columns lighten as the limit rises; the spine drum, spine twist and knee columns do not.</figcaption></figure>
+<div class="wrap">
+
+<h3>Top saturated motors in the guided run (share of samples at the limit)</h3>
+<div class="tbl"><table>
+<thead><tr><th>move</th><th class="wrap-ok">base 0.8</th><th class="wrap-ok">4.0 +mass (w40)</th></tr></thead>
+<tbody>
+<tr><td>walk</td><td class="wrap-ok">spine_twist 9 %, FR_knee, FR_dist</td><td class="wrap-ok">spine_twist 17 %, FR_knee</td></tr>
+<tr><td>happy</td><td class="wrap-ok">spine_twist 30 %, FL_dist 2 %, FR_dist 1 %</td><td class="wrap-ok">spine_twist 31 %, FR_knee, FR_dist</td></tr>
+<tr><td>stairs</td><td class="wrap-ok">spine_twist 25 %, RL_dist 2 %, FR_dist 2 %</td><td class="wrap-ok">spine_twist 29 %, FL_knee 8 %, FR_knee 4 %</td></tr>
+<tr><td>couch</td><td class="wrap-ok">spine_drum_rear 70 %, spine_drum_front 36 %, neck_lift 7 %</td><td class="wrap-ok">spine_drum_rear 71 %, spine_drum_front 32 %, neck_lift 6 %</td></tr>
+<tr><td>hop</td><td class="wrap-ok">spine_drum_rear 48 %, spine_drum_front 38 %, neck_lift 6 %</td><td class="wrap-ok">spine_drum_rear 51 %, spine_drum_front 48 %, neck_lift 5 %</td></tr>
+<tr><td>jump</td><td class="wrap-ok">spine_drum_rear 35 %, spine_drum_front 18 %, FL_dist 9 %</td><td class="wrap-ok">spine_drum_rear 36 %, spine_drum_front 14 %, neck_lift 5 %</td></tr>
+<tr><td>flip</td><td class="wrap-ok">spine_drum_front 49 %, spine_drum_rear 28 %, neck_lift 13 %</td><td class="wrap-ok">spine_drum_front 62 %, spine_drum_rear 29 %, neck_lift 14 %</td></tr>
+<tr><td>pounce</td><td class="wrap-ok">spine_drum_rear 60 %, spine_drum_front 58 %, spine_twist 10 %</td><td class="wrap-ok">same</td></tr>
+<tr><td>gallop</td><td class="wrap-ok">spine_drum_front 92 %, spine_drum_rear 68 %, RL_dist 62 %</td><td class="wrap-ok">spine_drum_front 93 %, spine_drum_rear 75 %, spine_twist 54 %</td></tr>
+<tr><td>sweep</td><td class="wrap-ok">spine_drum_front 91 %, spine_drum_rear 70 %, RL_dist 65 %</td><td class="wrap-ok">spine_drum_front 92 %, spine_drum_rear 79 %, spine_twist 61 %</td></tr>
+</tbody></table></div>
+<p class="note">All six variants with saturation counts are in <code>tables.md</code>.</p>
+
+<h3>What the wrists actually draw once they are allowed to (N·m, guided run)</h3>
+<p>Where the number sits below the limit it is a real demand. Where it equals the limit the servo railed again.</p>
+<div class="tbl"><table>
+<thead><tr><th>move</th><th>1.5</th><th>2.5</th><th>4.0 +mass</th><th>4.0 light</th><th class="wrap-ok">reading</th></tr></thead>
+<tbody>
+<tr><td class="wrap-ok">stand, sit, lay, tgrab</td><td class="num">0.23–0.39</td><td class="num">same</td><td class="num">same</td><td class="num">same</td><td class="wrap-ok">the 2204 is fine for static work, 2× margin</td></tr>
+<tr><td>flip, pounce</td><td class="num">1.09</td><td class="num">1.09</td><td class="num">1.34</td><td class="num">1.09</td><td class="wrap-ok">bounded, about 1.1–1.3 N·m</td></tr>
+<tr><td>couch</td><td class="num">1.50 (rail)</td><td class="num">1.87</td><td class="num">2.07</td><td class="num">1.87</td><td class="wrap-ok">bounded, about 1.9–2.1 N·m</td></tr>
+<tr><td>hop</td><td class="num">rail</td><td class="num">2.50 (rail)</td><td class="num">2.37</td><td class="num">2.82</td><td class="wrap-ok">about 2.4–2.8 N·m</td></tr>
+<tr><td>jump</td><td class="num">rail</td><td class="num">rail</td><td class="num">3.29</td><td class="num">2.96</td><td class="wrap-ok">about 3.0–3.3 N·m</td></tr>
+<tr><td class="wrap-ok">walk, happy, stairs, gallop, sweep</td><td class="num">rail</td><td class="num">rail</td><td class="num">3.7–4.0 (rail)</td><td class="num">rail</td><td class="wrap-ok"><strong>unbounded</strong>: the servo winds up against a mis-timed foot contact</td></tr>
+</tbody></table></div>
+<div class="callout">
+<p>With kp = 15 N·m/rad, 3.7 N·m means a 0.25 rad tracking error at the wrist. The foot is on the ground while the animation says it should be moving, and the servo pushes against the floor. In those moves the 0.8 N·m limit was acting as a clutch. Removing the clutch makes the body fight the ground harder, which is why stairs, gallop and sweep get <em>worse</em> at 1.5 and 2.5 N·m, and why no wrist torque changes the walk residual (80 % in every variant).</p>
+</div>
+
+<h2>4. Answers</h2>
+<p><strong>Smallest upgrade that fixes the most moves: none of them fixes any move.</strong> The verdict table is identical across all six variants, including the extras. The baseline wrist saturation was real but it was a symptom.</p>
+<p>If the question is instead what wrist torque a controller would need, the bounded demands say: 1.5 N·m covers flip and pounce, about 2.1 N·m covers couch, 2.8 N·m hop, 3.3 N·m jump. Walk and gallop cannot be read from open-loop replay at all.</p>
+<p><strong>New bottleneck after the upgrade</strong> (w40): the spine cable drums at 1.0 N·m, at the limit for 93 % / 75 % of gallop samples, 71 % of couch, about 50 % of hop and 62 % of flip. Then spine twist at 0.8 N·m (17–31 % of samples in walk, happy and stairs; 54–61 % in gallop and sweep). Then the front knees at 4.0 N·m (4–9 % of samples in walk, happy and stairs). The 0.204 kg of extra foot mass costs nothing measurable (stand and tgrab residual 4 → 2 % and 6 → 5 %, open-loop stand error 8 → 5 mm). Raising the wrist servo gains to the hip values changes nothing either.</p>
+
+<h2>5. Recommendation</h2>
+<div class="callout fail">
+<p>Do not buy wrist motors on this evidence. Every dynamic failure is a control failure: the body is 80 % of body weight off its path in walk with zero sensitivity to wrist torque, and the spine drums are railing because the spine is being asked to carry a body the legs are not supporting.</p>
+<p>Keep the 2204s for now. Record the bounded demands (1.1 / 2.1 / 2.8 / 3.3 N·m for flip-pounce / couch / hop / jump) as the spec to revisit once a controller produces real contact timing. Look at the spine drum limit (1.0 N·m) before the wrists: it is the motor at its limit most of the time in every dynamic move in every variant.</p>
+</div>
+
+<h2>6. Proposed next phase (not started): a real balance and gait controller</h2>
+<p>Goal: walk and gallop on the flat scene with the as-shipped motors, measured by the same residual (target 0, no guide) and by actual forward speed against the rig's.</p>
+<h3>Route A, RL policy in MJX (recommended first)</h3>
+<p>Port blur.xml to MJX. The model has 63 joints with fixed tendons (spine drums, twist, tail winches), elliptic cones and implicitfast; MJX lists support for all of these (verify on day 1 by loading the model), but the 0.5 ms timestep and the 9-joint cable tail make it an expensive environment. The first policy should freeze the tail, neck and jaw at the stand pose and control the 16 leg servos plus 3 spine actuators (19-D action, PD targets). Observation: IMU quaternion, gyro and accel, joint positions and velocities, foot touch, gait phase, commanded velocity. Reward: tracked velocity, upright, foot clearance, torque and action-rate penalties, with the rig's walk and gallop joint angles as an imitation term so the gait looks like BLUR's rig. PPO on the Brax / MuJoCo Playground recipe, with domain randomisation on mass, friction, motor gain and latency.</p>
+<ul>
+<li><strong>Time:</strong> about one week to a walking policy (2 days environment and reward, 3 days training iterations, 2 days sim-to-sim check in plain MuJoCo at 0.5 ms). Gallop with the spine active: 1–2 more weeks, since the spine drums become a learned degree of freedom.</li>
+<li><strong>Hardware:</strong> the RTX 5070 laptop (8 GB) should train the walk policy at about 2048 environments in 2–4 h per run. Gallop iterations with spine and tail unfrozen want more memory and throughput: one rented H100 at about $3/h, roughly $150–300 for the phase. Everything is checkable afterwards on the laptop CPU with replay_exp-style scripts.</li>
+</ul>
+<h3>Route B, model-predictive control</h3>
+<p>Convex MPC on a single-rigid-body model (the standard quadruped MPC, 10–20 ms horizon, 50 Hz) with a Raibert-style foot placement planner and a joint PD layer underneath. Works for walk and trot within 2–3 weeks of engineering, runs on CPU, no training. It does not naturally handle the cable spine, the tail or the gallop's flight phase; those need whole-body MPC (3–4 weeks more) or go back to RL.</p>
+<p><strong>Recommendation:</strong> Route A for walk first. It answers the real question (what torque a controlled BLUR needs at the wrists and the spine) in one week, and gallop follows on the same stack. Route B is the fallback if the MJX port of the tendon spine turns out to be the slow part.</p>
+
+<h2>Files</h2>
+<pre><code>BLUR/
+  RESULTS.md                      the written report (this page)
+  tables.md                       every table, all six variants
+  baseline.png                    26 actuators × 14 moves, motors alone + guided
+  upgrade.png / upgrade_residual.png   variant heatmaps / residual dot chart
+  baseline/     report_original.json (shipped), report_run.log (rerun, identical), report_full.json (per-actuator)
+  blur_mujoco/  the zip contents, untouched, + .venv (python 3.12)
+  experiments/  replay_exp.py (--model/--out/--jobs), make_variants.py, plot_reports.py, make_table.py, run_all.sh,
+                variants/{base,w15,w25,w40,w40_light,w40_kp60}/, results/*.json + *.log</code></pre>
+</div>
