@@ -1,0 +1,14 @@
+stand    PASS               open-loop err     2 mm  fell=False residual mean   6.8% / peak  16.2% of body weight   RR_knee 0.36x, RL_knee 0.36x, FL_pitch 0.22x
+sit      PASS w/ controller open-loop err    85 mm  fell=False residual mean  20.5% / peak  27.9% of body weight   RL_knee 0.59x, RR_knee 0.59x, FL_pitch 0.16x
+lay      PASS               open-loop err    39 mm  fell=False residual mean  61.8% / peak  86.7% of body weight   FL_knee 0.73x, FR_knee 0.72x, RR_knee 0.58x
+walk     NEEDS WORK         open-loop err  1201 mm  fell=True  residual mean  58.2% / peak  78.3% of body weight   FR_knee 1.00x, FR_dist 1.00x, RL_knee 0.69x
+happy    NEEDS WORK         open-loop err   889 mm  fell=True  residual mean  45.7% / peak  70.7% of body weight   FR_knee 1.00x, FR_dist 1.00x, neck_tilt 1.00x
+gallop   NEEDS WORK         open-loop err  8627 mm  fell=True  residual mean 196.6% / peak 496.1% of body weight   FR_pitch 1.00x, FR_knee 1.00x, FR_dist 1.00x
+sweep    NEEDS WORK         open-loop err 13263 mm  fell=True  residual mean 199.0% / peak 499.2% of body weight   FR_abd 1.00x, FR_pitch 1.00x, FR_knee 1.00x
+hop      NEEDS WORK         open-loop err   381 mm  fell=False residual mean  41.3% / peak 222.3% of body weight   RR_knee 1.00x, RL_knee 1.00x, spine_s2 1.00x
+jump     NEEDS WORK         open-loop err   882 mm  fell=False residual mean  50.0% / peak 276.9% of body weight   FR_pitch 1.00x, FR_knee 1.00x, FR_dist 1.00x
+flip     NEEDS WORK         open-loop err   370 mm  fell=False residual mean  52.4% / peak 304.6% of body weight   FR_pitch 1.00x, FL_pitch 1.00x, RR_knee 1.00x
+stairs   NEEDS WORK         open-loop err   767 mm  fell=False residual mean 195.0% / peak 480.6% of body weight   FR_pitch 1.00x, FR_knee 1.00x, FR_dist 1.00x
+couch    NEEDS WORK         open-loop err  1046 mm  fell=False residual mean  64.6% / peak 201.1% of body weight   FR_pitch 1.00x, FR_knee 1.00x, FL_pitch 1.00x
+pounce   NEEDS WORK         open-loop err   512 mm  fell=False residual mean  45.8% / peak 208.7% of body weight   RR_abd 1.00x, RR_knee 1.00x, RL_abd 1.00x
+tgrab    PASS               open-loop err     9 mm  fell=False residual mean   4.2% / peak   6.4% of body weight   RR_knee 0.36x, RL_knee 0.36x, FL_abd 0.27x

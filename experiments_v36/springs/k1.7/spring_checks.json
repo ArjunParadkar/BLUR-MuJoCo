@@ -1,0 +1,119 @@
+{
+ "variant": "k1.7",
+ "spring_crouch_Nm": {
+  "jumpspring_FR_pitch": 1.7,
+  "jumpspring_FR_knee": 1.7,
+  "jumpspring_FL_pitch": 1.7,
+  "jumpspring_FL_knee": 1.7,
+  "jumpspring_RR_knee": 1.7,
+  "jumpspring_RL_knee": 1.7
+ },
+ "jump": {
+  "mass_kg": 3.672,
+  "needed_mm": 750,
+  "ceiling_rig_stance_mm": 406,
+  "ceiling_feet_tucked_mm": 724,
+  "note": "upper bound: full torque the whole push, no speed loss, perfect timing"
+ },
+ "hold": {
+  "stand": {
+   "all": {
+    "FR_abd": 0.649,
+    "FR_pitch": 0.65,
+    "FR_knee": 0.574,
+    "FR_dist": 0.259,
+    "FL_abd": 0.644,
+    "FL_pitch": 0.652,
+    "FL_knee": 0.578,
+    "FL_dist": 0.257,
+    "RR_abd": 0.098,
+    "RR_pitch": 0.282,
+    "RR_knee": 1.116,
+    "RR_dist": 0.096,
+    "RL_abd": 0.095,
+    "RL_pitch": 0.28,
+    "RL_knee": 1.108,
+    "RL_dist": 0.097,
+    "spine_s1": 0.381,
+    "spine_twist": 0.006,
+    "spine_s2": 0.105,
+    "neck_lift": 0.131,
+    "neck_pan": 0.0,
+    "neck_tilt": 0.051,
+    "jaw": 0.004,
+    "gripper": 0.0
+   },
+   "max": [
+    1.116,
+    "RR_knee"
+   ],
+   "base_drop_mm": 0.0
+  },
+  "sit": {
+   "all": {
+    "FR_abd": 0.286,
+    "FR_pitch": 1.278,
+    "FR_knee": 0.126,
+    "FR_dist": 0.094,
+    "FL_abd": 0.266,
+    "FL_pitch": 1.305,
+    "FL_knee": 0.13,
+    "FL_dist": 0.087,
+    "RR_abd": 1.012,
+    "RR_pitch": 1.191,
+    "RR_knee": 2.357,
+    "RR_dist": 0.42,
+    "RL_abd": 0.99,
+    "RL_pitch": 1.186,
+    "RL_knee": 2.39,
+    "RL_dist": 0.413,
+    "spine_s1": 0.923,
+    "spine_twist": 0.027,
+    "spine_s2": 1.537,
+    "neck_lift": 0.043,
+    "neck_pan": 0.001,
+    "neck_tilt": 0.03,
+    "jaw": 0.003,
+    "gripper": 0.0
+   },
+   "max": [
+    2.39,
+    "RL_knee"
+   ],
+   "base_drop_mm": 27.4
+  },
+  "lay": {
+   "all": {
+    "FR_abd": 0.718,
+    "FR_pitch": 0.43,
+    "FR_knee": 2.38,
+    "FR_dist": 0.003,
+    "FL_abd": 1.031,
+    "FL_pitch": 0.37,
+    "FL_knee": 2.009,
+    "FL_dist": 0.004,
+    "RR_abd": 0.382,
+    "RR_pitch": 0.072,
+    "RR_knee": 1.937,
+    "RR_dist": 0.343,
+    "RL_abd": 0.594,
+    "RL_pitch": 0.261,
+    "RL_knee": 1.65,
+    "RL_dist": 0.317,
+    "spine_s1": 0.437,
+    "spine_twist": 0.36,
+    "spine_s2": 0.204,
+    "neck_lift": 0.106,
+    "neck_pan": 0.001,
+    "neck_tilt": 0.043,
+    "jaw": 0.004,
+    "gripper": 0.0
+   },
+   "max": [
+    2.38,
+    "FR_knee"
+   ],
+   "base_drop_mm": 23.5
+  }
+ }
+}

@@ -1,0 +1,202 @@
+[
+ {
+  "k": 0.0,
+  "tucked": 580,
+  "rig": 406,
+  "stand": [
+   0.747,
+   "FR_pitch"
+  ],
+  "sit": [
+   1.463,
+   "spine_s2"
+  ],
+  "lay": [
+   1.122,
+   "FL_abd"
+  ],
+  "sit_knee": 0.387,
+  "lay_knee": 0.463,
+  "worst": 1.463
+ },
+ {
+  "k": 0.5,
+  "tucked": 614,
+  "rig": 406,
+  "stand": [
+   0.67,
+   "FR_abd"
+  ],
+  "sit": [
+   1.498,
+   "spine_s2"
+  ],
+  "lay": [
+   1.063,
+   "FL_abd"
+  ],
+  "sit_knee": 0.987,
+  "lay_knee": 0.901,
+  "worst": 1.498
+ },
+ {
+  "k": 1.0,
+  "tucked": 660,
+  "rig": 406,
+  "stand": [
+   0.69,
+   "RR_knee"
+  ],
+  "sit": [
+   1.58,
+   "RL_knee"
+  ],
+  "lay": [
+   1.465,
+   "FR_knee"
+  ],
+  "sit_knee": 1.58,
+  "lay_knee": 1.465,
+  "worst": 1.58
+ },
+ {
+  "k": 1.5,
+  "tucked": 706,
+  "rig": 406,
+  "stand": [
+   0.995,
+   "RR_knee"
+  ],
+  "sit": [
+   2.159,
+   "RL_knee"
+  ],
+  "lay": [
+   2.12,
+   "FR_knee"
+  ],
+  "sit_knee": 2.159,
+  "lay_knee": 2.12,
+  "worst": 2.159
+ },
+ {
+  "k": 1.7,
+  "tucked": 724,
+  "rig": 406,
+  "stand": [
+   1.116,
+   "RR_knee"
+  ],
+  "sit": [
+   2.39,
+   "RL_knee"
+  ],
+  "lay": [
+   2.38,
+   "FR_knee"
+  ],
+  "sit_knee": 2.39,
+  "lay_knee": 2.38,
+  "worst": 2.39
+ },
+ {
+  "k": 1.8,
+  "tucked": 733,
+  "rig": 406,
+  "stand": [
+   1.176,
+   "RR_knee"
+  ],
+  "sit": [
+   2.504,
+   "RL_knee"
+  ],
+  "lay": [
+   2.51,
+   "FR_knee"
+  ],
+  "sit_knee": 2.504,
+  "lay_knee": 2.51,
+  "worst": 2.51
+ },
+ {
+  "k": 1.9,
+  "tucked": 742,
+  "rig": 406,
+  "stand": [
+   1.236,
+   "RR_knee"
+  ],
+  "sit": [
+   2.616,
+   "RL_knee"
+  ],
+  "lay": [
+   2.639,
+   "FR_knee"
+  ],
+  "sit_knee": 2.616,
+  "lay_knee": 2.639,
+  "worst": 2.639
+ },
+ {
+  "k": 2.0,
+  "tucked": 751,
+  "rig": 406,
+  "stand": [
+   1.297,
+   "RR_knee"
+  ],
+  "sit": [
+   2.73,
+   "RL_knee"
+  ],
+  "lay": [
+   2.768,
+   "FR_knee"
+  ],
+  "sit_knee": 2.73,
+  "lay_knee": 2.768,
+  "worst": 2.768
+ },
+ {
+  "k": 2.5,
+  "tucked": 794,
+  "rig": 406,
+  "stand": [
+   1.597,
+   "RR_knee"
+  ],
+  "sit": [
+   3.302,
+   "RL_knee"
+  ],
+  "lay": [
+   3.411,
+   "FR_knee"
+  ],
+  "sit_knee": 3.302,
+  "lay_knee": 3.411,
+  "worst": 3.411
+ },
+ {
+  "k": 3.0,
+  "tucked": 835,
+  "rig": 406,
+  "stand": [
+   1.894,
+   "RR_knee"
+  ],
+  "sit": [
+   3.885,
+   "RL_knee"
+  ],
+  "lay": [
+   4.0,
+   "FR_knee"
+  ],
+  "sit_knee": 3.885,
+  "lay_knee": 4.0,
+  "worst": 4.0
+ }
+]

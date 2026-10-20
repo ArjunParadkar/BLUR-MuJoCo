@@ -1,0 +1,1 @@
+k0.0 jump 580 406 hold max {'stand': (0.747, 'FR_pitch'), 'sit': (1.463, 'spine_s2'), 'lay': (1.122, 'FL_abd')} crouch {'jumpspring_FR_pitch': 0.0, 'jumpspring_FR_knee': 0.0, 'jumpspring_FL_pitch': 0.0, 'jumpspring_FL_knee': 0.0, 'jumpspring_RR_knee': 0.0, 'jumpspring_RL_knee': 0.0}

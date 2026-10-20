@@ -1,0 +1,1 @@
+k1.5 jump 706 406 hold max {'stand': (0.995, 'RR_knee'), 'sit': (2.159, 'RL_knee'), 'lay': (2.12, 'FR_knee')} crouch {'jumpspring_FR_pitch': 1.5, 'jumpspring_FR_knee': 1.5, 'jumpspring_FL_pitch': 1.5, 'jumpspring_FL_knee': 1.5, 'jumpspring_RR_knee': 1.5, 'jumpspring_RL_knee': 1.5}

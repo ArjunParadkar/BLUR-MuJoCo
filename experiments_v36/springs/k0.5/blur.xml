@@ -1,0 +1,1529 @@
+<mujoco model="BLUR">
+  <compiler angle="radian" meshdir="meshes" autolimits="true" inertiafromgeom="false"/>
+  <option timestep="0.0005" integrator="implicitfast" cone="elliptic" impratio="10"/>
+  <default>
+    <default class="blur">
+      <default class="vis"><geom type="mesh" contype="0" conaffinity="0" group="1" density="0"/></default>
+      <default class="col"><geom contype="1" conaffinity="0" group="3" rgba="0.9 0.3 0.2 0.25" friction="0.8 0.02 0.001" solref="0.004 1"/></default>
+      <default class="foot"><geom contype="1" conaffinity="0" group="3" rgba="0.2 0.9 0.3 0.4" friction="1.2 0.02 0.002" solref="0.004 1" solimp="0.9 0.95 0.001"/></default>
+      <default class="grip"><geom contype="1" conaffinity="1" group="3" rgba="0.2 0.6 0.9 0.4" friction="1.5 0.02 0.002" solref="0.004 1"/></default>
+      <site group="4" rgba="1 1 0 1"/>
+    </default>
+  </default>
+  <asset>
+    <mesh name="chest_0" file="chest_0.stl" inertia="shell"/>
+    <mesh name="chest_1" file="chest_1.stl" inertia="shell"/>
+    <mesh name="chest_2" file="chest_2.stl" inertia="shell"/>
+    <mesh name="chest_3" file="chest_3.stl" inertia="shell"/>
+    <mesh name="chest_4" file="chest_4.stl" inertia="shell"/>
+    <mesh name="chest_5" file="chest_5.stl" inertia="shell"/>
+    <mesh name="chest_6" file="chest_6.stl" inertia="shell"/>
+    <mesh name="chest_7" file="chest_7.stl" inertia="shell"/>
+    <mesh name="chest_8" file="chest_8.stl" inertia="shell"/>
+    <mesh name="chest_9" file="chest_9.stl" inertia="shell"/>
+    <mesh name="chest_10" file="chest_10.stl" inertia="shell"/>
+    <mesh name="chest_418" file="chest_418.stl" inertia="shell"/>
+    <mesh name="chest_419" file="chest_419.stl" inertia="shell"/>
+    <mesh name="chest_420" file="chest_420.stl" inertia="shell"/>
+    <mesh name="chest_421" file="chest_421.stl" inertia="shell"/>
+    <mesh name="chest_422" file="chest_422.stl" inertia="shell"/>
+    <mesh name="chest_423" file="chest_423.stl" inertia="shell"/>
+    <mesh name="chest_424" file="chest_424.stl" inertia="shell"/>
+    <mesh name="chest_425" file="chest_425.stl" inertia="shell"/>
+    <mesh name="chest_426" file="chest_426.stl" inertia="shell"/>
+    <mesh name="chest_427" file="chest_427.stl" inertia="shell"/>
+    <mesh name="chest_428" file="chest_428.stl" inertia="shell"/>
+    <mesh name="chest_429" file="chest_429.stl" inertia="shell"/>
+    <mesh name="chest_430" file="chest_430.stl" inertia="shell"/>
+    <mesh name="chest_431" file="chest_431.stl" inertia="shell"/>
+    <mesh name="chest_432" file="chest_432.stl" inertia="shell"/>
+    <mesh name="chest_433" file="chest_433.stl" inertia="shell"/>
+    <mesh name="chest_434" file="chest_434.stl" inertia="shell"/>
+    <mesh name="chest_435" file="chest_435.stl" inertia="shell"/>
+    <mesh name="chest_436" file="chest_436.stl" inertia="shell"/>
+    <mesh name="chest_437" file="chest_437.stl" inertia="shell"/>
+    <mesh name="chest_438" file="chest_438.stl" inertia="shell"/>
+    <mesh name="chest_439" file="chest_439.stl" inertia="shell"/>
+    <mesh name="chest_440" file="chest_440.stl" inertia="shell"/>
+    <mesh name="FR_abdJ_11" file="FR_abdJ_11.stl" inertia="shell"/>
+    <mesh name="FR_abdJ_68" file="FR_abdJ_68.stl" inertia="shell"/>
+    <mesh name="FR_abdJ_69" file="FR_abdJ_69.stl" inertia="shell"/>
+    <mesh name="FR_pod_12" file="FR_pod_12.stl" inertia="shell"/>
+    <mesh name="FR_pod_13" file="FR_pod_13.stl" inertia="shell"/>
+    <mesh name="FR_pod_14" file="FR_pod_14.stl" inertia="shell"/>
+    <mesh name="FR_pod_15" file="FR_pod_15.stl" inertia="shell"/>
+    <mesh name="FR_pod_16" file="FR_pod_16.stl" inertia="shell"/>
+    <mesh name="FR_pod_17" file="FR_pod_17.stl" inertia="shell"/>
+    <mesh name="FR_pod_18" file="FR_pod_18.stl" inertia="shell"/>
+    <mesh name="FR_pod_19" file="FR_pod_19.stl" inertia="shell"/>
+    <mesh name="FR_pod_20" file="FR_pod_20.stl" inertia="shell"/>
+    <mesh name="FR_pod_21" file="FR_pod_21.stl" inertia="shell"/>
+    <mesh name="FR_pod_22" file="FR_pod_22.stl" inertia="shell"/>
+    <mesh name="FR_pod_23" file="FR_pod_23.stl" inertia="shell"/>
+    <mesh name="FR_pod_24" file="FR_pod_24.stl" inertia="shell"/>
+    <mesh name="FR_pod_62" file="FR_pod_62.stl" inertia="shell"/>
+    <mesh name="FR_pod_63" file="FR_pod_63.stl" inertia="shell"/>
+    <mesh name="FR_pitJ_25" file="FR_pitJ_25.stl" inertia="shell"/>
+    <mesh name="FR_pitJ_59" file="FR_pitJ_59.stl" inertia="shell"/>
+    <mesh name="FR_pitJ_60" file="FR_pitJ_60.stl" inertia="shell"/>
+    <mesh name="FR_pitJ_61" file="FR_pitJ_61.stl" inertia="shell"/>
+    <mesh name="FR_midJ_26" file="FR_midJ_26.stl" inertia="shell"/>
+    <mesh name="FR_midJ_27" file="FR_midJ_27.stl" inertia="shell"/>
+    <mesh name="FR_midJ_28" file="FR_midJ_28.stl" inertia="shell"/>
+    <mesh name="FR_midJ_29" file="FR_midJ_29.stl" inertia="shell"/>
+    <mesh name="FR_midJ_30" file="FR_midJ_30.stl" inertia="shell"/>
+    <mesh name="FR_midJ_31" file="FR_midJ_31.stl" inertia="shell"/>
+    <mesh name="FR_midJ_32" file="FR_midJ_32.stl" inertia="shell"/>
+    <mesh name="FR_midJ_33" file="FR_midJ_33.stl" inertia="shell"/>
+    <mesh name="FR_midJ_34" file="FR_midJ_34.stl" inertia="shell"/>
+    <mesh name="FR_midJ_35" file="FR_midJ_35.stl" inertia="shell"/>
+    <mesh name="FR_midJ_36" file="FR_midJ_36.stl" inertia="shell"/>
+    <mesh name="FR_midJ_37" file="FR_midJ_37.stl" inertia="shell"/>
+    <mesh name="FR_midJ_38" file="FR_midJ_38.stl" inertia="shell"/>
+    <mesh name="FR_midJ_56" file="FR_midJ_56.stl" inertia="shell"/>
+    <mesh name="FR_midJ_57" file="FR_midJ_57.stl" inertia="shell"/>
+    <mesh name="FR_midJ_58" file="FR_midJ_58.stl" inertia="shell"/>
+    <mesh name="FR_disJ_39" file="FR_disJ_39.stl" inertia="shell"/>
+    <mesh name="FR_disJ_40" file="FR_disJ_40.stl" inertia="shell"/>
+    <mesh name="FR_disJ_41" file="FR_disJ_41.stl" inertia="shell"/>
+    <mesh name="FR_disJ_42" file="FR_disJ_42.stl" inertia="shell"/>
+    <mesh name="FR_disJ_43" file="FR_disJ_43.stl" inertia="shell"/>
+    <mesh name="FR_disJ_44" file="FR_disJ_44.stl" inertia="shell"/>
+    <mesh name="FR_disJ_45" file="FR_disJ_45.stl" inertia="shell"/>
+    <mesh name="FR_disJ_46" file="FR_disJ_46.stl" inertia="shell"/>
+    <mesh name="FR_disJ_47" file="FR_disJ_47.stl" inertia="shell"/>
+    <mesh name="FR_disJ_48" file="FR_disJ_48.stl" inertia="shell"/>
+    <mesh name="FR_disJ_49" file="FR_disJ_49.stl" inertia="shell"/>
+    <mesh name="FR_disJ_50" file="FR_disJ_50.stl" inertia="shell"/>
+    <mesh name="FR_disJ_51" file="FR_disJ_51.stl" inertia="shell"/>
+    <mesh name="FR_disJ_52" file="FR_disJ_52.stl" inertia="shell"/>
+    <mesh name="FR_disJ_54" file="FR_disJ_54.stl" inertia="shell"/>
+    <mesh name="FR_disJ_55" file="FR_disJ_55.stl" inertia="shell"/>
+    <mesh name="FR_pawJ_53" file="FR_pawJ_53.stl" inertia="shell"/>
+    <mesh name="FR_scJ_64" file="FR_scJ_64.stl" inertia="shell"/>
+    <mesh name="FR_scJ_65" file="FR_scJ_65.stl" inertia="shell"/>
+    <mesh name="FR_scJ_66" file="FR_scJ_66.stl" inertia="shell"/>
+    <mesh name="FR_linkJ_67" file="FR_linkJ_67.stl" inertia="shell"/>
+    <mesh name="FL_abdJ_70" file="FL_abdJ_70.stl" inertia="shell"/>
+    <mesh name="FL_abdJ_127" file="FL_abdJ_127.stl" inertia="shell"/>
+    <mesh name="FL_abdJ_128" file="FL_abdJ_128.stl" inertia="shell"/>
+    <mesh name="FL_pod_71" file="FL_pod_71.stl" inertia="shell"/>
+    <mesh name="FL_pod_72" file="FL_pod_72.stl" inertia="shell"/>
+    <mesh name="FL_pod_73" file="FL_pod_73.stl" inertia="shell"/>
+    <mesh name="FL_pod_74" file="FL_pod_74.stl" inertia="shell"/>
+    <mesh name="FL_pod_75" file="FL_pod_75.stl" inertia="shell"/>
+    <mesh name="FL_pod_76" file="FL_pod_76.stl" inertia="shell"/>
+    <mesh name="FL_pod_77" file="FL_pod_77.stl" inertia="shell"/>
+    <mesh name="FL_pod_78" file="FL_pod_78.stl" inertia="shell"/>
+    <mesh name="FL_pod_79" file="FL_pod_79.stl" inertia="shell"/>
+    <mesh name="FL_pod_80" file="FL_pod_80.stl" inertia="shell"/>
+    <mesh name="FL_pod_81" file="FL_pod_81.stl" inertia="shell"/>
+    <mesh name="FL_pod_82" file="FL_pod_82.stl" inertia="shell"/>
+    <mesh name="FL_pod_83" file="FL_pod_83.stl" inertia="shell"/>
+    <mesh name="FL_pod_121" file="FL_pod_121.stl" inertia="shell"/>
+    <mesh name="FL_pod_122" file="FL_pod_122.stl" inertia="shell"/>
+    <mesh name="FL_pitJ_84" file="FL_pitJ_84.stl" inertia="shell"/>
+    <mesh name="FL_pitJ_118" file="FL_pitJ_118.stl" inertia="shell"/>
+    <mesh name="FL_pitJ_119" file="FL_pitJ_119.stl" inertia="shell"/>
+    <mesh name="FL_pitJ_120" file="FL_pitJ_120.stl" inertia="shell"/>
+    <mesh name="FL_midJ_85" file="FL_midJ_85.stl" inertia="shell"/>
+    <mesh name="FL_midJ_86" file="FL_midJ_86.stl" inertia="shell"/>
+    <mesh name="FL_midJ_87" file="FL_midJ_87.stl" inertia="shell"/>
+    <mesh name="FL_midJ_88" file="FL_midJ_88.stl" inertia="shell"/>
+    <mesh name="FL_midJ_89" file="FL_midJ_89.stl" inertia="shell"/>
+    <mesh name="FL_midJ_90" file="FL_midJ_90.stl" inertia="shell"/>
+    <mesh name="FL_midJ_91" file="FL_midJ_91.stl" inertia="shell"/>
+    <mesh name="FL_midJ_92" file="FL_midJ_92.stl" inertia="shell"/>
+    <mesh name="FL_midJ_93" file="FL_midJ_93.stl" inertia="shell"/>
+    <mesh name="FL_midJ_94" file="FL_midJ_94.stl" inertia="shell"/>
+    <mesh name="FL_midJ_95" file="FL_midJ_95.stl" inertia="shell"/>
+    <mesh name="FL_midJ_96" file="FL_midJ_96.stl" inertia="shell"/>
+    <mesh name="FL_midJ_97" file="FL_midJ_97.stl" inertia="shell"/>
+    <mesh name="FL_midJ_115" file="FL_midJ_115.stl" inertia="shell"/>
+    <mesh name="FL_midJ_116" file="FL_midJ_116.stl" inertia="shell"/>
+    <mesh name="FL_midJ_117" file="FL_midJ_117.stl" inertia="shell"/>
+    <mesh name="FL_disJ_98" file="FL_disJ_98.stl" inertia="shell"/>
+    <mesh name="FL_disJ_99" file="FL_disJ_99.stl" inertia="shell"/>
+    <mesh name="FL_disJ_100" file="FL_disJ_100.stl" inertia="shell"/>
+    <mesh name="FL_disJ_101" file="FL_disJ_101.stl" inertia="shell"/>
+    <mesh name="FL_disJ_102" file="FL_disJ_102.stl" inertia="shell"/>
+    <mesh name="FL_disJ_103" file="FL_disJ_103.stl" inertia="shell"/>
+    <mesh name="FL_disJ_104" file="FL_disJ_104.stl" inertia="shell"/>
+    <mesh name="FL_disJ_105" file="FL_disJ_105.stl" inertia="shell"/>
+    <mesh name="FL_disJ_106" file="FL_disJ_106.stl" inertia="shell"/>
+    <mesh name="FL_disJ_107" file="FL_disJ_107.stl" inertia="shell"/>
+    <mesh name="FL_disJ_108" file="FL_disJ_108.stl" inertia="shell"/>
+    <mesh name="FL_disJ_109" file="FL_disJ_109.stl" inertia="shell"/>
+    <mesh name="FL_disJ_110" file="FL_disJ_110.stl" inertia="shell"/>
+    <mesh name="FL_disJ_111" file="FL_disJ_111.stl" inertia="shell"/>
+    <mesh name="FL_disJ_113" file="FL_disJ_113.stl" inertia="shell"/>
+    <mesh name="FL_disJ_114" file="FL_disJ_114.stl" inertia="shell"/>
+    <mesh name="FL_pawJ_112" file="FL_pawJ_112.stl" inertia="shell"/>
+    <mesh name="FL_scJ_123" file="FL_scJ_123.stl" inertia="shell"/>
+    <mesh name="FL_scJ_124" file="FL_scJ_124.stl" inertia="shell"/>
+    <mesh name="FL_scJ_125" file="FL_scJ_125.stl" inertia="shell"/>
+    <mesh name="FL_linkJ_126" file="FL_linkJ_126.stl" inertia="shell"/>
+    <mesh name="spine0_129" file="spine0_129.stl" inertia="shell"/>
+    <mesh name="spine0_130" file="spine0_130.stl" inertia="shell"/>
+    <mesh name="spine0_131" file="spine0_131.stl" inertia="shell"/>
+    <mesh name="spine0_132" file="spine0_132.stl" inertia="shell"/>
+    <mesh name="spine0_133" file="spine0_133.stl" inertia="shell"/>
+    <mesh name="spine0_134" file="spine0_134.stl" inertia="shell"/>
+    <mesh name="spine0_135" file="spine0_135.stl" inertia="shell"/>
+    <mesh name="spine0_136" file="spine0_136.stl" inertia="shell"/>
+    <mesh name="spine0_137" file="spine0_137.stl" inertia="shell"/>
+    <mesh name="spine0_138" file="spine0_138.stl" inertia="shell"/>
+    <mesh name="spine0_139" file="spine0_139.stl" inertia="shell"/>
+    <mesh name="spine0_140" file="spine0_140.stl" inertia="shell"/>
+    <mesh name="spine0_141" file="spine0_141.stl" inertia="shell"/>
+    <mesh name="spine0_361" file="spine0_361.stl" inertia="shell"/>
+    <mesh name="spine1_142" file="spine1_142.stl" inertia="shell"/>
+    <mesh name="spine1_143" file="spine1_143.stl" inertia="shell"/>
+    <mesh name="spine1_144" file="spine1_144.stl" inertia="shell"/>
+    <mesh name="spine1_145" file="spine1_145.stl" inertia="shell"/>
+    <mesh name="spine1_146" file="spine1_146.stl" inertia="shell"/>
+    <mesh name="spine1_147" file="spine1_147.stl" inertia="shell"/>
+    <mesh name="spine1_148" file="spine1_148.stl" inertia="shell"/>
+    <mesh name="spine1_149" file="spine1_149.stl" inertia="shell"/>
+    <mesh name="spine1_150" file="spine1_150.stl" inertia="shell"/>
+    <mesh name="spine1_151" file="spine1_151.stl" inertia="shell"/>
+    <mesh name="spine1_152" file="spine1_152.stl" inertia="shell"/>
+    <mesh name="spine1_153" file="spine1_153.stl" inertia="shell"/>
+    <mesh name="spine1_154" file="spine1_154.stl" inertia="shell"/>
+    <mesh name="spine2_155" file="spine2_155.stl" inertia="shell"/>
+    <mesh name="spine2_156" file="spine2_156.stl" inertia="shell"/>
+    <mesh name="pelvis_157" file="pelvis_157.stl" inertia="shell"/>
+    <mesh name="pelvis_158" file="pelvis_158.stl" inertia="shell"/>
+    <mesh name="pelvis_277" file="pelvis_277.stl" inertia="shell"/>
+    <mesh name="pelvis_278" file="pelvis_278.stl" inertia="shell"/>
+    <mesh name="pelvis_279" file="pelvis_279.stl" inertia="shell"/>
+    <mesh name="pelvis_280" file="pelvis_280.stl" inertia="shell"/>
+    <mesh name="pelvis_281" file="pelvis_281.stl" inertia="shell"/>
+    <mesh name="pelvis_282" file="pelvis_282.stl" inertia="shell"/>
+    <mesh name="pelvis_283" file="pelvis_283.stl" inertia="shell"/>
+    <mesh name="pelvis_344" file="pelvis_344.stl" inertia="shell"/>
+    <mesh name="pelvis_345" file="pelvis_345.stl" inertia="shell"/>
+    <mesh name="pelvis_346" file="pelvis_346.stl" inertia="shell"/>
+    <mesh name="pelvis_347" file="pelvis_347.stl" inertia="shell"/>
+    <mesh name="pelvis_348" file="pelvis_348.stl" inertia="shell"/>
+    <mesh name="pelvis_349" file="pelvis_349.stl" inertia="shell"/>
+    <mesh name="pelvis_350" file="pelvis_350.stl" inertia="shell"/>
+    <mesh name="pelvis_351" file="pelvis_351.stl" inertia="shell"/>
+    <mesh name="pelvis_352" file="pelvis_352.stl" inertia="shell"/>
+    <mesh name="pelvis_353" file="pelvis_353.stl" inertia="shell"/>
+    <mesh name="pelvis_354" file="pelvis_354.stl" inertia="shell"/>
+    <mesh name="pelvis_355" file="pelvis_355.stl" inertia="shell"/>
+    <mesh name="pelvis_356" file="pelvis_356.stl" inertia="shell"/>
+    <mesh name="pelvis_357" file="pelvis_357.stl" inertia="shell"/>
+    <mesh name="pelvis_358" file="pelvis_358.stl" inertia="shell"/>
+    <mesh name="pelvis_359" file="pelvis_359.stl" inertia="shell"/>
+    <mesh name="pelvis_360" file="pelvis_360.stl" inertia="shell"/>
+    <mesh name="RR_pod_159" file="RR_pod_159.stl" inertia="shell"/>
+    <mesh name="RR_pod_160" file="RR_pod_160.stl" inertia="shell"/>
+    <mesh name="RR_pod_161" file="RR_pod_161.stl" inertia="shell"/>
+    <mesh name="RR_pod_162" file="RR_pod_162.stl" inertia="shell"/>
+    <mesh name="RR_pod_163" file="RR_pod_163.stl" inertia="shell"/>
+    <mesh name="RR_pod_164" file="RR_pod_164.stl" inertia="shell"/>
+    <mesh name="RR_pod_165" file="RR_pod_165.stl" inertia="shell"/>
+    <mesh name="RR_pod_166" file="RR_pod_166.stl" inertia="shell"/>
+    <mesh name="RR_pod_167" file="RR_pod_167.stl" inertia="shell"/>
+    <mesh name="RR_pod_168" file="RR_pod_168.stl" inertia="shell"/>
+    <mesh name="RR_pod_169" file="RR_pod_169.stl" inertia="shell"/>
+    <mesh name="RR_pod_170" file="RR_pod_170.stl" inertia="shell"/>
+    <mesh name="RR_pod_171" file="RR_pod_171.stl" inertia="shell"/>
+    <mesh name="RR_pod_211" file="RR_pod_211.stl" inertia="shell"/>
+    <mesh name="RR_pitJ_172" file="RR_pitJ_172.stl" inertia="shell"/>
+    <mesh name="RR_pitJ_208" file="RR_pitJ_208.stl" inertia="shell"/>
+    <mesh name="RR_pitJ_209" file="RR_pitJ_209.stl" inertia="shell"/>
+    <mesh name="RR_pitJ_210" file="RR_pitJ_210.stl" inertia="shell"/>
+    <mesh name="RR_midJ_173" file="RR_midJ_173.stl" inertia="shell"/>
+    <mesh name="RR_midJ_174" file="RR_midJ_174.stl" inertia="shell"/>
+    <mesh name="RR_midJ_175" file="RR_midJ_175.stl" inertia="shell"/>
+    <mesh name="RR_midJ_176" file="RR_midJ_176.stl" inertia="shell"/>
+    <mesh name="RR_midJ_177" file="RR_midJ_177.stl" inertia="shell"/>
+    <mesh name="RR_midJ_178" file="RR_midJ_178.stl" inertia="shell"/>
+    <mesh name="RR_midJ_179" file="RR_midJ_179.stl" inertia="shell"/>
+    <mesh name="RR_midJ_180" file="RR_midJ_180.stl" inertia="shell"/>
+    <mesh name="RR_midJ_181" file="RR_midJ_181.stl" inertia="shell"/>
+    <mesh name="RR_midJ_182" file="RR_midJ_182.stl" inertia="shell"/>
+    <mesh name="RR_midJ_183" file="RR_midJ_183.stl" inertia="shell"/>
+    <mesh name="RR_midJ_184" file="RR_midJ_184.stl" inertia="shell"/>
+    <mesh name="RR_midJ_185" file="RR_midJ_185.stl" inertia="shell"/>
+    <mesh name="RR_midJ_204" file="RR_midJ_204.stl" inertia="shell"/>
+    <mesh name="RR_midJ_205" file="RR_midJ_205.stl" inertia="shell"/>
+    <mesh name="RR_midJ_206" file="RR_midJ_206.stl" inertia="shell"/>
+    <mesh name="RR_midJ_207" file="RR_midJ_207.stl" inertia="shell"/>
+    <mesh name="RR_disJ_186" file="RR_disJ_186.stl" inertia="shell"/>
+    <mesh name="RR_disJ_187" file="RR_disJ_187.stl" inertia="shell"/>
+    <mesh name="RR_disJ_188" file="RR_disJ_188.stl" inertia="shell"/>
+    <mesh name="RR_disJ_189" file="RR_disJ_189.stl" inertia="shell"/>
+    <mesh name="RR_disJ_190" file="RR_disJ_190.stl" inertia="shell"/>
+    <mesh name="RR_disJ_191" file="RR_disJ_191.stl" inertia="shell"/>
+    <mesh name="RR_disJ_192" file="RR_disJ_192.stl" inertia="shell"/>
+    <mesh name="RR_disJ_193" file="RR_disJ_193.stl" inertia="shell"/>
+    <mesh name="RR_disJ_194" file="RR_disJ_194.stl" inertia="shell"/>
+    <mesh name="RR_disJ_195" file="RR_disJ_195.stl" inertia="shell"/>
+    <mesh name="RR_disJ_196" file="RR_disJ_196.stl" inertia="shell"/>
+    <mesh name="RR_disJ_197" file="RR_disJ_197.stl" inertia="shell"/>
+    <mesh name="RR_disJ_198" file="RR_disJ_198.stl" inertia="shell"/>
+    <mesh name="RR_disJ_199" file="RR_disJ_199.stl" inertia="shell"/>
+    <mesh name="RR_disJ_201" file="RR_disJ_201.stl" inertia="shell"/>
+    <mesh name="RR_disJ_202" file="RR_disJ_202.stl" inertia="shell"/>
+    <mesh name="RR_disJ_203" file="RR_disJ_203.stl" inertia="shell"/>
+    <mesh name="RR_pawJ_200" file="RR_pawJ_200.stl" inertia="shell"/>
+    <mesh name="RR_scJ_212" file="RR_scJ_212.stl" inertia="shell"/>
+    <mesh name="RR_scJ_213" file="RR_scJ_213.stl" inertia="shell"/>
+    <mesh name="RR_scJ_214" file="RR_scJ_214.stl" inertia="shell"/>
+    <mesh name="RR_linkJ_215" file="RR_linkJ_215.stl" inertia="shell"/>
+    <mesh name="RR_abdJ_216" file="RR_abdJ_216.stl" inertia="shell"/>
+    <mesh name="RR_abdJ_217" file="RR_abdJ_217.stl" inertia="shell"/>
+    <mesh name="RL_pod_218" file="RL_pod_218.stl" inertia="shell"/>
+    <mesh name="RL_pod_219" file="RL_pod_219.stl" inertia="shell"/>
+    <mesh name="RL_pod_220" file="RL_pod_220.stl" inertia="shell"/>
+    <mesh name="RL_pod_221" file="RL_pod_221.stl" inertia="shell"/>
+    <mesh name="RL_pod_222" file="RL_pod_222.stl" inertia="shell"/>
+    <mesh name="RL_pod_223" file="RL_pod_223.stl" inertia="shell"/>
+    <mesh name="RL_pod_224" file="RL_pod_224.stl" inertia="shell"/>
+    <mesh name="RL_pod_225" file="RL_pod_225.stl" inertia="shell"/>
+    <mesh name="RL_pod_226" file="RL_pod_226.stl" inertia="shell"/>
+    <mesh name="RL_pod_227" file="RL_pod_227.stl" inertia="shell"/>
+    <mesh name="RL_pod_228" file="RL_pod_228.stl" inertia="shell"/>
+    <mesh name="RL_pod_229" file="RL_pod_229.stl" inertia="shell"/>
+    <mesh name="RL_pod_230" file="RL_pod_230.stl" inertia="shell"/>
+    <mesh name="RL_pod_270" file="RL_pod_270.stl" inertia="shell"/>
+    <mesh name="RL_pitJ_231" file="RL_pitJ_231.stl" inertia="shell"/>
+    <mesh name="RL_pitJ_267" file="RL_pitJ_267.stl" inertia="shell"/>
+    <mesh name="RL_pitJ_268" file="RL_pitJ_268.stl" inertia="shell"/>
+    <mesh name="RL_pitJ_269" file="RL_pitJ_269.stl" inertia="shell"/>
+    <mesh name="RL_midJ_232" file="RL_midJ_232.stl" inertia="shell"/>
+    <mesh name="RL_midJ_233" file="RL_midJ_233.stl" inertia="shell"/>
+    <mesh name="RL_midJ_234" file="RL_midJ_234.stl" inertia="shell"/>
+    <mesh name="RL_midJ_235" file="RL_midJ_235.stl" inertia="shell"/>
+    <mesh name="RL_midJ_236" file="RL_midJ_236.stl" inertia="shell"/>
+    <mesh name="RL_midJ_237" file="RL_midJ_237.stl" inertia="shell"/>
+    <mesh name="RL_midJ_238" file="RL_midJ_238.stl" inertia="shell"/>
+    <mesh name="RL_midJ_239" file="RL_midJ_239.stl" inertia="shell"/>
+    <mesh name="RL_midJ_240" file="RL_midJ_240.stl" inertia="shell"/>
+    <mesh name="RL_midJ_241" file="RL_midJ_241.stl" inertia="shell"/>
+    <mesh name="RL_midJ_242" file="RL_midJ_242.stl" inertia="shell"/>
+    <mesh name="RL_midJ_243" file="RL_midJ_243.stl" inertia="shell"/>
+    <mesh name="RL_midJ_244" file="RL_midJ_244.stl" inertia="shell"/>
+    <mesh name="RL_midJ_263" file="RL_midJ_263.stl" inertia="shell"/>
+    <mesh name="RL_midJ_264" file="RL_midJ_264.stl" inertia="shell"/>
+    <mesh name="RL_midJ_265" file="RL_midJ_265.stl" inertia="shell"/>
+    <mesh name="RL_midJ_266" file="RL_midJ_266.stl" inertia="shell"/>
+    <mesh name="RL_disJ_245" file="RL_disJ_245.stl" inertia="shell"/>
+    <mesh name="RL_disJ_246" file="RL_disJ_246.stl" inertia="shell"/>
+    <mesh name="RL_disJ_247" file="RL_disJ_247.stl" inertia="shell"/>
+    <mesh name="RL_disJ_248" file="RL_disJ_248.stl" inertia="shell"/>
+    <mesh name="RL_disJ_249" file="RL_disJ_249.stl" inertia="shell"/>
+    <mesh name="RL_disJ_250" file="RL_disJ_250.stl" inertia="shell"/>
+    <mesh name="RL_disJ_251" file="RL_disJ_251.stl" inertia="shell"/>
+    <mesh name="RL_disJ_252" file="RL_disJ_252.stl" inertia="shell"/>
+    <mesh name="RL_disJ_253" file="RL_disJ_253.stl" inertia="shell"/>
+    <mesh name="RL_disJ_254" file="RL_disJ_254.stl" inertia="shell"/>
+    <mesh name="RL_disJ_255" file="RL_disJ_255.stl" inertia="shell"/>
+    <mesh name="RL_disJ_256" file="RL_disJ_256.stl" inertia="shell"/>
+    <mesh name="RL_disJ_257" file="RL_disJ_257.stl" inertia="shell"/>
+    <mesh name="RL_disJ_258" file="RL_disJ_258.stl" inertia="shell"/>
+    <mesh name="RL_disJ_260" file="RL_disJ_260.stl" inertia="shell"/>
+    <mesh name="RL_disJ_261" file="RL_disJ_261.stl" inertia="shell"/>
+    <mesh name="RL_disJ_262" file="RL_disJ_262.stl" inertia="shell"/>
+    <mesh name="RL_pawJ_259" file="RL_pawJ_259.stl" inertia="shell"/>
+    <mesh name="RL_scJ_271" file="RL_scJ_271.stl" inertia="shell"/>
+    <mesh name="RL_scJ_272" file="RL_scJ_272.stl" inertia="shell"/>
+    <mesh name="RL_scJ_273" file="RL_scJ_273.stl" inertia="shell"/>
+    <mesh name="RL_linkJ_274" file="RL_linkJ_274.stl" inertia="shell"/>
+    <mesh name="RL_abdJ_275" file="RL_abdJ_275.stl" inertia="shell"/>
+    <mesh name="RL_abdJ_276" file="RL_abdJ_276.stl" inertia="shell"/>
+    <mesh name="tailc0_284" file="tailc0_284.stl" inertia="shell"/>
+    <mesh name="tail0_285" file="tail0_285.stl" inertia="shell"/>
+    <mesh name="tail0_286" file="tail0_286.stl" inertia="shell"/>
+    <mesh name="tail0_342" file="tail0_342.stl" inertia="shell"/>
+    <mesh name="tail0_343" file="tail0_343.stl" inertia="shell"/>
+    <mesh name="tailc1_287" file="tailc1_287.stl" inertia="shell"/>
+    <mesh name="tail1_288" file="tail1_288.stl" inertia="shell"/>
+    <mesh name="tail1_289" file="tail1_289.stl" inertia="shell"/>
+    <mesh name="tail1_340" file="tail1_340.stl" inertia="shell"/>
+    <mesh name="tail1_341" file="tail1_341.stl" inertia="shell"/>
+    <mesh name="tailc2_290" file="tailc2_290.stl" inertia="shell"/>
+    <mesh name="tail2_291" file="tail2_291.stl" inertia="shell"/>
+    <mesh name="tail2_292" file="tail2_292.stl" inertia="shell"/>
+    <mesh name="tail2_338" file="tail2_338.stl" inertia="shell"/>
+    <mesh name="tail2_339" file="tail2_339.stl" inertia="shell"/>
+    <mesh name="tailc3_293" file="tailc3_293.stl" inertia="shell"/>
+    <mesh name="tail3_294" file="tail3_294.stl" inertia="shell"/>
+    <mesh name="tail3_295" file="tail3_295.stl" inertia="shell"/>
+    <mesh name="tail3_336" file="tail3_336.stl" inertia="shell"/>
+    <mesh name="tail3_337" file="tail3_337.stl" inertia="shell"/>
+    <mesh name="tailc4_296" file="tailc4_296.stl" inertia="shell"/>
+    <mesh name="tail4_297" file="tail4_297.stl" inertia="shell"/>
+    <mesh name="tail4_298" file="tail4_298.stl" inertia="shell"/>
+    <mesh name="tail4_334" file="tail4_334.stl" inertia="shell"/>
+    <mesh name="tail4_335" file="tail4_335.stl" inertia="shell"/>
+    <mesh name="tailc5_299" file="tailc5_299.stl" inertia="shell"/>
+    <mesh name="tail5_300" file="tail5_300.stl" inertia="shell"/>
+    <mesh name="tail5_301" file="tail5_301.stl" inertia="shell"/>
+    <mesh name="tail5_332" file="tail5_332.stl" inertia="shell"/>
+    <mesh name="tail5_333" file="tail5_333.stl" inertia="shell"/>
+    <mesh name="tailc6_302" file="tailc6_302.stl" inertia="shell"/>
+    <mesh name="tail6_303" file="tail6_303.stl" inertia="shell"/>
+    <mesh name="tail6_304" file="tail6_304.stl" inertia="shell"/>
+    <mesh name="tail6_330" file="tail6_330.stl" inertia="shell"/>
+    <mesh name="tail6_331" file="tail6_331.stl" inertia="shell"/>
+    <mesh name="tailc7_305" file="tailc7_305.stl" inertia="shell"/>
+    <mesh name="tail7_306" file="tail7_306.stl" inertia="shell"/>
+    <mesh name="tail7_307" file="tail7_307.stl" inertia="shell"/>
+    <mesh name="tail7_328" file="tail7_328.stl" inertia="shell"/>
+    <mesh name="tail7_329" file="tail7_329.stl" inertia="shell"/>
+    <mesh name="tailc8_308" file="tailc8_308.stl" inertia="shell"/>
+    <mesh name="tail8_309" file="tail8_309.stl" inertia="shell"/>
+    <mesh name="tail8_310" file="tail8_310.stl" inertia="shell"/>
+    <mesh name="tail8_326" file="tail8_326.stl" inertia="shell"/>
+    <mesh name="tail8_327" file="tail8_327.stl" inertia="shell"/>
+    <mesh name="grip_311" file="grip_311.stl" inertia="shell"/>
+    <mesh name="grip_312" file="grip_312.stl" inertia="shell"/>
+    <mesh name="grip_313" file="grip_313.stl" inertia="shell"/>
+    <mesh name="grip_314" file="grip_314.stl" inertia="shell"/>
+    <mesh name="grip_315" file="grip_315.stl" inertia="shell"/>
+    <mesh name="grip_316" file="grip_316.stl" inertia="shell"/>
+    <mesh name="collar_317" file="collar_317.stl" inertia="shell"/>
+    <mesh name="finger0_318" file="finger0_318.stl" inertia="shell"/>
+    <mesh name="finger0_319" file="finger0_319.stl" inertia="shell"/>
+    <mesh name="finger1_320" file="finger1_320.stl" inertia="shell"/>
+    <mesh name="finger1_321" file="finger1_321.stl" inertia="shell"/>
+    <mesh name="finger2_322" file="finger2_322.stl" inertia="shell"/>
+    <mesh name="finger2_323" file="finger2_323.stl" inertia="shell"/>
+    <mesh name="finger3_324" file="finger3_324.stl" inertia="shell"/>
+    <mesh name="finger3_325" file="finger3_325.stl" inertia="shell"/>
+    <mesh name="neck_lift_362" file="neck_lift_362.stl" inertia="shell"/>
+    <mesh name="neck_lift_363" file="neck_lift_363.stl" inertia="shell"/>
+    <mesh name="neck_lift_364" file="neck_lift_364.stl" inertia="shell"/>
+    <mesh name="neck_lift_365" file="neck_lift_365.stl" inertia="shell"/>
+    <mesh name="neck_lift_366" file="neck_lift_366.stl" inertia="shell"/>
+    <mesh name="neck_lift_367" file="neck_lift_367.stl" inertia="shell"/>
+    <mesh name="neck_lift_368" file="neck_lift_368.stl" inertia="shell"/>
+    <mesh name="neck_lift_369" file="neck_lift_369.stl" inertia="shell"/>
+    <mesh name="neck_lift_370" file="neck_lift_370.stl" inertia="shell"/>
+    <mesh name="neck_lift_371" file="neck_lift_371.stl" inertia="shell"/>
+    <mesh name="neck_lift_372" file="neck_lift_372.stl" inertia="shell"/>
+    <mesh name="neck_lift_373" file="neck_lift_373.stl" inertia="shell"/>
+    <mesh name="neck_pan_374" file="neck_pan_374.stl" inertia="shell"/>
+    <mesh name="neck_pan_375" file="neck_pan_375.stl" inertia="shell"/>
+    <mesh name="neck_pan_376" file="neck_pan_376.stl" inertia="shell"/>
+    <mesh name="neck_pan_377" file="neck_pan_377.stl" inertia="shell"/>
+    <mesh name="neck_pan_378" file="neck_pan_378.stl" inertia="shell"/>
+    <mesh name="neck_pan_379" file="neck_pan_379.stl" inertia="shell"/>
+    <mesh name="neck_pan_380" file="neck_pan_380.stl" inertia="shell"/>
+    <mesh name="neck_pan_381" file="neck_pan_381.stl" inertia="shell"/>
+    <mesh name="neck_pan_382" file="neck_pan_382.stl" inertia="shell"/>
+    <mesh name="neck_pan_383" file="neck_pan_383.stl" inertia="shell"/>
+    <mesh name="neck_pan_384" file="neck_pan_384.stl" inertia="shell"/>
+    <mesh name="neck_pan_385" file="neck_pan_385.stl" inertia="shell"/>
+    <mesh name="head_386" file="head_386.stl" inertia="shell"/>
+    <mesh name="head_387" file="head_387.stl" inertia="shell"/>
+    <mesh name="head_388" file="head_388.stl" inertia="shell"/>
+    <mesh name="head_389" file="head_389.stl" inertia="shell"/>
+    <mesh name="head_390" file="head_390.stl" inertia="shell"/>
+    <mesh name="head_391" file="head_391.stl" inertia="shell"/>
+    <mesh name="head_392" file="head_392.stl" inertia="shell"/>
+    <mesh name="head_393" file="head_393.stl" inertia="shell"/>
+    <mesh name="head_394" file="head_394.stl" inertia="shell"/>
+    <mesh name="head_395" file="head_395.stl" inertia="shell"/>
+    <mesh name="head_396" file="head_396.stl" inertia="shell"/>
+    <mesh name="head_397" file="head_397.stl" inertia="shell"/>
+    <mesh name="head_398" file="head_398.stl" inertia="shell"/>
+    <mesh name="head_399" file="head_399.stl" inertia="shell"/>
+    <mesh name="head_400" file="head_400.stl" inertia="shell"/>
+    <mesh name="head_401" file="head_401.stl" inertia="shell"/>
+    <mesh name="head_402" file="head_402.stl" inertia="shell"/>
+    <mesh name="head_403" file="head_403.stl" inertia="shell"/>
+    <mesh name="head_404" file="head_404.stl" inertia="shell"/>
+    <mesh name="head_405" file="head_405.stl" inertia="shell"/>
+    <mesh name="head_406" file="head_406.stl" inertia="shell"/>
+    <mesh name="head_407" file="head_407.stl" inertia="shell"/>
+    <mesh name="head_415" file="head_415.stl" inertia="shell"/>
+    <mesh name="head_416" file="head_416.stl" inertia="shell"/>
+    <mesh name="jaw_408" file="jaw_408.stl" inertia="shell"/>
+    <mesh name="jaw_409" file="jaw_409.stl" inertia="shell"/>
+    <mesh name="jaw_410" file="jaw_410.stl" inertia="shell"/>
+    <mesh name="ear0_411" file="ear0_411.stl" inertia="shell"/>
+    <mesh name="ear0_412" file="ear0_412.stl" inertia="shell"/>
+    <mesh name="ear1_413" file="ear1_413.stl" inertia="shell"/>
+    <mesh name="ear1_414" file="ear1_414.stl" inertia="shell"/>
+    <mesh name="jawcrank_417" file="jawcrank_417.stl" inertia="shell"/>
+  </asset>
+  <worldbody>
+    <body name="chest" pos="0 0 -0.03167" quat="1 0 0 0" childclass="blur">
+      <freejoint name="root"/>
+      <site name="imu" pos="0.032 0 -0.12" size="0.004"/>
+      <inertial pos="0.0377865 0.000932132 -0.0558171" mass="1.17970" fullinertia="0.00201348 0.00474264 0.0036127 1.49977e-05 4.51713e-05 -7.7335e-05"/>
+      <geom class="vis" mesh="chest_0" rgba="0.846834 0.665185 0.294589 1"/>
+      <geom class="vis" mesh="chest_1" rgba="0.0498401 0.0849447 0.0849447 1"/>
+      <geom class="vis" mesh="chest_2" rgba="0.352474 0.150005 0.522329 1"/>
+      <geom class="vis" mesh="chest_3" rgba="0.786014 0.811515 0.838187 1"/>
+      <geom class="vis" mesh="chest_4" rgba="0.778868 0.797738 0.822766 1"/>
+      <geom class="vis" mesh="chest_5" rgba="0.0849447 0.110702 0.131804 1"/>
+      <geom class="vis" mesh="chest_6" rgba="0.180859 0.432587 0.813782 0.9"/>
+      <geom class="vis" mesh="chest_7" rgba="0.948242 0.759381 0.180859 1"/>
+      <geom class="vis" mesh="chest_8" rgba="0.150005 0.166186 0.194353 1"/>
+      <geom class="vis" mesh="chest_9" rgba="0.783641 0.131804 0.0849447 1"/>
+      <geom class="vis" mesh="chest_10" rgba="0.940805 0.538065 0.131804 1"/>
+      <geom class="vis" mesh="chest_418" rgba="1 1 1 1"/>
+      <geom class="vis" mesh="chest_419" rgba="0.0849447 0.47561 0.269015 1"/>
+      <geom class="vis" mesh="chest_420" rgba="0.0498401 0.0498401 0.0498401 1"/>
+      <geom class="vis" mesh="chest_421" rgba="0.180859 0.432587 0.813782 1"/>
+      <geom class="vis" mesh="chest_422" rgba="0.900416 0.884384 0.838187 1"/>
+      <geom class="vis" mesh="chest_423" rgba="0.602582 0.637993 0.676821 1"/>
+      <geom class="vis" mesh="chest_424" rgba="0.0849447 0.0849447 0.0849447 1"/>
+      <geom class="vis" mesh="chest_425" rgba="0.861693 0.838187 0.776467 1"/>
+      <geom class="vis" mesh="chest_426" rgba="0.180859 0.699347 0.286361 1"/>
+      <geom class="vis" mesh="chest_427" rgba="0.699347 0.131804 0.110702 1"/>
+      <geom class="vis" mesh="chest_428" rgba="0.912197 0.754406 0.218649 1"/>
+      <geom class="vis" mesh="chest_429" rgba="0.110702 0.302554 0.619001 1"/>
+      <geom class="vis" mesh="chest_430" rgba="0.0849447 0.0849447 0.110702 1"/>
+      <geom class="vis" mesh="chest_431" rgba="0.656282 0.522329 0.352474 1"/>
+      <geom class="vis" mesh="chest_432" rgba="0.0498401 0.0849447 0.110702 1"/>
+      <geom class="vis" mesh="chest_433" rgba="0.110702 0.371442 0.720968 1"/>
+      <geom class="vis" mesh="chest_434" rgba="0.229735 0.25026 0.277847 1"/>
+      <geom class="vis" mesh="chest_435" rgba="0.720968 0.746862 0.778868 1"/>
+      <geom class="vis" mesh="chest_436" rgba="0.0849447 0.417003 0.240248 1"/>
+      <geom class="vis" mesh="chest_437" rgba="0.131804 0.166186 0.194353 1"/>
+      <geom class="vis" mesh="chest_438" rgba="0.286361 0.352474 0.417003 1"/>
+      <geom class="vis" mesh="chest_439" rgba="0.538065 0.575048 0.619001 1"/>
+      <geom class="vis" mesh="chest_440" rgba="0.766765 0.505969 0.286361 1"/>
+      <geom class="col" name="c_pi5" type="box" pos="0.0175 0 -0.03" quat="6.12323e-17 0 0 1" size="0.0425 0.028 0.00125"/>
+      <geom class="col" name="c_ports" type="box" pos="0.0515 0.003 -0.0214" quat="6.12323e-17 0 0 1" size="0.0105 0.022 0.0078"/>
+      <geom class="col" name="c_cooler" type="box" pos="0.0125 6.12323e-19 -0.02165" quat="6.12323e-17 0 0 1" size="0.0275 0.021 0.00615"/>
+      <geom class="col" name="c_packL" type="box" pos="0.0325 -0.01875 -0.0945" quat="1 0 0 0" size="0.037 0.0185 0.018"/>
+      <geom class="col" name="c_packL-xt60" type="box" pos="-0.0155 -0.01875 -0.1005" quat="1 0 0 0" size="0.004 0.008 0.004"/>
+      <geom class="col" name="c_packR" type="box" pos="0.0325 0.01875 -0.0945" quat="1 0 0 0" size="0.037 0.0185 0.018"/>
+      <geom class="col" name="c_packR-xt60" type="box" pos="-0.0155 0.01875 -0.1005" quat="1 0 0 0" size="0.004 0.008 0.004"/>
+      <geom class="col" name="c_pdb" type="box" pos="0.023 -0.0354 -0.045" quat="0.707107 -0.707107 0 0" size="0.0265 0.0125 0.0018"/>
+      <geom class="col" name="c_imu" type="box" pos="0.032 0 -0.12" quat="1 0 0 0" size="0.0075 0.009 0.0015"/>
+      <geom class="col" name="c_teensy" type="box" pos="0.02 0.03545 -0.056" quat="0.707107 0.707107 0 0" size="0.0305 0.009 0.0023"/>
+      <geom class="col" name="c_esc_FR-abd" type="box" pos="-0.018 -0.0155 -0.062" quat="0.5 0.5 0.5 0.5" size="0.013 0.01 0.002"/>
+      <geom class="col" name="c_esc_FR-pitch" type="box" pos="-0.018 0.0155 -0.0613" quat="0.5 0.5 0.5 0.5" size="0.015 0.0152 0.002"/>
+      <geom class="col" name="c_esc_FR-knee" type="box" pos="-0.0114 -0.0155 -0.0613" quat="0.5 0.5 0.5 0.5" size="0.015 0.0152 0.002"/>
+      <geom class="col" name="c_esc_FR-dist" type="box" pos="-0.0114 0.0155 -0.0613" quat="0.5 0.5 0.5 0.5" size="0.015 0.0152 0.002"/>
+      <geom class="col" name="c_esc_FL-abd" type="box" pos="-0.0048 -0.0155 -0.062" quat="0.5 0.5 0.5 0.5" size="0.013 0.01 0.002"/>
+      <geom class="col" name="c_esc_FL-pitch" type="box" pos="-0.0048 0.0155 -0.0613" quat="0.5 0.5 0.5 0.5" size="0.015 0.0152 0.002"/>
+      <geom class="col" name="c_esc_FL-knee" type="box" pos="0.0018 -0.0155 -0.0613" quat="0.5 0.5 0.5 0.5" size="0.015 0.0152 0.002"/>
+      <geom class="col" name="c_esc_FL-dist" type="box" pos="0.0018 0.0155 -0.0613" quat="0.5 0.5 0.5 0.5" size="0.015 0.0152 0.002"/>
+      <geom class="col" name="c_esc_RR-abd" type="box" pos="0.0084 -0.0155 -0.062" quat="0.5 0.5 0.5 0.5" size="0.013 0.01 0.002"/>
+      <geom class="col" name="c_esc_RR-pitch" type="box" pos="0.0084 0.0155 -0.0613" quat="0.5 0.5 0.5 0.5" size="0.015 0.0152 0.002"/>
+      <geom class="col" name="c_esc_RR-knee" type="box" pos="0.015 -0.0155 -0.0613" quat="0.5 0.5 0.5 0.5" size="0.015 0.0152 0.002"/>
+      <geom class="col" name="c_esc_RR-dist" type="box" pos="0.015 0.0155 -0.0613" quat="0.5 0.5 0.5 0.5" size="0.015 0.0152 0.002"/>
+      <geom class="col" name="c_esc_RL-abd" type="box" pos="0.0216 -0.0155 -0.062" quat="0.5 0.5 0.5 0.5" size="0.013 0.01 0.002"/>
+      <geom class="col" name="c_esc_RL-pitch" type="box" pos="0.0216 0.0155 -0.0613" quat="0.5 0.5 0.5 0.5" size="0.015 0.0152 0.002"/>
+      <geom class="col" name="c_esc_RL-knee" type="box" pos="0.0282 -0.0155 -0.0613" quat="0.5 0.5 0.5 0.5" size="0.015 0.0152 0.002"/>
+      <geom class="col" name="c_esc_RL-dist" type="box" pos="0.0282 0.0155 -0.0613" quat="0.5 0.5 0.5 0.5" size="0.015 0.0152 0.002"/>
+      <geom class="col" name="c_esc_spine1" type="box" pos="0.0348 -0.0155 -0.062" quat="0.5 0.5 0.5 0.5" size="0.013 0.01 0.002"/>
+      <geom class="col" name="c_esc_spine2" type="box" pos="0.0348 0.0155 -0.062" quat="0.5 0.5 0.5 0.5" size="0.013 0.01 0.002"/>
+      <geom class="col" name="c_esc_spine-twist" type="box" pos="0.0414 -0.0155 -0.062" quat="0.5 0.5 0.5 0.5" size="0.013 0.01 0.002"/>
+      <geom class="col" name="c_esc_winch-pitch" type="box" pos="0.0414 0.0155 -0.062" quat="0.5 0.5 0.5 0.5" size="0.013 0.01 0.002"/>
+      <geom class="col" name="c_esc_winch-yaw" type="box" pos="0.048 -0.0155 -0.062" quat="0.5 0.5 0.5 0.5" size="0.013 0.01 0.002"/>
+      <geom class="col" name="c_hd0" type="box" pos="0.082 0 -0.063" quat="1 0 0 0" size="0.013 0.01 0.002"/>
+      <geom class="col" name="c_hd1" type="box" pos="0.082 0 -0.067" quat="1 0 0 0" size="0.013 0.01 0.002"/>
+      <geom class="col" name="c_hd2" type="box" pos="0.082 0 -0.071" quat="1 0 0 0" size="0.013 0.01 0.002"/>
+      <geom class="col" name="c_hd3" type="box" pos="0.082 0 -0.075" quat="1 0 0 0" size="0.013 0.01 0.002"/>
+      <geom class="col" name="c_esp1" type="box" pos="0.085 0 -0.082" quat="0.707107 0 0 0.707107" size="0.0315 0.01275 0.003"/>
+      <geom class="col" name="c_ubec" type="box" pos="0.084 0 -0.09" quat="0.707107 0 0 0.707107" size="0.0225 0.0125 0.0045"/>
+      <geom class="col" name="c_can-1" type="box" pos="0.082 0.022 -0.075" quat="1 0 0 0" size="0.011 0.008 0.002"/>
+      <geom class="col" name="c_can-T" type="box" pos="0.011 0.035 -0.037" quat="0.707107 0.707107 0 0" size="0.011 0.008 0.002"/>
+      <geom class="col" name="c_estop" type="box" pos="0.02 0.024 0.001" quat="1 0 0 0" size="0.014 0.014 0.012"/>
+      <geom class="col" name="c_FR-abd" type="cylinder" pos="0.0857 0 -0.036" zaxis="1 0 2.22045e-16" size="0.02300 0.00500"/>
+      <geom class="col" name="c_FR-abd_mm" type="cylinder" pos="0.103 0 -0.036" zaxis="1 0 2.22045e-16" size="0.02300 0.01230"/>
+      <geom class="col" name="c_FL-abd" type="cylinder" pos="0.1197 0 -0.036" zaxis="1 0 2.22045e-16" size="0.02300 0.00500"/>
+      <geom class="col" name="c_FL-abd_mm" type="cylinder" pos="0.137 0 -0.036" zaxis="1 0 2.22045e-16" size="0.02300 0.01230"/>
+      <geom class="col" name="c_spine1" type="cylinder" pos="-0.044 0.0123 -0.014" zaxis="0 1 2.22045e-16" size="0.02300 0.00500"/>
+      <geom class="col" name="c_spine1_mm" type="cylinder" pos="-0.044 -0.005 -0.014" zaxis="0 1 2.22045e-16" size="0.02300 0.01230"/>
+      <geom class="col" name="c_ribcage" type="ellipsoid" pos="0.012 0 -0.064" size="0.042 0.044 0.064"/>
+      <geom class="col" name="c_sternum" type="capsule" fromto="0.04 0 -0.112 0.095 0 -0.095" size="0.006"/>
+      <site name="spr1a" pos="0.064 0.022 -0.117" size="0.002"/>
+      <site name="spr2a" pos="0.046 0.022 -0.117" size="0.002"/>
+      <site name="spr4a" pos="0.064 -0.022 -0.117" size="0.002"/>
+      <site name="spr5a" pos="0.046 -0.022 -0.117" size="0.002"/>
+      <body name="spine0" pos="-0.044 0 -0.014" quat="1 0 0 0">
+        <joint name="spine_s1" type="hinge" axis="0 1 0" range="-0.5861 0.3445" armature="0.0064" damping="0.02" frictionloss="0.01"/>
+        <inertial pos="-0.0388152 -8.17347e-05 6.26076e-05" mass="0.12575" fullinertia="3.43223e-05 3.27919e-05 3.46766e-05 4.80452e-07 -2.47515e-07 -1.67094e-10"/>
+        <geom class="vis" mesh="spine0_129" rgba="1 1 1 1"/>
+        <geom class="vis" mesh="spine0_130" rgba="0.497533 0.656282 0.846834 1"/>
+        <geom class="vis" mesh="spine0_131" rgba="0.940805 0.538065 0.131804 1"/>
+        <geom class="vis" mesh="spine0_132" rgba="0.602582 0.637993 0.676821 1"/>
+        <geom class="vis" mesh="spine0_133" rgba="0.229735 0.25026 0.277847 1"/>
+        <geom class="vis" mesh="spine0_134" rgba="0.786014 0.811515 0.838187 1"/>
+        <geom class="vis" mesh="spine0_135" rgba="0.0849447 0.0849447 0.110702 1"/>
+        <geom class="vis" mesh="spine0_136" rgba="0.150005 0.166186 0.194353 1"/>
+        <geom class="vis" mesh="spine0_137" rgba="0.720968 0.746862 0.778868 1"/>
+        <geom class="vis" mesh="spine0_138" rgba="0.0849447 0.417003 0.240248 1"/>
+        <geom class="vis" mesh="spine0_139" rgba="0.0849447 0.110702 0.131804 1"/>
+        <geom class="vis" mesh="spine0_140" rgba="0.699347 0.131804 0.110702 1"/>
+        <geom class="vis" mesh="spine0_141" rgba="0.912197 0.754406 0.218649 1"/>
+        <geom class="vis" mesh="spine0_361" rgba="0.538065 0.575048 0.619001 1"/>
+        <geom class="col" name="c_spine-twist" type="cylinder" pos="-0.0533 0 0" zaxis="1 0 2.22045e-16" size="0.02300 0.00500"/>
+        <geom class="col" name="c_spine-twist_mm" type="cylinder" pos="-0.036 0 0" zaxis="1 0 2.22045e-16" size="0.02300 0.01230"/>
+        <body name="spine1" pos="-0.041 0 0" quat="1 0 0 0">
+          <joint name="spine_twist" type="hinge" axis="1 0 0" range="-0.3615 1.2870" armature="0.0064" damping="0.02" frictionloss="0.01"/>
+          <inertial pos="-0.0399218 -0.000523491 1.7037e-05" mass="0.12348" fullinertia="2.88002e-05 3.48303e-05 3.0487e-05 -7.01555e-08 -8.0154e-08 -3.24374e-08"/>
+          <geom class="vis" mesh="spine1_142" rgba="1 1 1 1"/>
+          <geom class="vis" mesh="spine1_143" rgba="0.538065 0.575048 0.619001 1"/>
+          <geom class="vis" mesh="spine1_144" rgba="0.940805 0.538065 0.131804 1"/>
+          <geom class="vis" mesh="spine1_145" rgba="0.602582 0.637993 0.676821 1"/>
+          <geom class="vis" mesh="spine1_146" rgba="0.229735 0.25026 0.277847 1"/>
+          <geom class="vis" mesh="spine1_147" rgba="0.786014 0.811515 0.838187 1"/>
+          <geom class="vis" mesh="spine1_148" rgba="0.0849447 0.0849447 0.110702 1"/>
+          <geom class="vis" mesh="spine1_149" rgba="0.150005 0.166186 0.194353 1"/>
+          <geom class="vis" mesh="spine1_150" rgba="0.720968 0.746862 0.778868 1"/>
+          <geom class="vis" mesh="spine1_151" rgba="0.0849447 0.417003 0.240248 1"/>
+          <geom class="vis" mesh="spine1_152" rgba="0.0849447 0.110702 0.131804 1"/>
+          <geom class="vis" mesh="spine1_153" rgba="0.699347 0.131804 0.110702 1"/>
+          <geom class="vis" mesh="spine1_154" rgba="0.912197 0.754406 0.218649 1"/>
+          <geom class="col" name="c_spine2" type="cylinder" pos="-0.041 0.0123 0" zaxis="0 1 2.22045e-16" size="0.02300 0.00500"/>
+          <geom class="col" name="c_spine2_mm" type="cylinder" pos="-0.041 -0.005 0" zaxis="0 1 2.22045e-16" size="0.02300 0.01230"/>
+          <body name="spine2" pos="-0.041 0 0" quat="1 0 0 0">
+            <joint name="spine_s2" type="hinge" axis="0 1 0" range="-0.5861 0.4493" armature="0.0064" damping="0.02" frictionloss="0.01"/>
+            <inertial pos="-1.30912e-19 -0.0195 -1.11876e-20" mass="0.00067" fullinertia="5.79931e-09 6.59596e-09 5.79931e-09 1.22631e-26 -1.3358e-26 7.44542e-27"/>
+            <geom class="vis" mesh="spine2_155" rgba="1 1 1 1"/>
+            <geom class="vis" mesh="spine2_156" rgba="0.497533 0.656282 0.846834 1"/>
+            <body name="pelvis" pos="-0.016 0 0" quat="1 0 0 0">
+              <inertial pos="-0.0698103 -0.000403631 -0.00970038" mass="0.43035" fullinertia="0.000348531 0.000656634 0.000476361 1.09325e-05 8.12195e-05 9.95446e-06"/>
+              <geom class="vis" mesh="pelvis_157" rgba="1 1 1 1"/>
+              <geom class="vis" mesh="pelvis_158" rgba="0.940805 0.538065 0.131804 1"/>
+              <geom class="vis" mesh="pelvis_277" rgba="0.846834 0.665185 0.294589 1"/>
+              <geom class="vis" mesh="pelvis_278" rgba="0.110702 0.371442 0.720968 1"/>
+              <geom class="vis" mesh="pelvis_279" rgba="0.166186 0.166186 0.194353 1"/>
+              <geom class="vis" mesh="pelvis_280" rgba="0.180859 0.432587 0.813782 1"/>
+              <geom class="vis" mesh="pelvis_281" rgba="0.0849447 0.0849447 0.110702 1"/>
+              <geom class="vis" mesh="pelvis_282" rgba="0.766765 0.505969 0.286361 1"/>
+              <geom class="vis" mesh="pelvis_283" rgba="0.352474 0.150005 0.522329 1"/>
+              <geom class="vis" mesh="pelvis_344" rgba="0.602582 0.637993 0.676821 1"/>
+              <geom class="vis" mesh="pelvis_345" rgba="0.229735 0.25026 0.277847 1"/>
+              <geom class="vis" mesh="pelvis_346" rgba="0.786014 0.811515 0.838187 1"/>
+              <geom class="vis" mesh="pelvis_347" rgba="0.150005 0.166186 0.194353 1"/>
+              <geom class="vis" mesh="pelvis_348" rgba="0.720968 0.746862 0.778868 1"/>
+              <geom class="vis" mesh="pelvis_349" rgba="0.0849447 0.417003 0.240248 1"/>
+              <geom class="vis" mesh="pelvis_350" rgba="0.0849447 0.110702 0.131804 1"/>
+              <geom class="vis" mesh="pelvis_351" rgba="0.699347 0.131804 0.110702 1"/>
+              <geom class="vis" mesh="pelvis_352" rgba="0.912197 0.754406 0.218649 1"/>
+              <geom class="vis" mesh="pelvis_353" rgba="0.778868 0.797738 0.822766 1"/>
+              <geom class="vis" mesh="pelvis_354" rgba="0.0498401 0.0849447 0.0849447 1"/>
+              <geom class="vis" mesh="pelvis_355" rgba="0.0498401 0.0498401 0.0498401 1"/>
+              <geom class="vis" mesh="pelvis_356" rgba="0.900416 0.884384 0.838187 1"/>
+              <geom class="vis" mesh="pelvis_357" rgba="0.131804 0.310278 0.688203 1"/>
+              <geom class="vis" mesh="pelvis_358" rgba="0.286361 0.352474 0.417003 1"/>
+              <geom class="vis" mesh="pelvis_359" rgba="0.538065 0.575048 0.619001 1"/>
+              <geom class="vis" mesh="pelvis_360" rgba="0.497533 0.656282 0.846834 1"/>
+              <geom class="col" name="c_RR-abd" type="cylinder" pos="-0.0553 0 -0.028" zaxis="1 0 2.22045e-16" size="0.02300 0.00500"/>
+              <geom class="col" name="c_RR-abd_mm" type="cylinder" pos="-0.038 0 -0.028" zaxis="1 0 2.22045e-16" size="0.02300 0.01230"/>
+              <geom class="col" name="c_RL-abd" type="cylinder" pos="-0.0647 0 -0.028" zaxis="1 0 2.22045e-16" size="0.02300 0.00500"/>
+              <geom class="col" name="c_RL-abd_mm" type="cylinder" pos="-0.082 0 -0.028" zaxis="1 0 2.22045e-16" size="0.02300 0.01230"/>
+              <geom class="col" name="c_esp2" type="box" pos="-0.052 -0.014 0.027" quat="1 0 0 0" size="0.0315 0.01275 0.003"/>
+              <geom class="col" name="c_esp3" type="box" pos="-0.052 0.014 0.027" quat="1 0 0 0" size="0.0315 0.01275 0.003"/>
+              <geom class="col" name="c_lm2596" type="box" pos="-0.052 -0.039 0.0306" quat="0.707107 0 0 0.707107" size="0.0105 0.0215 0.0065"/>
+              <geom class="col" name="c_can-2" type="box" pos="-0.034 0.037 0.0262" quat="1 0 0 0" size="0.011 0.008 0.002"/>
+              <geom class="col" name="c_can-3" type="box" pos="-0.058 0.037 0.0262" quat="1 0 0 0" size="0.011 0.008 0.002"/>
+              <geom class="col" name="c_drv8833" type="box" pos="-0.08 0.038 0.0262" quat="1 0 0 0" size="0.008 0.00925 0.002"/>
+              <geom class="col" name="c_winch-pitch" type="cylinder" pos="-0.111 0.0076 -0.006" zaxis="0 1 2.22045e-16" size="0.01600 0.00450"/>
+              <geom class="col" name="c_winch-pitch_mm" type="cylinder" pos="-0.111 -0.0045 -0.006" zaxis="0 1 2.22045e-16" size="0.01375 0.00760"/>
+              <geom class="col" name="c_winch-yaw" type="cylinder" pos="-0.111 0 0.0316" zaxis="0 0 1" size="0.01600 0.00450"/>
+              <geom class="col" name="c_winch-yaw_mm" type="cylinder" pos="-0.111 0 0.0195" zaxis="0 0 1" size="0.01375 0.00760"/>
+              <geom class="col" name="c_pelvis" type="capsule" fromto="-0.01 0 0 -0.09 0 0" size="0.02"/>
+              <site name="spr7a" pos="-0.004 0.012 -0.05" size="0.002"/>
+              <site name="spr8a" pos="-0.02 0.016 -0.05" size="0.002"/>
+              <site name="spr10a" pos="-0.004 -0.012 -0.05" size="0.002"/>
+              <site name="spr11a" pos="-0.02 -0.016 -0.05" size="0.002"/>
+              <site name="cab4_0" pos="-0.111 0.0155 -0.001" size="0.0015"/>
+              <site name="cab4_1" pos="-0.121 0.009 0.003" size="0.0015"/>
+              <site name="cab5_0" pos="-0.111 0.0155 -0.011" size="0.0015"/>
+              <site name="cab5_1" pos="-0.121 0.009 -0.008" size="0.0015"/>
+              <site name="cab6_0" pos="-0.111 -0.005 0.038" size="0.0015"/>
+              <site name="cab6_1" pos="-0.121 -0.011 0.018" size="0.0015"/>
+              <site name="cab7_0" pos="-0.111 0.005 0.038" size="0.0015"/>
+              <site name="cab7_1" pos="-0.121 0.011 0.018" size="0.0015"/>
+              <body name="RR_abdJ" pos="-0.06 0 -0.028" quat="1 0 0 0">
+                <joint name="RR_abd" type="hinge" axis="1 0 0" range="-1.0078 0.5540" armature="0.0064" damping="0.02" frictionloss="0.01"/>
+                <inertial pos="-0.00856421 0.0356011 0.0272455" mass="0.01792" fullinertia="1.41304e-05 1.30951e-05 1.3602e-05 5.10141e-06 3.97673e-06 -6.35496e-06"/>
+                <geom class="vis" mesh="RR_abdJ_216" rgba="0.497533 0.656282 0.846834 1"/>
+                <geom class="vis" mesh="RR_abdJ_217" rgba="0.286361 0.352474 0.417003 1"/>
+                <site name="spr6a" pos="0.006 0.062 0.06" size="0.002"/>
+                <body name="RR_linkJ" pos="-0.046 0.062 0.04" quat="1 0 0 0">
+                  <joint name="RR_girdle_lift" type="hinge" axis="0 1 0" range="-0.4000 0.4000" stiffness="5.0" springref="-0.16874" damping="0.15" armature="1e-4"/>
+                  <inertial pos="0.016 1.81236e-20 2.20103e-19" mass="0.00205" fullinertia="3.3779e-08 1.29113e-07 1.29113e-07 -5.32567e-25 2.84503e-24 5.60597e-26"/>
+                  <geom class="vis" mesh="RR_linkJ_215" rgba="0.286361 0.352474 0.417003 1"/>
+                  <body name="RR_scJ" pos="0.032 0 0" quat="1 0 0 0">
+                    <joint name="RR_girdle_rock" type="hinge" axis="0 1 0" range="-0.4500 0.4500" stiffness="6.0" springref="-0.13826" damping="0.15" armature="1e-4"/>
+                    <inertial pos="1.43802e-19 -2.52564e-20 3.00347e-20" mass="0.00394" fullinertia="1.33645e-07 1.82166e-07 1.33645e-07 -1.68179e-25 -1.12119e-25 0"/>
+                    <geom class="vis" mesh="RR_scJ_212" rgba="0.286361 0.352474 0.417003 1"/>
+                    <geom class="vis" mesh="RR_scJ_213" rgba="0.497533 0.656282 0.846834 1"/>
+                    <geom class="vis" mesh="RR_scJ_214" rgba="0.150005 0.166186 0.206896 1"/>
+                    <body name="RR_pod" pos="0.014 0 -0.04" quat="1 0 0 0">
+                      <inertial pos="-0.000176521 0.00148022 0.000437454" mass="0.10224" fullinertia="2.18613e-05 2.37706e-05 1.99837e-05 -1.75288e-07 1.60355e-08 -1.32187e-07"/>
+                      <geom class="vis" mesh="RR_pod_159" rgba="0.940805 0.538065 0.131804 1"/>
+                      <geom class="vis" mesh="RR_pod_160" rgba="0.602582 0.637993 0.676821 1"/>
+                      <geom class="vis" mesh="RR_pod_161" rgba="0.229735 0.25026 0.277847 1"/>
+                      <geom class="vis" mesh="RR_pod_162" rgba="0.786014 0.811515 0.838187 1"/>
+                      <geom class="vis" mesh="RR_pod_163" rgba="0.0849447 0.0849447 0.110702 1"/>
+                      <geom class="vis" mesh="RR_pod_164" rgba="0.150005 0.166186 0.194353 1"/>
+                      <geom class="vis" mesh="RR_pod_165" rgba="0.707556 0.39503 0.166186 1"/>
+                      <geom class="vis" mesh="RR_pod_166" rgba="0.110702 0.110702 0.131804 1"/>
+                      <geom class="vis" mesh="RR_pod_167" rgba="0.131804 0.310278 0.688203 1"/>
+                      <geom class="vis" mesh="RR_pod_168" rgba="0.0498401 0.0498401 0.0498401 1"/>
+                      <geom class="vis" mesh="RR_pod_169" rgba="0.0849447 0.110702 0.131804 1"/>
+                      <geom class="vis" mesh="RR_pod_170" rgba="0.699347 0.131804 0.110702 1"/>
+                      <geom class="vis" mesh="RR_pod_171" rgba="0.912197 0.754406 0.218649 1"/>
+                      <geom class="vis" mesh="RR_pod_211" rgba="0.286361 0.352474 0.417003 1"/>
+                      <geom class="col" name="c_RR-pitch" type="cylinder" pos="0 0.0101 0" zaxis="0 1 2.22045e-16" size="0.02400 0.00600"/>
+                      <geom class="col" name="c_RR-pitch_mm" type="cylinder" pos="0 -0.006 0" zaxis="0 1 2.22045e-16" size="0.01675 0.01010"/>
+                      <site name="spr6b" pos="0.006 0 0.036" size="0.002"/>
+                      <site name="spr7b" pos="-0.002 -0.014 -0.018" size="0.002"/>
+                      <site name="spr8b" pos="-0.026 -0.014 -0.018" size="0.002"/>
+                      <body name="RR_pitJ" pos="0 0.014 0" quat="1 0 0 0">
+                        <joint name="RR_pitch" type="hinge" axis="0 1 0" range="-2.7498 1.1065" armature="0.001" damping="0.02" frictionloss="0.01"/>
+                        <inertial pos="9.67533e-06 0.000182678 -0.0380326" mass="0.01972" fullinertia="2.22479e-05 2.26379e-05 1.19414e-06 3.48521e-11 -7.51877e-08 5.17729e-10"/>
+                        <geom class="vis" mesh="RR_pitJ_172" rgba="0.0849447 0.0849447 0.110702 1"/>
+                        <geom class="vis" mesh="RR_pitJ_208" rgba="0.764314 0.797738 0.838187 1"/>
+                        <geom class="vis" mesh="RR_pitJ_209" rgba="0.286361 0.352474 0.417003 1"/>
+                        <geom class="vis" mesh="RR_pitJ_210" rgba="0.497533 0.656282 0.846834 1"/>
+                        <geom class="col" name="c_RR_pitJ_bone" type="capsule" fromto="0 0 -0.008 0 0 -0.092" size="0.0070"/>
+                        <site name="spr24a" pos="0.013 -0.004 -0.02" size="0.002"/>
+                        <site name="spr24b" pos="0.013 -0.004 -0.0787397" size="0.002"/>
+                        <site name="spr25a" pos="0.013 0.004 -0.02" size="0.002"/>
+                        <site name="spr25b" pos="0.013 0.004 -0.0787397" size="0.002"/>
+                        <site name="spr26a" pos="-0.014 -0.008 -0.04" size="0.002"/>
+                        <site name="spr27a" pos="-0.014 0.008 -0.04" size="0.002"/>
+                        <site name="cab0_0" pos="0.013 -0.004 -0.0787397" size="0.0015"/>
+                        <site name="cab0_1" pos="0.017 -0.004 -0.086" size="0.0015"/>
+                        <site name="cab1_0" pos="0.013 0.004 -0.0787397" size="0.0015"/>
+                        <site name="cab1_1" pos="0.017 0.004 -0.086" size="0.0015"/>
+                        <body name="RR_midJ" pos="0 0 -0.1" quat="1 0 0 0">
+                          <joint name="RR_knee" type="hinge" axis="0 1 0" range="0.1281 2.8368" armature="0.001" damping="0.02" frictionloss="0.01"/>
+                          <inertial pos="-0.000124774 0.0124094 -0.00666781" mass="0.11571" fullinertia="7.51236e-05 7.4841e-05 2.43518e-05 -2.01603e-07 -3.57759e-07 -9.40177e-06"/>
+                          <geom class="vis" mesh="RR_midJ_173" rgba="0.940805 0.538065 0.131804 1"/>
+                          <geom class="vis" mesh="RR_midJ_174" rgba="0.602582 0.637993 0.676821 1"/>
+                          <geom class="vis" mesh="RR_midJ_175" rgba="0.229735 0.25026 0.277847 1"/>
+                          <geom class="vis" mesh="RR_midJ_176" rgba="0.786014 0.811515 0.838187 1"/>
+                          <geom class="vis" mesh="RR_midJ_177" rgba="0.0849447 0.0849447 0.110702 1"/>
+                          <geom class="vis" mesh="RR_midJ_178" rgba="0.150005 0.166186 0.194353 1"/>
+                          <geom class="vis" mesh="RR_midJ_179" rgba="0.707556 0.39503 0.166186 1"/>
+                          <geom class="vis" mesh="RR_midJ_180" rgba="0.110702 0.110702 0.131804 1"/>
+                          <geom class="vis" mesh="RR_midJ_181" rgba="0.131804 0.310278 0.688203 1"/>
+                          <geom class="vis" mesh="RR_midJ_182" rgba="0.0498401 0.0498401 0.0498401 1"/>
+                          <geom class="vis" mesh="RR_midJ_183" rgba="0.0849447 0.110702 0.131804 1"/>
+                          <geom class="vis" mesh="RR_midJ_184" rgba="0.699347 0.131804 0.110702 1"/>
+                          <geom class="vis" mesh="RR_midJ_185" rgba="0.912197 0.754406 0.218649 1"/>
+                          <geom class="vis" mesh="RR_midJ_204" rgba="0.286361 0.352474 0.417003 1"/>
+                          <geom class="vis" mesh="RR_midJ_205" rgba="0.497533 0.656282 0.846834 1"/>
+                          <geom class="vis" mesh="RR_midJ_206" rgba="0.846834 0.822766 0.759381 1"/>
+                          <geom class="vis" mesh="RR_midJ_207" rgba="0.764314 0.797738 0.838187 1"/>
+                          <geom class="col" name="c_RR-knee" type="cylinder" pos="-7.10543e-18 0.006 0" zaxis="0 1 2.22045e-16" size="0.02400 0.00600"/>
+                          <geom class="col" name="c_RR-knee_mm" type="cylinder" pos="-7.10543e-18 0.0221 0" zaxis="0 1 2.22045e-16" size="0.01675 0.01010"/>
+                          <geom class="col" name="c_RR_midJ_bone" type="capsule" fromto="0 0 -0.008 0 0 -0.102" size="0.0065"/>
+                          <site name="spr22a" pos="-0.016 -0.005 -0.03" size="0.002"/>
+                          <site name="spr23a" pos="-0.016 0.005 -0.03" size="0.002"/>
+                          <site name="spr26b" pos="-0.016 -0.008 0.014" size="0.002"/>
+                          <site name="spr27b" pos="-0.016 0.008 0.014" size="0.002"/>
+                          <site name="cab0_2" pos="0.0225 -0.004 0.006" size="0.0015"/>
+                          <site name="cab0_3" pos="0.021 -0.004 -0.008" size="0.0015"/>
+                          <site name="cab0_4" pos="0.012 -0.004 -0.03" size="0.0015"/>
+                          <site name="cab1_2" pos="0.0225 0.004 0.006" size="0.0015"/>
+                          <site name="cab1_3" pos="0.021 0.004 -0.008" size="0.0015"/>
+                          <site name="cab1_4" pos="0.012 0.004 -0.03" size="0.0015"/>
+                          <body name="RR_disJ" pos="0 0 -0.11" quat="1 0 0 0">
+                            <joint name="RR_dist" type="hinge" axis="0 1 0" range="-3.1371 0.6936" armature="0.001" damping="0.02" frictionloss="0.01"/>
+                            <inertial pos="-7.3241e-05 0.0133944 -0.00244386" mass="0.10733" fullinertia="3.35898e-05 3.36494e-05 2.14847e-05 -1.64968e-07 1.36157e-07 -3.47803e-06"/>
+                            <geom class="vis" mesh="RR_disJ_186" rgba="0.940805 0.538065 0.131804 1"/>
+                            <geom class="vis" mesh="RR_disJ_187" rgba="0.602582 0.637993 0.676821 1"/>
+                            <geom class="vis" mesh="RR_disJ_188" rgba="0.229735 0.25026 0.277847 1"/>
+                            <geom class="vis" mesh="RR_disJ_189" rgba="0.786014 0.811515 0.838187 1"/>
+                            <geom class="vis" mesh="RR_disJ_190" rgba="0.0849447 0.0849447 0.110702 1"/>
+                            <geom class="vis" mesh="RR_disJ_191" rgba="0.150005 0.166186 0.194353 1"/>
+                            <geom class="vis" mesh="RR_disJ_192" rgba="0.707556 0.39503 0.166186 1"/>
+                            <geom class="vis" mesh="RR_disJ_193" rgba="0.110702 0.110702 0.131804 1"/>
+                            <geom class="vis" mesh="RR_disJ_194" rgba="0.131804 0.310278 0.688203 1"/>
+                            <geom class="vis" mesh="RR_disJ_195" rgba="0.0498401 0.0498401 0.0498401 1"/>
+                            <geom class="vis" mesh="RR_disJ_196" rgba="0.0849447 0.110702 0.131804 1"/>
+                            <geom class="vis" mesh="RR_disJ_197" rgba="0.699347 0.131804 0.110702 1"/>
+                            <geom class="vis" mesh="RR_disJ_198" rgba="0.912197 0.754406 0.218649 1"/>
+                            <geom class="vis" mesh="RR_disJ_199" rgba="0.150005 0.166186 0.206896 1"/>
+                            <geom class="vis" mesh="RR_disJ_201" rgba="0.286361 0.352474 0.417003 1"/>
+                            <geom class="vis" mesh="RR_disJ_202" rgba="0.497533 0.656282 0.846834 1"/>
+                            <geom class="vis" mesh="RR_disJ_203" rgba="0.764314 0.797738 0.838187 1"/>
+                            <geom class="col" name="c_RR-dist" type="cylinder" pos="0 0.006 0" zaxis="6.16298e-33 1 2.22045e-16" size="0.02400 0.00600"/>
+                            <geom class="col" name="c_RR-dist_mm" type="cylinder" pos="0 0.0221 0" zaxis="6.16298e-33 1 2.22045e-16" size="0.01675 0.01010"/>
+                            <geom class="col" name="c_RR_disJ_bone" type="capsule" fromto="0 0 -0.008 0 0 -0.057" size="0.0060"/>
+                            <site name="spr22b" pos="-0.015 -0.005 0.013" size="0.002"/>
+                            <site name="spr23b" pos="-0.015 0.005 0.013" size="0.002"/>
+                            <body name="RR_pawJ" pos="0 0 -0.065" quat="1 0 0 0">
+                              <inertial pos="3.48909e-19 3.66426e-19 -0.004" mass="0.00297" fullinertia="2.07613e-07 2.07613e-07 2.30752e-07 -1.12119e-25 3.36358e-25 -2.24239e-25"/>
+                              <geom class="vis" mesh="RR_pawJ_200" rgba="0.150005 0.166186 0.206896 1"/>
+                              <geom class="foot" name="RR_foot" type="sphere" pos="0 0 -0.004" size="0.011"/>
+                              <site name="RR_foot" pos="0 0 -0.0135" size="0.003"/>
+                            </body>
+                          </body>
+                        </body>
+                      </body>
+                    </body>
+                  </body>
+                  <body name="RR_crankJ" pos="0.028 0.008 0.027" quat="1 0 0 0">
+                    <inertial pos="0 0 0" mass="0.00010" fullinertia="2e-09 2e-09 2e-09 0 0 0"/>
+                  </body>
+                </body>
+              </body>
+              <body name="RL_abdJ" pos="-0.06 0 -0.028" quat="1 0 0 0">
+                <joint name="RL_abd" type="hinge" axis="1 0 0" range="-0.5540 0.4318" armature="0.0064" damping="0.02" frictionloss="0.01"/>
+                <inertial pos="-0.0126835 -0.035648 0.0272028" mass="0.01800" fullinertia="1.4279e-05 1.14708e-05 1.19013e-05 -2.98161e-06 1.30025e-06 6.43142e-06"/>
+                <geom class="vis" mesh="RL_abdJ_275" rgba="0.497533 0.656282 0.846834 1"/>
+                <geom class="vis" mesh="RL_abdJ_276" rgba="0.286361 0.352474 0.417003 1"/>
+                <site name="spr9a" pos="0.006 -0.062 0.06" size="0.002"/>
+                <body name="RL_linkJ" pos="-0.046 -0.062 0.04" quat="1 0 0 0">
+                  <joint name="RL_girdle_lift" type="hinge" axis="0 1 0" range="-0.4000 0.4000" stiffness="5.0" springref="-0.16881" damping="0.15" armature="1e-4"/>
+                  <inertial pos="0.016 1.81236e-20 2.20103e-19" mass="0.00205" fullinertia="3.3779e-08 1.29113e-07 1.29113e-07 -5.32567e-25 2.84503e-24 5.60597e-26"/>
+                  <geom class="vis" mesh="RL_linkJ_274" rgba="0.286361 0.352474 0.417003 1"/>
+                  <body name="RL_scJ" pos="0.032 0 0" quat="1 0 0 0">
+                    <joint name="RL_girdle_rock" type="hinge" axis="0 1 0" range="-0.4500 0.4500" stiffness="6.0" springref="-0.13803" damping="0.15" armature="1e-4"/>
+                    <inertial pos="1.43802e-19 -2.52564e-20 3.00347e-20" mass="0.00394" fullinertia="1.33645e-07 1.82166e-07 1.33645e-07 -1.68179e-25 -1.12119e-25 0"/>
+                    <geom class="vis" mesh="RL_scJ_271" rgba="0.286361 0.352474 0.417003 1"/>
+                    <geom class="vis" mesh="RL_scJ_272" rgba="0.497533 0.656282 0.846834 1"/>
+                    <geom class="vis" mesh="RL_scJ_273" rgba="0.150005 0.166186 0.206896 1"/>
+                    <body name="RL_pod" pos="0.014 0 -0.04" quat="1 0 0 0">
+                      <inertial pos="-0.000176521 -0.00148022 0.000437454" mass="0.10224" fullinertia="2.18613e-05 2.37706e-05 1.99837e-05 1.75262e-07 1.59364e-08 1.32188e-07"/>
+                      <geom class="vis" mesh="RL_pod_218" rgba="0.940805 0.538065 0.131804 1"/>
+                      <geom class="vis" mesh="RL_pod_219" rgba="0.602582 0.637993 0.676821 1"/>
+                      <geom class="vis" mesh="RL_pod_220" rgba="0.229735 0.25026 0.277847 1"/>
+                      <geom class="vis" mesh="RL_pod_221" rgba="0.786014 0.811515 0.838187 1"/>
+                      <geom class="vis" mesh="RL_pod_222" rgba="0.0849447 0.0849447 0.110702 1"/>
+                      <geom class="vis" mesh="RL_pod_223" rgba="0.150005 0.166186 0.194353 1"/>
+                      <geom class="vis" mesh="RL_pod_224" rgba="0.707556 0.39503 0.166186 1"/>
+                      <geom class="vis" mesh="RL_pod_225" rgba="0.110702 0.110702 0.131804 1"/>
+                      <geom class="vis" mesh="RL_pod_226" rgba="0.131804 0.310278 0.688203 1"/>
+                      <geom class="vis" mesh="RL_pod_227" rgba="0.0498401 0.0498401 0.0498401 1"/>
+                      <geom class="vis" mesh="RL_pod_228" rgba="0.0849447 0.110702 0.131804 1"/>
+                      <geom class="vis" mesh="RL_pod_229" rgba="0.699347 0.131804 0.110702 1"/>
+                      <geom class="vis" mesh="RL_pod_230" rgba="0.912197 0.754406 0.218649 1"/>
+                      <geom class="vis" mesh="RL_pod_270" rgba="0.286361 0.352474 0.417003 1"/>
+                      <geom class="col" name="c_RL-pitch" type="cylinder" pos="0 -0.0101 0" zaxis="0 1 2.22045e-16" size="0.02400 0.00600"/>
+                      <geom class="col" name="c_RL-pitch_mm" type="cylinder" pos="0 0.006 0" zaxis="0 1 2.22045e-16" size="0.01675 0.01010"/>
+                      <site name="spr9b" pos="0.006 0 0.036" size="0.002"/>
+                      <site name="spr10b" pos="-0.002 0.014 -0.018" size="0.002"/>
+                      <site name="spr11b" pos="-0.026 0.014 -0.018" size="0.002"/>
+                      <body name="RL_pitJ" pos="0 -0.014 0" quat="1 0 0 0">
+                        <joint name="RL_pitch" type="hinge" axis="0 1 0" range="-2.7779 1.1103" armature="0.001" damping="0.02" frictionloss="0.01"/>
+                        <inertial pos="9.67533e-06 9.62814e-05 -0.0380326" mass="0.01972" fullinertia="2.22484e-05 2.26379e-05 1.19462e-06 1.83689e-11 -7.51877e-08 6.53112e-08"/>
+                        <geom class="vis" mesh="RL_pitJ_231" rgba="0.0849447 0.0849447 0.110702 1"/>
+                        <geom class="vis" mesh="RL_pitJ_267" rgba="0.764314 0.797738 0.838187 1"/>
+                        <geom class="vis" mesh="RL_pitJ_268" rgba="0.286361 0.352474 0.417003 1"/>
+                        <geom class="vis" mesh="RL_pitJ_269" rgba="0.497533 0.656282 0.846834 1"/>
+                        <geom class="col" name="c_RL_pitJ_bone" type="capsule" fromto="0 0 -0.008 0 0 -0.092" size="0.0070"/>
+                        <site name="spr30a" pos="0.013 -0.004 -0.02" size="0.002"/>
+                        <site name="spr30b" pos="0.013 -0.004 -0.0787397" size="0.002"/>
+                        <site name="spr31a" pos="0.013 0.004 -0.02" size="0.002"/>
+                        <site name="spr31b" pos="0.013 0.004 -0.0787397" size="0.002"/>
+                        <site name="spr32a" pos="-0.014 -0.008 -0.04" size="0.002"/>
+                        <site name="spr33a" pos="-0.014 0.008 -0.04" size="0.002"/>
+                        <site name="cab2_0" pos="0.013 -0.004 -0.0787397" size="0.0015"/>
+                        <site name="cab2_1" pos="0.017 -0.004 -0.086" size="0.0015"/>
+                        <site name="cab3_0" pos="0.013 0.004 -0.0787397" size="0.0015"/>
+                        <site name="cab3_1" pos="0.017 0.004 -0.086" size="0.0015"/>
+                        <body name="RL_midJ" pos="0 0 -0.1" quat="1 0 0 0">
+                          <joint name="RL_knee" type="hinge" axis="0 1 0" range="0.1636 2.8351" armature="0.001" damping="0.02" frictionloss="0.01"/>
+                          <inertial pos="-0.000124546 -0.0123598 -0.00667161" mass="0.11585" fullinertia="7.52553e-05 7.48414e-05 2.44835e-05 2.01181e-07 -3.53633e-07 9.65599e-06"/>
+                          <geom class="vis" mesh="RL_midJ_232" rgba="0.940805 0.538065 0.131804 1"/>
+                          <geom class="vis" mesh="RL_midJ_233" rgba="0.602582 0.637993 0.676821 1"/>
+                          <geom class="vis" mesh="RL_midJ_234" rgba="0.229735 0.25026 0.277847 1"/>
+                          <geom class="vis" mesh="RL_midJ_235" rgba="0.786014 0.811515 0.838187 1"/>
+                          <geom class="vis" mesh="RL_midJ_236" rgba="0.0849447 0.0849447 0.110702 1"/>
+                          <geom class="vis" mesh="RL_midJ_237" rgba="0.150005 0.166186 0.194353 1"/>
+                          <geom class="vis" mesh="RL_midJ_238" rgba="0.707556 0.39503 0.166186 1"/>
+                          <geom class="vis" mesh="RL_midJ_239" rgba="0.110702 0.110702 0.131804 1"/>
+                          <geom class="vis" mesh="RL_midJ_240" rgba="0.131804 0.310278 0.688203 1"/>
+                          <geom class="vis" mesh="RL_midJ_241" rgba="0.0498401 0.0498401 0.0498401 1"/>
+                          <geom class="vis" mesh="RL_midJ_242" rgba="0.0849447 0.110702 0.131804 1"/>
+                          <geom class="vis" mesh="RL_midJ_243" rgba="0.699347 0.131804 0.110702 1"/>
+                          <geom class="vis" mesh="RL_midJ_244" rgba="0.912197 0.754406 0.218649 1"/>
+                          <geom class="vis" mesh="RL_midJ_263" rgba="0.286361 0.352474 0.417003 1"/>
+                          <geom class="vis" mesh="RL_midJ_264" rgba="0.497533 0.656282 0.846834 1"/>
+                          <geom class="vis" mesh="RL_midJ_265" rgba="0.846834 0.822766 0.759381 1"/>
+                          <geom class="vis" mesh="RL_midJ_266" rgba="0.764314 0.797738 0.838187 1"/>
+                          <geom class="col" name="c_RL-knee" type="cylinder" pos="-7.10543e-18 -0.006 0" zaxis="0 1 2.22045e-16" size="0.02400 0.00600"/>
+                          <geom class="col" name="c_RL-knee_mm" type="cylinder" pos="-7.10543e-18 -0.0221 0" zaxis="0 1 2.22045e-16" size="0.01675 0.01010"/>
+                          <geom class="col" name="c_RL_midJ_bone" type="capsule" fromto="0 0 -0.008 0 0 -0.102" size="0.0065"/>
+                          <site name="spr28a" pos="-0.016 -0.005 -0.03" size="0.002"/>
+                          <site name="spr29a" pos="-0.016 0.005 -0.03" size="0.002"/>
+                          <site name="spr32b" pos="-0.016 -0.008 0.014" size="0.002"/>
+                          <site name="spr33b" pos="-0.016 0.008 0.014" size="0.002"/>
+                          <site name="cab2_2" pos="0.0225 -0.004 0.006" size="0.0015"/>
+                          <site name="cab2_3" pos="0.021 -0.004 -0.008" size="0.0015"/>
+                          <site name="cab2_4" pos="0.012 -0.004 -0.03" size="0.0015"/>
+                          <site name="cab3_2" pos="0.0225 0.004 0.006" size="0.0015"/>
+                          <site name="cab3_3" pos="0.021 0.004 -0.008" size="0.0015"/>
+                          <site name="cab3_4" pos="0.012 0.004 -0.03" size="0.0015"/>
+                          <body name="RL_disJ" pos="0 0 -0.11" quat="1 0 0 0">
+                            <joint name="RL_dist" type="hinge" axis="0 1 0" range="-3.1371 0.6129" armature="0.001" damping="0.02" frictionloss="0.01"/>
+                            <inertial pos="-8.13457e-05 -0.0133418 -0.00245278" mass="0.10748" fullinertia="3.37317e-05 3.36562e-05 2.16201e-05 1.77174e-07 1.20937e-07 3.63051e-06"/>
+                            <geom class="vis" mesh="RL_disJ_245" rgba="0.940805 0.538065 0.131804 1"/>
+                            <geom class="vis" mesh="RL_disJ_246" rgba="0.602582 0.637993 0.676821 1"/>
+                            <geom class="vis" mesh="RL_disJ_247" rgba="0.229735 0.25026 0.277847 1"/>
+                            <geom class="vis" mesh="RL_disJ_248" rgba="0.786014 0.811515 0.838187 1"/>
+                            <geom class="vis" mesh="RL_disJ_249" rgba="0.0849447 0.0849447 0.110702 1"/>
+                            <geom class="vis" mesh="RL_disJ_250" rgba="0.150005 0.166186 0.194353 1"/>
+                            <geom class="vis" mesh="RL_disJ_251" rgba="0.707556 0.39503 0.166186 1"/>
+                            <geom class="vis" mesh="RL_disJ_252" rgba="0.110702 0.110702 0.131804 1"/>
+                            <geom class="vis" mesh="RL_disJ_253" rgba="0.131804 0.310278 0.688203 1"/>
+                            <geom class="vis" mesh="RL_disJ_254" rgba="0.0498401 0.0498401 0.0498401 1"/>
+                            <geom class="vis" mesh="RL_disJ_255" rgba="0.0849447 0.110702 0.131804 1"/>
+                            <geom class="vis" mesh="RL_disJ_256" rgba="0.699347 0.131804 0.110702 1"/>
+                            <geom class="vis" mesh="RL_disJ_257" rgba="0.912197 0.754406 0.218649 1"/>
+                            <geom class="vis" mesh="RL_disJ_258" rgba="0.150005 0.166186 0.206896 1"/>
+                            <geom class="vis" mesh="RL_disJ_260" rgba="0.286361 0.352474 0.417003 1"/>
+                            <geom class="vis" mesh="RL_disJ_261" rgba="0.497533 0.656282 0.846834 1"/>
+                            <geom class="vis" mesh="RL_disJ_262" rgba="0.764314 0.797738 0.838187 1"/>
+                            <geom class="col" name="c_RL-dist" type="cylinder" pos="0 -0.006 0" zaxis="6.16298e-33 1 2.22045e-16" size="0.02400 0.00600"/>
+                            <geom class="col" name="c_RL-dist_mm" type="cylinder" pos="0 -0.0221 0" zaxis="6.16298e-33 1 2.22045e-16" size="0.01675 0.01010"/>
+                            <geom class="col" name="c_RL_disJ_bone" type="capsule" fromto="0 0 -0.008 0 0 -0.057" size="0.0060"/>
+                            <site name="spr28b" pos="-0.015 -0.005 0.013" size="0.002"/>
+                            <site name="spr29b" pos="-0.015 0.005 0.013" size="0.002"/>
+                            <body name="RL_pawJ" pos="0 0 -0.065" quat="1 0 0 0">
+                              <inertial pos="3.48909e-19 3.66426e-19 -0.004" mass="0.00297" fullinertia="2.07613e-07 2.07613e-07 2.30752e-07 -1.12119e-25 3.36358e-25 -2.24239e-25"/>
+                              <geom class="vis" mesh="RL_pawJ_259" rgba="0.150005 0.166186 0.206896 1"/>
+                              <geom class="foot" name="RL_foot" type="sphere" pos="0 0 -0.004" size="0.011"/>
+                              <site name="RL_foot" pos="0 0 -0.0135" size="0.003"/>
+                            </body>
+                          </body>
+                        </body>
+                      </body>
+                    </body>
+                  </body>
+                  <body name="RL_crankJ" pos="0.028 -0.008 0.027" quat="1 0 0 0">
+                    <inertial pos="0 0 0" mass="0.00010" fullinertia="2e-09 2e-09 2e-09 0 0 0"/>
+                  </body>
+                </body>
+              </body>
+              <body name="tailroot" pos="-0.13 0 0.006" quat="1 0 0 0">
+                <inertial pos="0 0 0" mass="0.00010" fullinertia="2e-09 2e-09 2e-09 0 0 0"/>
+                <body name="tailc0" pos="0 0 0" quat="1 0 0 0">
+                  <joint name="tail0_pitch" type="hinge" axis="0 1 0" range="-0.5160 1.3917" stiffness="0.4" springref="-0.00385" damping="0.01" armature="2e-5"/>
+                  <inertial pos="-3.0053e-20 0 0" mass="0.00048" fullinertia="5.4243e-09 2.01724e-09 5.4243e-09 3.50373e-27 3.50373e-27 -1.05112e-25"/>
+                  <geom class="vis" mesh="tailc0_284" rgba="0.497533 0.656282 0.846834 1"/>
+                  <body name="tail0" pos="0 0 0" quat="1 0 0 0">
+                    <joint name="tail0_yaw" type="hinge" axis="0 0 1" range="-0.3291 0.3625" stiffness="0.4" springref="-0.00001" damping="0.01" armature="2e-5"/>
+                    <inertial pos="-0.0139005 4.20154e-20 7.75669e-20" mass="0.00444" fullinertia="2.02329e-07 6.79019e-07 6.73949e-07 8.96955e-25 -3.92418e-24 -3.9417e-26"/>
+                    <geom class="vis" mesh="tail0_285" rgba="0.538065 0.575048 0.619001 1"/>
+                    <geom class="vis" mesh="tail0_286" rgba="0.0849447 0.0849447 0.110702 1"/>
+                    <geom class="vis" mesh="tail0_342" rgba="0.497533 0.656282 0.846834 1"/>
+                    <geom class="vis" mesh="tail0_343" rgba="0.286361 0.352474 0.417003 1"/>
+                    <geom class="col" name="c_tail0" type="capsule" fromto="-0.006 0 0 -0.034 0 0" size="0.0090"/>
+                    <site name="tail0_eye" pos="-0.006 0 0" size="0.002"/>
+                    <site name="cab4_2" pos="-0.006 0 0.009" size="0.0015"/>
+                    <site name="cab5_2" pos="-0.006 0 -0.009" size="0.0015"/>
+                    <site name="cab6_2" pos="-0.006 -0.009 7.10543e-18" size="0.0015"/>
+                    <site name="cab7_2" pos="-0.006 0.009 7.10543e-18" size="0.0015"/>
+                    <body name="tailc1" pos="-0.038 0 0" quat="1 0 0 0">
+                      <joint name="tail1_pitch" type="hinge" axis="0 1 0" range="-0.5288 0.4975" stiffness="0.4" springref="-0.03481" damping="0.01" armature="2e-5"/>
+                      <inertial pos="0 0 -2.791e-20" mass="0.00051" fullinertia="7.11719e-09 2.0464e-09 7.11719e-09 0 0 -1.54164e-25"/>
+                      <geom class="vis" mesh="tailc1_287" rgba="0.497533 0.656282 0.846834 1"/>
+                      <body name="tail1" pos="0 0 0" quat="1 0 0 0">
+                        <joint name="tail1_yaw" type="hinge" axis="0 0 1" range="-0.3194 0.3507" stiffness="0.4" springref="-0.00000" damping="0.01" armature="2e-5"/>
+                        <inertial pos="-0.014068 -2.72377e-20 2.3833e-20" mass="0.00422" fullinertia="1.76247e-07 6.45148e-07 6.40681e-07 -2.24239e-24 -7.73623e-24 -1.75186e-26"/>
+                        <geom class="vis" mesh="tail1_288" rgba="0.538065 0.575048 0.619001 1"/>
+                        <geom class="vis" mesh="tail1_289" rgba="0.0849447 0.0849447 0.110702 1"/>
+                        <geom class="vis" mesh="tail1_340" rgba="0.497533 0.656282 0.846834 1"/>
+                        <geom class="vis" mesh="tail1_341" rgba="0.286361 0.352474 0.417003 1"/>
+                        <geom class="col" name="c_tail1" type="capsule" fromto="-0.006 0 0 -0.034 0 0" size="0.0085"/>
+                        <site name="tail1_eye" pos="-0.006 0 0" size="0.002"/>
+                        <site name="cab4_3" pos="-0.006 0 0.0085" size="0.0015"/>
+                        <site name="cab5_3" pos="-0.006 0 -0.0085" size="0.0015"/>
+                        <site name="cab6_3" pos="-0.006 -0.0085 -7.10543e-18" size="0.0015"/>
+                        <site name="cab7_3" pos="-0.006 0.0085 -7.10543e-18" size="0.0015"/>
+                        <body name="tailc2" pos="-0.038 0 0" quat="1 0 0 0">
+                          <joint name="tail2_pitch" type="hinge" axis="0 1 0" range="-0.5055 0.4762" stiffness="0.4" springref="-0.06018" damping="0.01" armature="2e-5"/>
+                          <inertial pos="-2.85896e-20 0 0" mass="0.00050" fullinertia="6.50454e-09 2.03668e-09 6.50454e-09 3.50373e-27 0 -1.36645e-25"/>
+                          <geom class="vis" mesh="tailc2_290" rgba="0.497533 0.656282 0.846834 1"/>
+                          <body name="tail2" pos="0 0 0" quat="1 0 0 0">
+                            <joint name="tail2_yaw" type="hinge" axis="0 0 1" range="-0.3203 0.3390" stiffness="0.4" springref="-0.00000" damping="0.01" armature="2e-5"/>
+                            <inertial pos="-0.0142417 -1.75929e-19 4.30846e-20" mass="0.00400" fullinertia="1.52783e-07 6.12978e-07 6.09064e-07 -2.9151e-24 -9.3059e-24 -1.72559e-25"/>
+                            <geom class="vis" mesh="tail2_291" rgba="0.538065 0.575048 0.619001 1"/>
+                            <geom class="vis" mesh="tail2_292" rgba="0.0849447 0.0849447 0.110702 1"/>
+                            <geom class="vis" mesh="tail2_338" rgba="0.497533 0.656282 0.846834 1"/>
+                            <geom class="vis" mesh="tail2_339" rgba="0.286361 0.352474 0.417003 1"/>
+                            <geom class="col" name="c_tail2" type="capsule" fromto="-0.006 0 0 -0.034 0 0" size="0.0080"/>
+                            <site name="tail2_eye" pos="-0.006 0 0" size="0.002"/>
+                            <site name="cab4_4" pos="-0.006 0 0.008" size="0.0015"/>
+                            <site name="cab5_4" pos="-0.006 0 -0.008" size="0.0015"/>
+                            <site name="cab6_4" pos="-0.006 -0.008 -2.84217e-17" size="0.0015"/>
+                            <site name="cab7_4" pos="-0.006 0.008 -2.84217e-17" size="0.0015"/>
+                            <body name="tailc3" pos="-0.038 0 0" quat="1 0 0 0">
+                              <joint name="tail3_pitch" type="hinge" axis="0 1 0" range="-0.4865 0.7248" stiffness="0.4" springref="0.04574" damping="0.01" armature="2e-5"/>
+                              <inertial pos="-2.9303e-20 0 0" mass="0.00049" fullinertia="5.94092e-09 2.02696e-09 5.94092e-09 7.00746e-27 0 -1.12119e-25"/>
+                              <geom class="vis" mesh="tailc3_293" rgba="0.497533 0.656282 0.846834 1"/>
+                              <body name="tail3" pos="0 0 0" quat="1 0 0 0">
+                                <joint name="tail3_yaw" type="hinge" axis="0 0 1" range="-0.3168 0.3272" stiffness="0.4" springref="-0.00000" damping="0.01" armature="2e-5"/>
+                                <inertial pos="-0.0144217 9.47537e-20 1.89507e-20" mass="0.00379" fullinertia="1.31745e-07 5.82426e-07 5.79019e-07 1.12119e-24 -6.05444e-24 8.32136e-26"/>
+                                <geom class="vis" mesh="tail3_294" rgba="0.538065 0.575048 0.619001 1"/>
+                                <geom class="vis" mesh="tail3_295" rgba="0.0849447 0.0849447 0.110702 1"/>
+                                <geom class="vis" mesh="tail3_336" rgba="0.497533 0.656282 0.846834 1"/>
+                                <geom class="vis" mesh="tail3_337" rgba="0.286361 0.352474 0.417003 1"/>
+                                <geom class="col" name="c_tail3" type="capsule" fromto="-0.006 0 0 -0.034 0 0" size="0.0075"/>
+                                <site name="tail3_eye" pos="-0.006 0 0" size="0.002"/>
+                                <site name="cab4_5" pos="-0.006 0 0.0075" size="0.0015"/>
+                                <site name="cab5_5" pos="-0.006 0 -0.0075" size="0.0015"/>
+                                <site name="cab6_5" pos="-0.006 -0.0075 0" size="0.0015"/>
+                                <site name="cab7_5" pos="-0.006 0.0075 0" size="0.0015"/>
+                                <body name="tailc4" pos="-0.038 0 0" quat="1 0 0 0">
+                                  <joint name="tail4_pitch" type="hinge" axis="0 1 0" range="-0.4886 1.0634" stiffness="0.4" springref="0.19801" damping="0.01" armature="2e-5"/>
+                                  <inertial pos="-3.0053e-20 0 0" mass="0.00048" fullinertia="5.4243e-09 2.01724e-09 5.4243e-09 3.50373e-27 3.50373e-27 -1.05112e-25"/>
+                                  <geom class="vis" mesh="tailc4_296" rgba="0.497533 0.656282 0.846834 1"/>
+                                  <body name="tail4" pos="0 0 0" quat="1 0 0 0">
+                                    <joint name="tail4_yaw" type="hinge" axis="0 0 1" range="-0.3021 0.3154" stiffness="0.4" springref="-0.00000" damping="0.01" armature="2e-5"/>
+                                    <inertial pos="-0.0146079 9.21207e-20 2.3631e-19" mass="0.00358" fullinertia="1.12953e-07 5.53413e-07 5.50468e-07 2.24239e-24 -5.38173e-24 2.57524e-25"/>
+                                    <geom class="vis" mesh="tail4_297" rgba="0.538065 0.575048 0.619001 1"/>
+                                    <geom class="vis" mesh="tail4_298" rgba="0.0849447 0.0849447 0.110702 1"/>
+                                    <geom class="vis" mesh="tail4_334" rgba="0.497533 0.656282 0.846834 1"/>
+                                    <geom class="vis" mesh="tail4_335" rgba="0.286361 0.352474 0.417003 1"/>
+                                    <geom class="col" name="c_tail4" type="capsule" fromto="-0.006 0 0 -0.034 0 0" size="0.0070"/>
+                                    <site name="tail4_eye" pos="-0.006 0 0" size="0.002"/>
+                                    <site name="cab4_6" pos="-0.006 0 0.007" size="0.0015"/>
+                                    <site name="cab5_6" pos="-0.006 0 -0.007" size="0.0015"/>
+                                    <site name="cab6_6" pos="-0.006 -0.007 0" size="0.0015"/>
+                                    <site name="cab7_6" pos="-0.006 0.007 0" size="0.0015"/>
+                                    <body name="tailc5" pos="-0.038 0 0" quat="1 0 0 0">
+                                      <joint name="tail5_pitch" type="hinge" axis="0 1 0" range="-0.5210 1.3917" stiffness="0.4" springref="0.35321" damping="0.01" armature="2e-5"/>
+                                      <inertial pos="0 3.08424e-20 0" mass="0.00047" fullinertia="4.95264e-09 2.00752e-09 4.95264e-09 7.00746e-27 3.50373e-27 -9.81044e-26"/>
+                                      <geom class="vis" mesh="tailc5_299" rgba="0.497533 0.656282 0.846834 1"/>
+                                      <body name="tail5" pos="0 0 0" quat="1 0 0 0">
+                                        <joint name="tail5_yaw" type="hinge" axis="0 0 1" range="-0.2805 0.3037" stiffness="0.4" springref="-0.00000" damping="0.01" armature="2e-5"/>
+                                        <inertial pos="-0.0148004 -8.68597e-20 -9.10967e-20" mass="0.00339" fullinertia="9.62318e-08 5.25869e-07 5.23343e-07 5.15749e-24 -4.48477e-25 -1.0336e-25"/>
+                                        <geom class="vis" mesh="tail5_300" rgba="0.538065 0.575048 0.619001 1"/>
+                                        <geom class="vis" mesh="tail5_301" rgba="0.0849447 0.0849447 0.110702 1"/>
+                                        <geom class="vis" mesh="tail5_332" rgba="0.497533 0.656282 0.846834 1"/>
+                                        <geom class="vis" mesh="tail5_333" rgba="0.286361 0.352474 0.417003 1"/>
+                                        <geom class="col" name="c_tail5" type="capsule" fromto="-0.006 0 0 -0.034 0 0" size="0.0065"/>
+                                        <site name="tail5_eye" pos="-0.006 0 0" size="0.002"/>
+                                        <site name="cab4_7" pos="-0.006 0 0.0065" size="0.0015"/>
+                                        <site name="cab5_7" pos="-0.006 0 -0.0065" size="0.0015"/>
+                                        <site name="cab6_7" pos="-0.006 -0.0065 0" size="0.0015"/>
+                                        <site name="cab7_7" pos="-0.006 0.0065 0" size="0.0015"/>
+                                        <body name="tailc6" pos="-0.038 0 0" quat="1 0 0 0">
+                                          <joint name="tail6_pitch" type="hinge" axis="0 1 0" range="-0.5534 1.3917" stiffness="0.4" springref="0.51051" damping="0.01" armature="2e-5"/>
+                                          <inertial pos="0 0 3.16744e-20" mass="0.00045" fullinertia="4.52391e-09 1.99779e-09 4.52391e-09 3.50373e-27 0 -7.00746e-26"/>
+                                          <geom class="vis" mesh="tailc6_302" rgba="0.497533 0.656282 0.846834 1"/>
+                                          <body name="tail6" pos="0 0 0" quat="1 0 0 0">
+                                            <joint name="tail6_yaw" type="hinge" axis="0 0 1" range="-0.2708 0.2919" stiffness="0.4" springref="-0.00000" damping="0.01" armature="2e-5"/>
+                                            <inertial pos="-0.0149988 3.58965e-20 -6.28188e-20" mass="0.00320" fullinertia="8.14179e-08 4.99729e-07 4.97581e-07 3.81206e-24 -2.46663e-24 3.8541e-26"/>
+                                            <geom class="vis" mesh="tail6_303" rgba="0.538065 0.575048 0.619001 1"/>
+                                            <geom class="vis" mesh="tail6_304" rgba="0.0849447 0.0849447 0.110702 1"/>
+                                            <geom class="vis" mesh="tail6_330" rgba="0.497533 0.656282 0.846834 1"/>
+                                            <geom class="vis" mesh="tail6_331" rgba="0.286361 0.352474 0.417003 1"/>
+                                            <geom class="col" name="c_tail6" type="capsule" fromto="-0.006 0 0 -0.034 0 0" size="0.0060"/>
+                                            <site name="tail6_eye" pos="-0.006 0 0" size="0.002"/>
+                                            <site name="cab4_8" pos="-0.006 0 0.006" size="0.0015"/>
+                                            <site name="cab5_8" pos="-0.006 0 -0.006" size="0.0015"/>
+                                            <site name="cab6_8" pos="-0.006 -0.006 1.42109e-17" size="0.0015"/>
+                                            <site name="cab7_8" pos="-0.006 0.006 1.42109e-17" size="0.0015"/>
+                                            <body name="tailc7" pos="-0.038 0 0" quat="1 0 0 0">
+                                              <joint name="tail7_pitch" type="hinge" axis="0 1 0" range="-0.5731 1.3917" stiffness="0.4" springref="0.62839" damping="0.01" armature="2e-5"/>
+                                              <inertial pos="0 0 0" mass="0.00044" fullinertia="4.13607e-09 1.98807e-09 4.13607e-09 -3.50373e-27 0 -5.60597e-26"/>
+                                              <geom class="vis" mesh="tailc7_305" rgba="0.497533 0.656282 0.846834 1"/>
+                                              <body name="tail7" pos="0 0 0" quat="1 0 0 0">
+                                                <joint name="tail7_yaw" type="hinge" axis="0 0 1" range="-0.2611 0.2861" stiffness="0.4" springref="-0.00000" damping="0.01" armature="2e-5"/>
+                                                <inertial pos="-0.0152029 6.18389e-20 9.98937e-20" mass="0.00302" fullinertia="6.83556e-08 4.74937e-07 4.73129e-07 5.38173e-24 -2.69086e-24 -1.16499e-25"/>
+                                                <geom class="vis" mesh="tail7_306" rgba="0.538065 0.575048 0.619001 1"/>
+                                                <geom class="vis" mesh="tail7_307" rgba="0.0849447 0.0849447 0.110702 1"/>
+                                                <geom class="vis" mesh="tail7_328" rgba="0.497533 0.656282 0.846834 1"/>
+                                                <geom class="vis" mesh="tail7_329" rgba="0.286361 0.352474 0.417003 1"/>
+                                                <geom class="col" name="c_tail7" type="capsule" fromto="-0.006 0 0 -0.034 0 0" size="0.0055"/>
+                                                <site name="tail7_eye" pos="-0.006 0 0" size="0.002"/>
+                                                <site name="cab4_9" pos="-0.006 0 0.0055" size="0.0015"/>
+                                                <site name="cab5_9" pos="-0.006 0 -0.0055" size="0.0015"/>
+                                                <site name="cab6_9" pos="-0.006 -0.0055 2.84217e-17" size="0.0015"/>
+                                                <site name="cab7_9" pos="-0.006 0.0055 2.84217e-17" size="0.0015"/>
+                                                <body name="tailc8" pos="-0.038 0 0" quat="1 0 0 0">
+                                                  <joint name="tail8_pitch" type="hinge" axis="0 1 0" range="-0.5800 1.3917" stiffness="0.4" springref="0.70831" damping="0.01" armature="2e-5"/>
+                                                  <inertial pos="0 3.34807e-20 0" mass="0.00043" fullinertia="3.78707e-09 1.97835e-09 3.78707e-09 0 0 -3.8541e-26"/>
+                                                  <geom class="vis" mesh="tailc8_308" rgba="0.497533 0.656282 0.846834 1"/>
+                                                  <body name="tail8" pos="0 0 0" quat="1 0 0 0">
+                                                    <joint name="tail8_yaw" type="hinge" axis="0 0 1" range="-0.2513 0.2727" stiffness="0.4" springref="-0.00000" damping="0.01" armature="2e-5"/>
+                                                    <inertial pos="-0.0046232 -4.84196e-21 1.54943e-19" mass="0.00148" fullinertia="3.41548e-08 3.68239e-08 1.9946e-08 5.60597e-26 -2.80298e-26 -3.15336e-26"/>
+                                                    <geom class="vis" mesh="tail8_309" rgba="0.538065 0.575048 0.619001 1"/>
+                                                    <geom class="vis" mesh="tail8_310" rgba="0.0849447 0.0849447 0.110702 1"/>
+                                                    <geom class="vis" mesh="tail8_326" rgba="0.497533 0.656282 0.846834 1"/>
+                                                    <geom class="vis" mesh="tail8_327" rgba="0.286361 0.352474 0.417003 1"/>
+                                                    <geom class="col" name="c_tail8" type="capsule" fromto="-0.006 0 0 -0.034 0 0" size="0.0050"/>
+                                                    <site name="tail8_eye" pos="-0.006 0 0" size="0.002"/>
+                                                    <site name="cab4_10" pos="-0.006 0 0.005" size="0.0015"/>
+                                                    <site name="cab4_11" pos="-0.035 0 0.005" size="0.0015"/>
+                                                    <site name="cab5_10" pos="-0.006 0 -0.005" size="0.0015"/>
+                                                    <site name="cab5_11" pos="-0.035 0 -0.005" size="0.0015"/>
+                                                    <site name="cab6_10" pos="-0.006 -0.005 -5.68434e-17" size="0.0015"/>
+                                                    <site name="cab6_11" pos="-0.035 -0.005 -5.68434e-17" size="0.0015"/>
+                                                    <site name="cab7_10" pos="-0.006 0.005 -5.68434e-17" size="0.0015"/>
+                                                    <site name="cab7_11" pos="-0.035 0.005 -5.68434e-17" size="0.0015"/>
+                                                    <body name="grip" pos="-0.038 0 0" quat="1 0 0 0">
+                                                      <inertial pos="0.00554455 -2.75373e-14 -3.58503e-12" mass="0.01572" fullinertia="4.12507e-07 1.60406e-06 1.64693e-06 4.74146e-18 -6.86579e-16 -3.8059e-20"/>
+                                                      <geom class="vis" mesh="grip_311" rgba="0.286361 0.352474 0.417003 1"/>
+                                                      <geom class="vis" mesh="grip_312" rgba="0.497533 0.656282 0.846834 1"/>
+                                                      <geom class="vis" mesh="grip_313" rgba="0.786014 0.811515 0.838187 1"/>
+                                                      <geom class="vis" mesh="grip_314" rgba="0.827211 0.842525 0.861693 1"/>
+                                                      <geom class="vis" mesh="grip_315" rgba="0.0849447 0.110702 0.131804 1"/>
+                                                      <geom class="vis" mesh="grip_316" rgba="0.846834 0.665185 0.294589 1"/>
+                                                      <geom class="col" name="c_tail-grip" type="box" pos="0.0045 0 0" quat="1 0 0 0" size="0.0045 0.006 0.005"/>
+                                                      <body name="finger0" pos="-0.008 0.0086 0" quat="1 0 0 0">
+                                                        <joint name="finger0" type="hinge" axis="0 0 1" range="-0.7809 -0.0743" damping="0.002" armature="1e-5"/>
+                                                        <inertial pos="-0.0174058 0.00287887 1.5144e-13" mass="0.00106" fullinertia="1.00878e-08 1.39524e-07 1.46654e-07 3.58605e-09 1.1e-12 2.63047e-13"/>
+                                                        <geom class="vis" mesh="finger0_318" rgba="0.286361 0.352474 0.417003 1"/>
+                                                        <geom class="vis" mesh="finger0_319" rgba="0.150005 0.166186 0.206896 1"/>
+                                                        <geom class="grip" name="c_finger0" type="capsule" fromto="-0.009 0.0045 0 -0.028 0.0042 0" size="0.0016"/>
+                                                      </body>
+                                                      <body name="finger1" pos="-0.008 5.26598e-19 0.0086" quat="0.707107 0.707107 0 0">
+                                                        <joint name="finger1" type="hinge" axis="0 0 1" range="-0.7809 -0.0743" damping="0.002" armature="1e-5"/>
+                                                        <inertial pos="-0.0174058 0.00287887 1.51437e-13" mass="0.00106" fullinertia="1.00878e-08 1.39524e-07 1.46654e-07 3.58605e-09 1.1e-12 2.63047e-13"/>
+                                                        <geom class="vis" mesh="finger1_320" rgba="0.286361 0.352474 0.417003 1"/>
+                                                        <geom class="vis" mesh="finger1_321" rgba="0.150005 0.166186 0.206896 1"/>
+                                                        <geom class="grip" name="c_finger1" type="capsule" fromto="-0.009 0.0045 0 -0.028 0.0042 0" size="0.0016"/>
+                                                      </body>
+                                                      <body name="finger2" pos="-0.008 -0.0086 0" quat="6.12323e-17 1 0 0">
+                                                        <joint name="finger2" type="hinge" axis="0 0 1" range="-0.7809 -0.0743" damping="0.002" armature="1e-5"/>
+                                                        <inertial pos="-0.0174058 0.00287887 1.51435e-13" mass="0.00106" fullinertia="1.00878e-08 1.39524e-07 1.46654e-07 3.58605e-09 1.1e-12 2.63047e-13"/>
+                                                        <geom class="vis" mesh="finger2_322" rgba="0.286361 0.352474 0.417003 1"/>
+                                                        <geom class="vis" mesh="finger2_323" rgba="0.150005 0.166186 0.206896 1"/>
+                                                        <geom class="grip" name="c_finger2" type="capsule" fromto="-0.009 0.0045 0 -0.028 0.0042 0" size="0.0016"/>
+                                                      </body>
+                                                      <body name="finger3" pos="-0.008 -1.57979e-18 -0.0086" quat="0.707107 -0.707107 0 0">
+                                                        <joint name="finger3" type="hinge" axis="0 0 1" range="-0.7809 -0.0743" damping="0.002" armature="1e-5"/>
+                                                        <inertial pos="-0.0174058 0.00287887 1.51437e-13" mass="0.00106" fullinertia="1.00878e-08 1.39524e-07 1.46654e-07 3.58605e-09 1.1e-12 2.63047e-13"/>
+                                                        <geom class="vis" mesh="finger3_324" rgba="0.286361 0.352474 0.417003 1"/>
+                                                        <geom class="vis" mesh="finger3_325" rgba="0.150005 0.166186 0.206896 1"/>
+                                                        <geom class="grip" name="c_finger3" type="capsule" fromto="-0.009 0.0045 0 -0.028 0.0042 0" size="0.0016"/>
+                                                      </body>
+                                                      <body name="collar" pos="-0.0126959 0 0" quat="1 0 0 0">
+                                                        <inertial pos="-3.74819e-20 -9.80297e-20 7.49639e-20" mass="0.00031" fullinertia="3.72523e-09 2.73387e-09 2.73387e-09 3.50373e-27 -2.6278e-27 -1.3139e-26"/>
+                                                        <geom class="vis" mesh="collar_317" rgba="0.286361 0.352474 0.417003 1"/>
+                                                      </body>
+                                                    </body>
+                                                  </body>
+                                                </body>
+                                              </body>
+                                            </body>
+                                          </body>
+                                        </body>
+                                      </body>
+                                    </body>
+                                  </body>
+                                </body>
+                              </body>
+                            </body>
+                          </body>
+                        </body>
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="FR_abdJ" pos="0.081 0 -0.036" quat="1 0 0 0">
+        <joint name="FR_abd" type="hinge" axis="1 0 0" range="-0.2049 0.1700" armature="0.0064" damping="0.02" frictionloss="0.01"/>
+        <inertial pos="-0.0152022 0.0425696 0.0335945" mass="0.00972" fullinertia="7.07366e-06 7.68066e-06 7.89605e-06 2.82529e-06 1.84921e-06 -3.1746e-06"/>
+        <geom class="vis" mesh="FR_abdJ_11" rgba="0.786014 0.802365 0.829421 0.55"/>
+        <geom class="vis" mesh="FR_abdJ_68" rgba="0.497533 0.656282 0.846834 1"/>
+        <geom class="vis" mesh="FR_abdJ_69" rgba="0.286361 0.352474 0.417003 1"/>
+        <site name="spr0a" pos="0.006 0.06 0.06" size="0.002"/>
+        <body name="FR_linkJ" pos="-0.046 0.06 0.04" quat="1 0 0 0">
+          <joint name="FR_girdle_lift" type="hinge" axis="0 1 0" range="-0.4000 0.4000" stiffness="5.0" springref="0.02937" damping="0.15" armature="1e-4"/>
+          <inertial pos="0.016 1.81236e-20 2.20103e-19" mass="0.00205" fullinertia="3.3779e-08 1.29113e-07 1.29113e-07 -5.32567e-25 2.84503e-24 5.60597e-26"/>
+          <geom class="vis" mesh="FR_linkJ_67" rgba="0.286361 0.352474 0.417003 1"/>
+          <body name="FR_scJ" pos="0.032 0 0" quat="1 0 0 0">
+            <joint name="FR_girdle_rock" type="hinge" axis="0 1 0" range="-0.4500 0.4500" stiffness="6.0" springref="-0.06973" damping="0.15" armature="1e-4"/>
+            <inertial pos="1.43802e-19 -2.52564e-20 3.00347e-20" mass="0.00394" fullinertia="1.33645e-07 1.82166e-07 1.33645e-07 -1.68179e-25 -1.12119e-25 0"/>
+            <geom class="vis" mesh="FR_scJ_64" rgba="0.286361 0.352474 0.417003 1"/>
+            <geom class="vis" mesh="FR_scJ_65" rgba="0.497533 0.656282 0.846834 1"/>
+            <geom class="vis" mesh="FR_scJ_66" rgba="0.150005 0.166186 0.206896 1"/>
+            <body name="FR_pod" pos="0.014 0 -0.04" quat="1 0 0 0">
+              <inertial pos="-0.00034467 0.00166879 0.000698438" mass="0.10318" fullinertia="2.30383e-05 2.48642e-05 2.07151e-05 1.84377e-07 5.10506e-07 -6.87114e-07"/>
+              <geom class="vis" mesh="FR_pod_12" rgba="0.940805 0.538065 0.131804 1"/>
+              <geom class="vis" mesh="FR_pod_13" rgba="0.602582 0.637993 0.676821 1"/>
+              <geom class="vis" mesh="FR_pod_14" rgba="0.229735 0.25026 0.277847 1"/>
+              <geom class="vis" mesh="FR_pod_15" rgba="0.786014 0.811515 0.838187 1"/>
+              <geom class="vis" mesh="FR_pod_16" rgba="0.0849447 0.0849447 0.110702 1"/>
+              <geom class="vis" mesh="FR_pod_17" rgba="0.150005 0.166186 0.194353 1"/>
+              <geom class="vis" mesh="FR_pod_18" rgba="0.707556 0.39503 0.166186 1"/>
+              <geom class="vis" mesh="FR_pod_19" rgba="0.110702 0.110702 0.131804 1"/>
+              <geom class="vis" mesh="FR_pod_20" rgba="0.131804 0.310278 0.688203 1"/>
+              <geom class="vis" mesh="FR_pod_21" rgba="0.0498401 0.0498401 0.0498401 1"/>
+              <geom class="vis" mesh="FR_pod_22" rgba="0.0849447 0.110702 0.131804 1"/>
+              <geom class="vis" mesh="FR_pod_23" rgba="0.699347 0.131804 0.110702 1"/>
+              <geom class="vis" mesh="FR_pod_24" rgba="0.912197 0.754406 0.218649 1"/>
+              <geom class="vis" mesh="FR_pod_62" rgba="0.764314 0.797738 0.838187 1"/>
+              <geom class="vis" mesh="FR_pod_63" rgba="0.286361 0.352474 0.417003 1"/>
+              <geom class="col" name="c_FR-pitch" type="cylinder" pos="0 0.0101 0" zaxis="0 1 2.22045e-16" size="0.02400 0.00600"/>
+              <geom class="col" name="c_FR-pitch_mm" type="cylinder" pos="0 -0.006 0" zaxis="0 1 2.22045e-16" size="0.01675 0.01010"/>
+              <site name="spr0b" pos="0.006 0 0.036" size="0.002"/>
+              <site name="spr1b" pos="-0.002 -0.014 -0.018" size="0.002"/>
+              <site name="spr2b" pos="-0.026 -0.014 -0.018" size="0.002"/>
+              <site name="spr14a" pos="-0.02 0.024 0.03" size="0.002"/>
+              <body name="FR_pitJ" pos="0 0.014 0" quat="1 0 0 0">
+                <joint name="FR_pitch" type="hinge" axis="0 1 0" range="-1.1823 3.0737" armature="0.001" damping="0.02" frictionloss="0.01"/>
+                <inertial pos="-0.000552208 0.000780563 -0.0416629" mass="0.02127" fullinertia="3.38862e-05 3.41756e-05 1.3207e-06 1.17758e-07 7.07713e-07 -6.60461e-07"/>
+                <geom class="vis" mesh="FR_pitJ_25" rgba="0.0849447 0.0849447 0.110702 1"/>
+                <geom class="vis" mesh="FR_pitJ_59" rgba="0.286361 0.352474 0.417003 1"/>
+                <geom class="vis" mesh="FR_pitJ_60" rgba="0.497533 0.656282 0.846834 1"/>
+                <geom class="vis" mesh="FR_pitJ_61" rgba="0.764314 0.797738 0.838187 1"/>
+                <geom class="col" name="c_FR_pitJ_bone" type="capsule" fromto="0 0 -0.008 0 0 -0.107" size="0.0070"/>
+                <site name="spr12a" pos="-0.012 -0.004 -0.0483" size="0.002"/>
+                <site name="spr13a" pos="-0.012 0.004 -0.0483" size="0.002"/>
+                <site name="spr14b" pos="-0.014 0.01 0.014" size="0.002"/>
+                <site name="spr15a" pos="0.014 -0.008 -0.06" size="0.002"/>
+                <site name="spr16a" pos="0.014 0.008 -0.06" size="0.002"/>
+                <body name="FR_midJ" pos="0 0 -0.115" quat="1 0 0 0">
+                  <joint name="FR_knee" type="hinge" axis="0 1 0" range="-2.7735 0.0653" armature="0.001" damping="0.02" frictionloss="0.01"/>
+                  <inertial pos="-6.9635e-06 -0.0126512 -0.00645145" mass="0.11336" fullinertia="7.43425e-05 7.3352e-05 2.29566e-05 2.3953e-08 2.99551e-08 9.33155e-06"/>
+                  <geom class="vis" mesh="FR_midJ_26" rgba="0.940805 0.538065 0.131804 1"/>
+                  <geom class="vis" mesh="FR_midJ_27" rgba="0.602582 0.637993 0.676821 1"/>
+                  <geom class="vis" mesh="FR_midJ_28" rgba="0.229735 0.25026 0.277847 1"/>
+                  <geom class="vis" mesh="FR_midJ_29" rgba="0.786014 0.811515 0.838187 1"/>
+                  <geom class="vis" mesh="FR_midJ_30" rgba="0.0849447 0.0849447 0.110702 1"/>
+                  <geom class="vis" mesh="FR_midJ_31" rgba="0.150005 0.166186 0.194353 1"/>
+                  <geom class="vis" mesh="FR_midJ_32" rgba="0.707556 0.39503 0.166186 1"/>
+                  <geom class="vis" mesh="FR_midJ_33" rgba="0.110702 0.110702 0.131804 1"/>
+                  <geom class="vis" mesh="FR_midJ_34" rgba="0.131804 0.310278 0.688203 1"/>
+                  <geom class="vis" mesh="FR_midJ_35" rgba="0.0498401 0.0498401 0.0498401 1"/>
+                  <geom class="vis" mesh="FR_midJ_36" rgba="0.0849447 0.110702 0.131804 1"/>
+                  <geom class="vis" mesh="FR_midJ_37" rgba="0.699347 0.131804 0.110702 1"/>
+                  <geom class="vis" mesh="FR_midJ_38" rgba="0.912197 0.754406 0.218649 1"/>
+                  <geom class="vis" mesh="FR_midJ_56" rgba="0.286361 0.352474 0.417003 1"/>
+                  <geom class="vis" mesh="FR_midJ_57" rgba="0.497533 0.656282 0.846834 1"/>
+                  <geom class="vis" mesh="FR_midJ_58" rgba="0.764314 0.797738 0.838187 1"/>
+                  <geom class="col" name="c_FR-knee" type="cylinder" pos="0 -0.006 0" zaxis="0 1 2.22045e-16" size="0.02400 0.00600"/>
+                  <geom class="col" name="c_FR-knee_mm" type="cylinder" pos="0 -0.0221 0" zaxis="0 1 2.22045e-16" size="0.01675 0.01010"/>
+                  <geom class="col" name="c_FR_midJ_bone" type="capsule" fromto="0 0 -0.008 0 0 -0.102" size="0.0065"/>
+                  <site name="spr12b" pos="-0.016 -0.004 0.014" size="0.002"/>
+                  <site name="spr13b" pos="-0.016 0.004 0.014" size="0.002"/>
+                  <site name="spr15b" pos="0.016 -0.008 0.014" size="0.002"/>
+                  <site name="spr16b" pos="0.016 0.008 0.014" size="0.002"/>
+                  <body name="FR_disJ" pos="0 0 -0.11" quat="1 0 0 0">
+                    <joint name="FR_dist" type="hinge" axis="0 1 0" range="-1.7533 2.1484" armature="0.001" damping="0.02" frictionloss="0.01"/>
+                    <inertial pos="5.60148e-06 -0.0135707 -0.00165933" mass="0.10590" fullinertia="2.67139e-05 2.68913e-05 2.10876e-05 2.33091e-08 -5.38347e-09 2.46896e-06"/>
+                    <geom class="vis" mesh="FR_disJ_39" rgba="0.940805 0.538065 0.131804 1"/>
+                    <geom class="vis" mesh="FR_disJ_40" rgba="0.602582 0.637993 0.676821 1"/>
+                    <geom class="vis" mesh="FR_disJ_41" rgba="0.229735 0.25026 0.277847 1"/>
+                    <geom class="vis" mesh="FR_disJ_42" rgba="0.786014 0.811515 0.838187 1"/>
+                    <geom class="vis" mesh="FR_disJ_43" rgba="0.0849447 0.0849447 0.110702 1"/>
+                    <geom class="vis" mesh="FR_disJ_44" rgba="0.150005 0.166186 0.194353 1"/>
+                    <geom class="vis" mesh="FR_disJ_45" rgba="0.707556 0.39503 0.166186 1"/>
+                    <geom class="vis" mesh="FR_disJ_46" rgba="0.110702 0.110702 0.131804 1"/>
+                    <geom class="vis" mesh="FR_disJ_47" rgba="0.131804 0.310278 0.688203 1"/>
+                    <geom class="vis" mesh="FR_disJ_48" rgba="0.0498401 0.0498401 0.0498401 1"/>
+                    <geom class="vis" mesh="FR_disJ_49" rgba="0.0849447 0.110702 0.131804 1"/>
+                    <geom class="vis" mesh="FR_disJ_50" rgba="0.699347 0.131804 0.110702 1"/>
+                    <geom class="vis" mesh="FR_disJ_51" rgba="0.912197 0.754406 0.218649 1"/>
+                    <geom class="vis" mesh="FR_disJ_52" rgba="0.150005 0.166186 0.206896 1"/>
+                    <geom class="vis" mesh="FR_disJ_54" rgba="0.286361 0.352474 0.417003 1"/>
+                    <geom class="vis" mesh="FR_disJ_55" rgba="0.497533 0.656282 0.846834 1"/>
+                    <geom class="col" name="c_FR-dist" type="cylinder" pos="0 -0.006 0" zaxis="0 1 2.22045e-16" size="0.02400 0.00600"/>
+                    <geom class="col" name="c_FR-dist_mm" type="cylinder" pos="0 -0.0221 0" zaxis="0 1 2.22045e-16" size="0.01675 0.01010"/>
+                    <geom class="col" name="c_FR_disJ_bone" type="capsule" fromto="0 0 -0.008 0 0 -0.04" size="0.0060"/>
+                    <body name="FR_pawJ" pos="0 0 -0.048" quat="1 0 0 0">
+                      <inertial pos="7.45201e-12 3.73901e-19 -0.004" mass="0.00297" fullinertia="2.07613e-07 2.07613e-07 2.30752e-07 5.60597e-25 1.44634e-23 -1.14898e-18"/>
+                      <geom class="vis" mesh="FR_pawJ_53" rgba="0.150005 0.166186 0.206896 1"/>
+                      <geom class="foot" name="FR_foot" type="sphere" pos="0 0 -0.004" size="0.011"/>
+                      <site name="FR_foot" pos="0 0 -0.0135" size="0.003"/>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+          <body name="FR_crankJ" pos="0.028 0.008 0.027" quat="1 0 0 0">
+            <inertial pos="0 0 0" mass="0.00010" fullinertia="2e-09 2e-09 2e-09 0 0 0"/>
+          </body>
+        </body>
+      </body>
+      <body name="FL_abdJ" pos="0.081 0 -0.036" quat="1 0 0 0">
+        <joint name="FL_abd" type="hinge" axis="1 0 0" range="-0.1700 0.2049" armature="0.0064" damping="0.02" frictionloss="0.01"/>
+        <inertial pos="-0.0180006 -0.0425723 0.0335438" mass="0.00975" fullinertia="7.13063e-06 6.7586e-06 6.93765e-06 -1.85907e-06 6.94096e-07 3.20428e-06"/>
+        <geom class="vis" mesh="FL_abdJ_70" rgba="0.786014 0.802365 0.829421 0.55"/>
+        <geom class="vis" mesh="FL_abdJ_127" rgba="0.497533 0.656282 0.846834 1"/>
+        <geom class="vis" mesh="FL_abdJ_128" rgba="0.286361 0.352474 0.417003 1"/>
+        <site name="spr3a" pos="0.006 -0.06 0.06" size="0.002"/>
+        <body name="FL_linkJ" pos="-0.046 -0.06 0.04" quat="1 0 0 0">
+          <joint name="FL_girdle_lift" type="hinge" axis="0 1 0" range="-0.4000 0.4000" stiffness="5.0" springref="0.02904" damping="0.15" armature="1e-4"/>
+          <inertial pos="0.016 1.81236e-20 2.20103e-19" mass="0.00205" fullinertia="3.3779e-08 1.29113e-07 1.29113e-07 -5.32567e-25 2.84503e-24 5.60597e-26"/>
+          <geom class="vis" mesh="FL_linkJ_126" rgba="0.286361 0.352474 0.417003 1"/>
+          <body name="FL_scJ" pos="0.032 0 0" quat="1 0 0 0">
+            <joint name="FL_girdle_rock" type="hinge" axis="0 1 0" range="-0.4500 0.4500" stiffness="6.0" springref="-0.06972" damping="0.15" armature="1e-4"/>
+            <inertial pos="1.43802e-19 -2.52564e-20 3.00347e-20" mass="0.00394" fullinertia="1.33645e-07 1.82166e-07 1.33645e-07 -1.68179e-25 -1.12119e-25 0"/>
+            <geom class="vis" mesh="FL_scJ_123" rgba="0.286361 0.352474 0.417003 1"/>
+            <geom class="vis" mesh="FL_scJ_124" rgba="0.497533 0.656282 0.846834 1"/>
+            <geom class="vis" mesh="FL_scJ_125" rgba="0.150005 0.166186 0.206896 1"/>
+            <body name="FL_pod" pos="0.014 0 -0.04" quat="1 0 0 0">
+              <inertial pos="-0.00034467 -0.00166879 0.000698438" mass="0.10318" fullinertia="2.30383e-05 2.48642e-05 2.07151e-05 -1.84404e-07 5.10407e-07 6.87116e-07"/>
+              <geom class="vis" mesh="FL_pod_71" rgba="0.940805 0.538065 0.131804 1"/>
+              <geom class="vis" mesh="FL_pod_72" rgba="0.602582 0.637993 0.676821 1"/>
+              <geom class="vis" mesh="FL_pod_73" rgba="0.229735 0.25026 0.277847 1"/>
+              <geom class="vis" mesh="FL_pod_74" rgba="0.786014 0.811515 0.838187 1"/>
+              <geom class="vis" mesh="FL_pod_75" rgba="0.0849447 0.0849447 0.110702 1"/>
+              <geom class="vis" mesh="FL_pod_76" rgba="0.150005 0.166186 0.194353 1"/>
+              <geom class="vis" mesh="FL_pod_77" rgba="0.707556 0.39503 0.166186 1"/>
+              <geom class="vis" mesh="FL_pod_78" rgba="0.110702 0.110702 0.131804 1"/>
+              <geom class="vis" mesh="FL_pod_79" rgba="0.131804 0.310278 0.688203 1"/>
+              <geom class="vis" mesh="FL_pod_80" rgba="0.0498401 0.0498401 0.0498401 1"/>
+              <geom class="vis" mesh="FL_pod_81" rgba="0.0849447 0.110702 0.131804 1"/>
+              <geom class="vis" mesh="FL_pod_82" rgba="0.699347 0.131804 0.110702 1"/>
+              <geom class="vis" mesh="FL_pod_83" rgba="0.912197 0.754406 0.218649 1"/>
+              <geom class="vis" mesh="FL_pod_121" rgba="0.764314 0.797738 0.838187 1"/>
+              <geom class="vis" mesh="FL_pod_122" rgba="0.286361 0.352474 0.417003 1"/>
+              <geom class="col" name="c_FL-pitch" type="cylinder" pos="0 -0.0101 0" zaxis="0 1 2.22045e-16" size="0.02400 0.00600"/>
+              <geom class="col" name="c_FL-pitch_mm" type="cylinder" pos="0 0.006 0" zaxis="0 1 2.22045e-16" size="0.01675 0.01010"/>
+              <site name="spr3b" pos="0.006 0 0.036" size="0.002"/>
+              <site name="spr4b" pos="-0.002 0.014 -0.018" size="0.002"/>
+              <site name="spr5b" pos="-0.026 0.014 -0.018" size="0.002"/>
+              <site name="spr19a" pos="-0.02 -0.024 0.03" size="0.002"/>
+              <body name="FL_pitJ" pos="0 -0.014 0" quat="1 0 0 0">
+                <joint name="FL_pitch" type="hinge" axis="0 1 0" range="-1.1823 3.0737" armature="0.001" damping="0.02" frictionloss="0.01"/>
+                <inertial pos="-0.000552208 -0.000521938 -0.0416629" mass="0.02127" fullinertia="3.38933e-05 3.41756e-05 1.32787e-06 -1.20795e-07 7.07713e-07 7.47576e-07"/>
+                <geom class="vis" mesh="FL_pitJ_84" rgba="0.0849447 0.0849447 0.110702 1"/>
+                <geom class="vis" mesh="FL_pitJ_118" rgba="0.286361 0.352474 0.417003 1"/>
+                <geom class="vis" mesh="FL_pitJ_119" rgba="0.497533 0.656282 0.846834 1"/>
+                <geom class="vis" mesh="FL_pitJ_120" rgba="0.764314 0.797738 0.838187 1"/>
+                <geom class="col" name="c_FL_pitJ_bone" type="capsule" fromto="0 0 -0.008 0 0 -0.107" size="0.0070"/>
+                <site name="spr17a" pos="-0.012 -0.004 -0.0483" size="0.002"/>
+                <site name="spr18a" pos="-0.012 0.004 -0.0483" size="0.002"/>
+                <site name="spr19b" pos="-0.014 -0.01 0.014" size="0.002"/>
+                <site name="spr20a" pos="0.014 -0.008 -0.06" size="0.002"/>
+                <site name="spr21a" pos="0.014 0.008 -0.06" size="0.002"/>
+                <body name="FL_midJ" pos="0 0 -0.115" quat="1 0 0 0">
+                  <joint name="FL_knee" type="hinge" axis="0 1 0" range="-2.7735 0.0653" armature="0.001" damping="0.02" frictionloss="0.01"/>
+                  <inertial pos="-6.9725e-06 0.0127021 -0.00644816" mass="0.11321" fullinertia="7.42071e-05 7.33504e-05 2.28218e-05 -2.39931e-08 2.80547e-08 -9.07729e-06"/>
+                  <geom class="vis" mesh="FL_midJ_85" rgba="0.940805 0.538065 0.131804 1"/>
+                  <geom class="vis" mesh="FL_midJ_86" rgba="0.602582 0.637993 0.676821 1"/>
+                  <geom class="vis" mesh="FL_midJ_87" rgba="0.229735 0.25026 0.277847 1"/>
+                  <geom class="vis" mesh="FL_midJ_88" rgba="0.786014 0.811515 0.838187 1"/>
+                  <geom class="vis" mesh="FL_midJ_89" rgba="0.0849447 0.0849447 0.110702 1"/>
+                  <geom class="vis" mesh="FL_midJ_90" rgba="0.150005 0.166186 0.194353 1"/>
+                  <geom class="vis" mesh="FL_midJ_91" rgba="0.707556 0.39503 0.166186 1"/>
+                  <geom class="vis" mesh="FL_midJ_92" rgba="0.110702 0.110702 0.131804 1"/>
+                  <geom class="vis" mesh="FL_midJ_93" rgba="0.131804 0.310278 0.688203 1"/>
+                  <geom class="vis" mesh="FL_midJ_94" rgba="0.0498401 0.0498401 0.0498401 1"/>
+                  <geom class="vis" mesh="FL_midJ_95" rgba="0.0849447 0.110702 0.131804 1"/>
+                  <geom class="vis" mesh="FL_midJ_96" rgba="0.699347 0.131804 0.110702 1"/>
+                  <geom class="vis" mesh="FL_midJ_97" rgba="0.912197 0.754406 0.218649 1"/>
+                  <geom class="vis" mesh="FL_midJ_115" rgba="0.286361 0.352474 0.417003 1"/>
+                  <geom class="vis" mesh="FL_midJ_116" rgba="0.497533 0.656282 0.846834 1"/>
+                  <geom class="vis" mesh="FL_midJ_117" rgba="0.764314 0.797738 0.838187 1"/>
+                  <geom class="col" name="c_FL-knee" type="cylinder" pos="0 0.006 0" zaxis="0 1 2.22045e-16" size="0.02400 0.00600"/>
+                  <geom class="col" name="c_FL-knee_mm" type="cylinder" pos="0 0.0221 0" zaxis="0 1 2.22045e-16" size="0.01675 0.01010"/>
+                  <geom class="col" name="c_FL_midJ_bone" type="capsule" fromto="0 0 -0.008 0 0 -0.102" size="0.0065"/>
+                  <site name="spr17b" pos="-0.016 -0.004 0.014" size="0.002"/>
+                  <site name="spr18b" pos="-0.016 0.004 0.014" size="0.002"/>
+                  <site name="spr20b" pos="0.016 -0.008 0.014" size="0.002"/>
+                  <site name="spr21b" pos="0.016 0.008 0.014" size="0.002"/>
+                  <body name="FL_disJ" pos="0 0 -0.11" quat="1 0 0 0">
+                    <joint name="FL_dist" type="hinge" axis="0 1 0" range="-1.7533 2.1492" armature="0.001" damping="0.02" frictionloss="0.01"/>
+                    <inertial pos="1.1767e-05 0.0136243 -0.00164918" mass="0.10575" fullinertia="2.65681e-05 2.68827e-05 2.09493e-05 -1.37741e-08 2.34702e-09 -2.35353e-06"/>
+                    <geom class="vis" mesh="FL_disJ_98" rgba="0.940805 0.538065 0.131804 1"/>
+                    <geom class="vis" mesh="FL_disJ_99" rgba="0.602582 0.637993 0.676821 1"/>
+                    <geom class="vis" mesh="FL_disJ_100" rgba="0.229735 0.25026 0.277847 1"/>
+                    <geom class="vis" mesh="FL_disJ_101" rgba="0.786014 0.811515 0.838187 1"/>
+                    <geom class="vis" mesh="FL_disJ_102" rgba="0.0849447 0.0849447 0.110702 1"/>
+                    <geom class="vis" mesh="FL_disJ_103" rgba="0.150005 0.166186 0.194353 1"/>
+                    <geom class="vis" mesh="FL_disJ_104" rgba="0.707556 0.39503 0.166186 1"/>
+                    <geom class="vis" mesh="FL_disJ_105" rgba="0.110702 0.110702 0.131804 1"/>
+                    <geom class="vis" mesh="FL_disJ_106" rgba="0.131804 0.310278 0.688203 1"/>
+                    <geom class="vis" mesh="FL_disJ_107" rgba="0.0498401 0.0498401 0.0498401 1"/>
+                    <geom class="vis" mesh="FL_disJ_108" rgba="0.0849447 0.110702 0.131804 1"/>
+                    <geom class="vis" mesh="FL_disJ_109" rgba="0.699347 0.131804 0.110702 1"/>
+                    <geom class="vis" mesh="FL_disJ_110" rgba="0.912197 0.754406 0.218649 1"/>
+                    <geom class="vis" mesh="FL_disJ_111" rgba="0.150005 0.166186 0.206896 1"/>
+                    <geom class="vis" mesh="FL_disJ_113" rgba="0.286361 0.352474 0.417003 1"/>
+                    <geom class="vis" mesh="FL_disJ_114" rgba="0.497533 0.656282 0.846834 1"/>
+                    <geom class="col" name="c_FL-dist" type="cylinder" pos="0 0.006 0" zaxis="0 1 2.22045e-16" size="0.02400 0.00600"/>
+                    <geom class="col" name="c_FL-dist_mm" type="cylinder" pos="0 0.0221 0" zaxis="0 1 2.22045e-16" size="0.01675 0.01010"/>
+                    <geom class="col" name="c_FL_disJ_bone" type="capsule" fromto="0 0 -0.008 0 0 -0.04" size="0.0060"/>
+                    <body name="FL_pawJ" pos="0 0 -0.048" quat="1 0 0 0">
+                      <inertial pos="7.45201e-12 3.73901e-19 -0.004" mass="0.00297" fullinertia="2.07613e-07 2.07613e-07 2.30752e-07 5.60597e-25 1.44634e-23 -1.14898e-18"/>
+                      <geom class="vis" mesh="FL_pawJ_112" rgba="0.150005 0.166186 0.206896 1"/>
+                      <geom class="foot" name="FL_foot" type="sphere" pos="0 0 -0.004" size="0.011"/>
+                      <site name="FL_foot" pos="0 0 -0.0135" size="0.003"/>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+          <body name="FL_crankJ" pos="0.028 -0.008 0.027" quat="1 0 0 0">
+            <inertial pos="0 0 0" mass="0.00010" fullinertia="2e-09 2e-09 2e-09 0 0 0"/>
+          </body>
+        </body>
+      </body>
+      <body name="neck_lift" pos="0.168 0 -0.026" quat="1 0 0 0">
+        <joint name="neck_lift" type="hinge" axis="0 1 0" range="-0.6238 0.8805" armature="0.0005" damping="0.02" frictionloss="0.01"/>
+        <inertial pos="3.9794e-05 0.000503627 -1.83456e-05" mass="0.04972" fullinertia="5.42977e-06 5.3124e-06 5.36294e-06 8.07836e-09 -1.16595e-08 -1.07645e-08"/>
+        <geom class="vis" mesh="neck_lift_362" rgba="0.940805 0.538065 0.131804 1"/>
+        <geom class="vis" mesh="neck_lift_363" rgba="0.602582 0.637993 0.676821 1"/>
+        <geom class="vis" mesh="neck_lift_364" rgba="0.229735 0.25026 0.277847 1"/>
+        <geom class="vis" mesh="neck_lift_365" rgba="0.786014 0.811515 0.838187 1"/>
+        <geom class="vis" mesh="neck_lift_366" rgba="0.0849447 0.0849447 0.110702 1"/>
+        <geom class="vis" mesh="neck_lift_367" rgba="0.150005 0.166186 0.194353 1"/>
+        <geom class="vis" mesh="neck_lift_368" rgba="0.720968 0.746862 0.778868 1"/>
+        <geom class="vis" mesh="neck_lift_369" rgba="0.131804 0.310278 0.688203 1"/>
+        <geom class="vis" mesh="neck_lift_370" rgba="0.0498401 0.0498401 0.0498401 1"/>
+        <geom class="vis" mesh="neck_lift_371" rgba="0.0849447 0.110702 0.131804 1"/>
+        <geom class="vis" mesh="neck_lift_372" rgba="0.699347 0.131804 0.110702 1"/>
+        <geom class="vis" mesh="neck_lift_373" rgba="0.912197 0.754406 0.218649 1"/>
+        <geom class="col" name="c_neck-lift" type="cylinder" pos="0 0.0076 0" zaxis="4.62223e-33 1 2.22045e-16" size="0.01600 0.00450"/>
+        <geom class="col" name="c_neck-lift_mm" type="cylinder" pos="0 -0.0045 0" zaxis="4.62223e-33 1 2.22045e-16" size="0.01375 0.00760"/>
+        <body name="neck_pan" pos="0.006 0 0.03" quat="1 0 0 0">
+          <joint name="neck_pan" type="hinge" axis="0 0 1" range="-0.8681 0.5570" armature="0.0005" damping="0.02" frictionloss="0.01"/>
+          <inertial pos="0.00171778 3.25024e-05 0.000900871" mass="0.05279" fullinertia="6.38956e-06 7.08578e-06 8.33024e-06 2.89765e-09 -3.98138e-07 1.59575e-08"/>
+          <geom class="vis" mesh="neck_pan_374" rgba="0.940805 0.538065 0.131804 1"/>
+          <geom class="vis" mesh="neck_pan_375" rgba="0.602582 0.637993 0.676821 1"/>
+          <geom class="vis" mesh="neck_pan_376" rgba="0.229735 0.25026 0.277847 1"/>
+          <geom class="vis" mesh="neck_pan_377" rgba="0.786014 0.811515 0.838187 1"/>
+          <geom class="vis" mesh="neck_pan_378" rgba="0.0849447 0.0849447 0.110702 1"/>
+          <geom class="vis" mesh="neck_pan_379" rgba="0.150005 0.166186 0.194353 1"/>
+          <geom class="vis" mesh="neck_pan_380" rgba="0.720968 0.746862 0.778868 1"/>
+          <geom class="vis" mesh="neck_pan_381" rgba="0.131804 0.310278 0.688203 1"/>
+          <geom class="vis" mesh="neck_pan_382" rgba="0.0498401 0.0498401 0.0498401 1"/>
+          <geom class="vis" mesh="neck_pan_383" rgba="0.0849447 0.110702 0.131804 1"/>
+          <geom class="vis" mesh="neck_pan_384" rgba="0.699347 0.131804 0.110702 1"/>
+          <geom class="vis" mesh="neck_pan_385" rgba="0.912197 0.754406 0.218649 1"/>
+          <geom class="col" name="c_neck-pan" type="cylinder" pos="2.84217e-17 0 0.0076" zaxis="2.77556e-17 0 1" size="0.01600 0.00450"/>
+          <geom class="col" name="c_neck-pan_mm" type="cylinder" pos="0 0 -0.0045" zaxis="2.77556e-17 0 1" size="0.01375 0.00760"/>
+          <body name="head" pos="0.04 0 0.008" quat="1 0 0 0">
+            <joint name="neck_tilt" type="hinge" axis="0 1 0" range="-0.9022 0.7634" armature="0.0005" damping="0.02" frictionloss="0.01"/>
+            <inertial pos="0.0281018 0.00011139 0.0146413" mass="0.16590" fullinertia="5.16112e-05 0.000130009 0.0001174 3.70769e-07 -2.2247e-05 4.9254e-07"/>
+            <geom class="vis" mesh="head_386" rgba="0.940805 0.538065 0.131804 1"/>
+            <geom class="vis" mesh="head_387" rgba="0.602582 0.637993 0.676821 1"/>
+            <geom class="vis" mesh="head_388" rgba="0.229735 0.25026 0.277847 1"/>
+            <geom class="vis" mesh="head_389" rgba="0.786014 0.811515 0.838187 1"/>
+            <geom class="vis" mesh="head_390" rgba="0.0849447 0.0849447 0.110702 1"/>
+            <geom class="vis" mesh="head_391" rgba="0.150005 0.166186 0.194353 1"/>
+            <geom class="vis" mesh="head_392" rgba="0.720968 0.746862 0.778868 1"/>
+            <geom class="vis" mesh="head_393" rgba="0.131804 0.310278 0.688203 1"/>
+            <geom class="vis" mesh="head_394" rgba="0.0498401 0.0498401 0.0498401 1"/>
+            <geom class="vis" mesh="head_395" rgba="0.0849447 0.110702 0.131804 1"/>
+            <geom class="vis" mesh="head_396" rgba="0.699347 0.131804 0.110702 1"/>
+            <geom class="vis" mesh="head_397" rgba="0.912197 0.754406 0.218649 1"/>
+            <geom class="vis" mesh="head_398" rgba="0.908292 0.641088 0.0498401 1"/>
+            <geom class="vis" mesh="head_399" rgba="0.0849447 0.110702 0.131804 0.3"/>
+            <geom class="vis" mesh="head_400" rgba="0 0 0 0.3"/>
+            <geom class="vis" mesh="head_401" rgba="1 0.699347 0.277847 0.3"/>
+            <geom class="vis" mesh="head_402" rgba="0.786014 0.637993 0.332181 0.3"/>
+            <geom class="vis" mesh="head_403" rgba="0.371442 0.81829 1 0.3"/>
+            <geom class="vis" mesh="head_404" rgba="0 0 0 1"/>
+            <geom class="vis" mesh="head_405" rgba="0.908292 0.641088 0.0498401 0.3"/>
+            <geom class="vis" mesh="head_406" rgba="0.131804 0.150005 0.166186 1"/>
+            <geom class="vis" mesh="head_407" rgba="0.720968 0.759381 0.797738 1"/>
+            <geom class="vis" mesh="head_415" rgba="0.131804 0.166186 0.206896 0.3"/>
+            <geom class="vis" mesh="head_416" rgba="0.110702 0.240248 0.466477 1"/>
+            <geom class="col" name="c_neck-tilt" type="cylinder" pos="0 0.0076 0" zaxis="4.62223e-33 1 2.22045e-16" size="0.01600 0.00450"/>
+            <geom class="col" name="c_neck-tilt_mm" type="cylinder" pos="0 -0.0045 -7.10543e-18" zaxis="4.62223e-33 1 2.22045e-16" size="0.01375 0.00760"/>
+            <geom class="col" name="c_jaw" type="cylinder" pos="0.034 0.0076 0.022" zaxis="4.62223e-33 1 2.22045e-16" size="0.01600 0.00450"/>
+            <geom class="col" name="c_jaw_mm" type="cylinder" pos="0.034 -0.0045 0.022" zaxis="4.62223e-33 1 2.22045e-16" size="0.01375 0.00760"/>
+            <geom class="col" name="c_head" type="box" pos="0.031 0 0.0217" size="0.0341 0.024025 0.017825"/>
+            <site name="jaw_top" pos="0.062 0 0.00341" size="0.003"/>
+            <body name="jaw" pos="0.0248 0 0.00372" quat="1 0 0 0">
+              <joint name="jaw" type="hinge" axis="0 1 0" range="-0.1700 1.2521" armature="0.0005" damping="0.02" frictionloss="0.01"/>
+              <inertial pos="0.029183 0.000220962 -0.00333694" mass="0.01360" fullinertia="8.9563e-07 2.94469e-06 3.64745e-06 8.77168e-08 -2.34373e-08 -2.37403e-08"/>
+              <geom class="vis" mesh="jaw_408" rgba="0.908292 0.641088 0.0498401 1"/>
+              <geom class="vis" mesh="jaw_409" rgba="0.131804 0.150005 0.166186 1"/>
+              <geom class="vis" mesh="jaw_410" rgba="0.286361 0.352474 0.417003 1"/>
+              <geom class="grip" name="c_jawplate" type="box" pos="0.017 0 -0.0026" size="0.018 0.0105 0.0015"/>
+            </body>
+            <body name="jawcrank" pos="0.034 0 0.022" quat="1 0 0 0">
+              <inertial pos="-9.83941e-20 0.0137075 0.00156152" mass="0.00053" fullinertia="6.15022e-09 7.3122e-09 3.50923e-09 -4.90522e-26 -3.32854e-26 -6.57124e-10"/>
+              <geom class="vis" mesh="jawcrank_417" rgba="0.286361 0.352474 0.417003 1"/>
+            </body>
+            <body name="ear0" pos="0.0093 0.019375 0.04247" quat="0.995953 -0.0898785 0 0">
+              <inertial pos="0.000252726 9.33842e-06 0.00771916" mass="0.00214" fullinertia="9.57442e-08 8.12126e-08 2.19869e-08 -2.27078e-11 -6.53257e-10 2.48355e-10"/>
+              <geom class="vis" mesh="ear0_411" rgba="0.0849447 0.110702 0.131804 1"/>
+              <geom class="vis" mesh="ear0_412" rgba="0.908292 0.641088 0.0498401 1"/>
+            </body>
+            <body name="ear1" pos="0.0093 -0.019375 0.04247" quat="0.995953 0.0898785 0 0">
+              <inertial pos="0.000252726 9.3384e-06 0.00771916" mass="0.00214" fullinertia="9.57442e-08 8.12126e-08 2.19869e-08 -2.27078e-11 -6.53257e-10 2.48354e-10"/>
+              <geom class="vis" mesh="ear1_413" rgba="0.0849447 0.110702 0.131804 1"/>
+              <geom class="vis" mesh="ear1_414" rgba="0.908292 0.641088 0.0498401 1"/>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <tendon>
+    <spatial name="coilover0" stiffness="1355" springlength="0.02544 1" damping="2" width="0.0035" rgba="0.76 0.8 0.84 1"><site site="spr0a"/><site site="spr0b"/></spatial>
+    <spatial name="coilover1" stiffness="1355" springlength="0.07321 1" damping="2" width="0.0035" rgba="0.76 0.8 0.84 1"><site site="spr1a"/><site site="spr1b"/></spatial>
+    <spatial name="coilover2" stiffness="1355" springlength="0.07210 1" damping="2" width="0.0035" rgba="0.76 0.8 0.84 1"><site site="spr2a"/><site site="spr2b"/></spatial>
+    <spatial name="coilover3" stiffness="1355" springlength="0.02544 1" damping="2" width="0.0035" rgba="0.76 0.8 0.84 1"><site site="spr3a"/><site site="spr3b"/></spatial>
+    <spatial name="coilover4" stiffness="1355" springlength="0.07321 1" damping="2" width="0.0035" rgba="0.76 0.8 0.84 1"><site site="spr4a"/><site site="spr4b"/></spatial>
+    <spatial name="coilover5" stiffness="1355" springlength="0.07210 1" damping="2" width="0.0035" rgba="0.76 0.8 0.84 1"><site site="spr5a"/><site site="spr5b"/></spatial>
+    <spatial name="coilover6" stiffness="1355" springlength="0.02544 1" damping="2" width="0.0035" rgba="0.76 0.8 0.84 1"><site site="spr6a"/><site site="spr6b"/></spatial>
+    <spatial name="coilover7" stiffness="1355" springlength="0.07248 1" damping="2" width="0.0035" rgba="0.76 0.8 0.84 1"><site site="spr7a"/><site site="spr7b"/></spatial>
+    <spatial name="coilover8" stiffness="1355" springlength="0.07786 1" damping="2" width="0.0035" rgba="0.76 0.8 0.84 1"><site site="spr8a"/><site site="spr8b"/></spatial>
+    <spatial name="coilover9" stiffness="1355" springlength="0.02544 1" damping="2" width="0.0035" rgba="0.76 0.8 0.84 1"><site site="spr9a"/><site site="spr9b"/></spatial>
+    <spatial name="coilover10" stiffness="1355" springlength="0.07248 1" damping="2" width="0.0035" rgba="0.76 0.8 0.84 1"><site site="spr10a"/><site site="spr10b"/></spatial>
+    <spatial name="coilover11" stiffness="1355" springlength="0.07786 1" damping="2" width="0.0035" rgba="0.76 0.8 0.84 1"><site site="spr11a"/><site site="spr11b"/></spatial>
+    <spatial name="extspring12" stiffness="800" springlength="0 0.07318" damping="2" width="0.002" rgba="0.76 0.8 0.84 1"><site site="spr12a"/><site site="spr12b"/></spatial>
+    <spatial name="extspring13" stiffness="800" springlength="0 0.07318" damping="2" width="0.002" rgba="0.76 0.8 0.84 1"><site site="spr13a"/><site site="spr13b"/></spatial>
+    <spatial name="extspring17" stiffness="800" springlength="0 0.07318" damping="2" width="0.002" rgba="0.76 0.8 0.84 1"><site site="spr17a"/><site site="spr17b"/></spatial>
+    <spatial name="extspring18" stiffness="800" springlength="0 0.07318" damping="2" width="0.002" rgba="0.76 0.8 0.84 1"><site site="spr18a"/><site site="spr18b"/></spatial>
+    <spatial name="extspring22" stiffness="1600" springlength="0 0.08537" damping="2" width="0.002" rgba="0.76 0.8 0.84 1"><site site="spr22a"/><site site="spr22b"/></spatial>
+    <spatial name="extspring23" stiffness="1600" springlength="0 0.08537" damping="2" width="0.002" rgba="0.76 0.8 0.84 1"><site site="spr23a"/><site site="spr23b"/></spatial>
+    <spatial name="extspring28" stiffness="1600" springlength="0 0.08537" damping="2" width="0.002" rgba="0.76 0.8 0.84 1"><site site="spr28a"/><site site="spr28b"/></spatial>
+    <spatial name="extspring29" stiffness="1600" springlength="0 0.08537" damping="2" width="0.002" rgba="0.76 0.8 0.84 1"><site site="spr29a"/><site site="spr29b"/></spatial>
+    <spatial name="knee_extensor0" stiffness="1600" springlength="0 0.07382" damping="2" width="0.0012" rgba="0.91 0.82 0.24 1"><site site="cab0_0"/><site site="cab0_1"/><site site="cab0_2"/><site site="cab0_3"/><site site="cab0_4"/></spatial>
+    <spatial name="knee_extensor1" stiffness="1600" springlength="0 0.07382" damping="2" width="0.0012" rgba="0.91 0.82 0.24 1"><site site="cab1_0"/><site site="cab1_1"/><site site="cab1_2"/><site site="cab1_3"/><site site="cab1_4"/></spatial>
+    <spatial name="knee_extensor2" stiffness="1600" springlength="0 0.07382" damping="2" width="0.0012" rgba="0.91 0.82 0.24 1"><site site="cab2_0"/><site site="cab2_1"/><site site="cab2_2"/><site site="cab2_3"/><site site="cab2_4"/></spatial>
+    <spatial name="knee_extensor3" stiffness="1600" springlength="0 0.07382" damping="2" width="0.0012" rgba="0.91 0.82 0.24 1"><site site="cab3_0"/><site site="cab3_1"/><site site="cab3_2"/><site site="cab3_3"/><site site="cab3_4"/></spatial>
+    <fixed name="jumpspring_FR_pitch" stiffness="0.1975" springlength="-100 -1.01229" damping="0.01"><joint joint="FR_pitch" coef="1"/></fixed>
+    <fixed name="jumpspring_FR_knee" stiffness="0.2983" springlength="-100 0.10472" damping="0.01"><joint joint="FR_knee" coef="-1"/></fixed>
+    <fixed name="jumpspring_FL_pitch" stiffness="0.1975" springlength="-100 -1.01229" damping="0.01"><joint joint="FL_pitch" coef="1"/></fixed>
+    <fixed name="jumpspring_FL_knee" stiffness="0.2983" springlength="-100 0.10472" damping="0.01"><joint joint="FL_knee" coef="-1"/></fixed>
+    <fixed name="jumpspring_RR_knee" stiffness="0.2497" springlength="-100 0.29810" damping="0.01"><joint joint="RR_knee" coef="1"/></fixed>
+    <fixed name="jumpspring_RL_knee" stiffness="0.2542" springlength="-100 0.33361" damping="0.01"><joint joint="RL_knee" coef="1"/></fixed>
+    <fixed name="tail_pitch_cable"><joint joint="tail0_pitch" coef="0.0090"/><joint joint="tail1_pitch" coef="0.0085"/><joint joint="tail2_pitch" coef="0.0080"/><joint joint="tail3_pitch" coef="0.0075"/><joint joint="tail4_pitch" coef="0.0070"/><joint joint="tail5_pitch" coef="0.0065"/><joint joint="tail6_pitch" coef="0.0060"/><joint joint="tail7_pitch" coef="0.0055"/><joint joint="tail8_pitch" coef="0.0050"/></fixed>
+    <fixed name="tail_yaw_cable"><joint joint="tail0_yaw" coef="0.0090"/><joint joint="tail1_yaw" coef="0.0085"/><joint joint="tail2_yaw" coef="0.0080"/><joint joint="tail3_yaw" coef="0.0075"/><joint joint="tail4_yaw" coef="0.0070"/><joint joint="tail5_yaw" coef="0.0065"/><joint joint="tail6_yaw" coef="0.0060"/><joint joint="tail7_yaw" coef="0.0055"/><joint joint="tail8_yaw" coef="0.0050"/></fixed>
+  </tendon>
+  <equality>
+    <joint joint1="finger1" joint2="finger0" polycoef="0 1 0 0 0" solref="0.002 1"/>
+    <joint joint1="finger2" joint2="finger0" polycoef="0 1 0 0 0" solref="0.002 1"/>
+    <joint joint1="finger3" joint2="finger0" polycoef="0 1 0 0 0" solref="0.002 1"/>
+  </equality>
+  <actuator>
+    <general name="FR_abd" joint="FR_abd" gaintype="fixed" gainprm="60" biastype="affine" biasprm="0 -60 -1.5" forcelimited="true" forcerange="-3.8 3.8" ctrllimited="false"/>
+    <general name="FR_pitch" joint="FR_pitch" gaintype="fixed" gainprm="60" biastype="affine" biasprm="0 -60 -1.5" forcelimited="true" forcerange="-4.0 4.0" ctrllimited="false"/>
+    <general name="FR_knee" joint="FR_knee" gaintype="fixed" gainprm="60" biastype="affine" biasprm="0 -60 -1.5" forcelimited="true" forcerange="-4.0 4.0" ctrllimited="false"/>
+    <general name="FR_dist" joint="FR_dist" gaintype="fixed" gainprm="60" biastype="affine" biasprm="0 -60 -1.5" forcelimited="true" forcerange="-4.0 4.0" ctrllimited="false"/>
+    <general name="FL_abd" joint="FL_abd" gaintype="fixed" gainprm="60" biastype="affine" biasprm="0 -60 -1.5" forcelimited="true" forcerange="-3.8 3.8" ctrllimited="false"/>
+    <general name="FL_pitch" joint="FL_pitch" gaintype="fixed" gainprm="60" biastype="affine" biasprm="0 -60 -1.5" forcelimited="true" forcerange="-4.0 4.0" ctrllimited="false"/>
+    <general name="FL_knee" joint="FL_knee" gaintype="fixed" gainprm="60" biastype="affine" biasprm="0 -60 -1.5" forcelimited="true" forcerange="-4.0 4.0" ctrllimited="false"/>
+    <general name="FL_dist" joint="FL_dist" gaintype="fixed" gainprm="60" biastype="affine" biasprm="0 -60 -1.5" forcelimited="true" forcerange="-4.0 4.0" ctrllimited="false"/>
+    <general name="RR_abd" joint="RR_abd" gaintype="fixed" gainprm="60" biastype="affine" biasprm="0 -60 -1.5" forcelimited="true" forcerange="-3.8 3.8" ctrllimited="false"/>
+    <general name="RR_pitch" joint="RR_pitch" gaintype="fixed" gainprm="60" biastype="affine" biasprm="0 -60 -1.5" forcelimited="true" forcerange="-4.0 4.0" ctrllimited="false"/>
+    <general name="RR_knee" joint="RR_knee" gaintype="fixed" gainprm="60" biastype="affine" biasprm="0 -60 -1.5" forcelimited="true" forcerange="-4.0 4.0" ctrllimited="false"/>
+    <general name="RR_dist" joint="RR_dist" gaintype="fixed" gainprm="60" biastype="affine" biasprm="0 -60 -1.5" forcelimited="true" forcerange="-4.0 4.0" ctrllimited="false"/>
+    <general name="RL_abd" joint="RL_abd" gaintype="fixed" gainprm="60" biastype="affine" biasprm="0 -60 -1.5" forcelimited="true" forcerange="-3.8 3.8" ctrllimited="false"/>
+    <general name="RL_pitch" joint="RL_pitch" gaintype="fixed" gainprm="60" biastype="affine" biasprm="0 -60 -1.5" forcelimited="true" forcerange="-4.0 4.0" ctrllimited="false"/>
+    <general name="RL_knee" joint="RL_knee" gaintype="fixed" gainprm="60" biastype="affine" biasprm="0 -60 -1.5" forcelimited="true" forcerange="-4.0 4.0" ctrllimited="false"/>
+    <general name="RL_dist" joint="RL_dist" gaintype="fixed" gainprm="60" biastype="affine" biasprm="0 -60 -1.5" forcelimited="true" forcerange="-4.0 4.0" ctrllimited="false"/>
+    <general name="spine_s1" joint="spine_s1" gaintype="fixed" gainprm="60" biastype="affine" biasprm="0 -60 -1.5" forcelimited="true" forcerange="-3.8 3.8" ctrllimited="false"/>
+    <general name="spine_twist" joint="spine_twist" gaintype="fixed" gainprm="60" biastype="affine" biasprm="0 -60 -1.5" forcelimited="true" forcerange="-3.8 3.8" ctrllimited="false"/>
+    <general name="spine_s2" joint="spine_s2" gaintype="fixed" gainprm="60" biastype="affine" biasprm="0 -60 -1.5" forcelimited="true" forcerange="-3.8 3.8" ctrllimited="false"/>
+    <general name="tail_winch_pitch" tendon="tail_pitch_cable" gaintype="fixed" gainprm="3000" biastype="affine" biasprm="0 -3000 -30" forcelimited="true" forcerange="-160 160" ctrllimited="false"/>
+    <general name="tail_winch_yaw" tendon="tail_yaw_cable" gaintype="fixed" gainprm="3000" biastype="affine" biasprm="0 -3000 -30" forcelimited="true" forcerange="-160 160" ctrllimited="false"/>
+    <general name="neck_lift" joint="neck_lift" gaintype="fixed" gainprm="15" biastype="affine" biasprm="0 -15 -0.3" forcelimited="true" forcerange="-0.8 0.8" ctrllimited="false"/>
+    <general name="neck_pan" joint="neck_pan" gaintype="fixed" gainprm="15" biastype="affine" biasprm="0 -15 -0.3" forcelimited="true" forcerange="-0.8 0.8" ctrllimited="false"/>
+    <general name="neck_tilt" joint="neck_tilt" gaintype="fixed" gainprm="15" biastype="affine" biasprm="0 -15 -0.3" forcelimited="true" forcerange="-0.8 0.8" ctrllimited="false"/>
+    <general name="jaw" joint="jaw" gaintype="fixed" gainprm="6" biastype="affine" biasprm="0 -6 -0.15" forcelimited="true" forcerange="-0.8 0.8" ctrllimited="false"/>
+    <general name="gripper" joint="finger0" gaintype="fixed" gainprm="0.6" biastype="affine" biasprm="0 -0.6 -0.01" forcelimited="true" forcerange="-0.3 0.3" ctrllimited="false"/>
+  </actuator>
+  <sensor>
+    <framequat name="imu_quat" objtype="site" objname="imu"/><gyro name="imu_gyro" site="imu"/><accelerometer name="imu_acc" site="imu"/>
+    <touch name="FR_foot_touch" site="FR_foot"/>
+    <touch name="FL_foot_touch" site="FL_foot"/>
+    <touch name="RR_foot_touch" site="RR_foot"/>
+    <touch name="RL_foot_touch" site="RL_foot"/>
+  </sensor>
+  <keyframe><key name="stand" qpos="0 0 0.26833 1 0 0 0 0 0 0 0 0 0 -0.62027 1.53512 -1.05447 0 0 0 -0.62027 1.53512 -1.05447 -0.14117 0 -0.13254 0 -0.12391 0 -0.05245 0 0.03995 0 0.13235 0 0.22475 0 0.29621 0 0.34673 0 -0.61087 -0.61087 -0.61087 -0.61087 0 0 0 0.98793 -1.06224 -0.23986 0 0 0 0.98793 -1.06224 -0.23986 -0.10472 0 0 0"/></keyframe>
+</mujoco>

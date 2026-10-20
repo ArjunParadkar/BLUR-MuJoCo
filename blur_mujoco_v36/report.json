@@ -1,0 +1,422 @@
+[
+ {
+  "move": "stand",
+  "verdict": "PASS",
+  "open_loop_path_err_mm": 2,
+  "open_loop_fell": false,
+  "residual_mean_pct_bw": 6.8,
+  "residual_peak_pct_bw": 16.2,
+  "hardest_actuators": [
+   [
+    "RR_knee",
+    0.36,
+    0.0
+   ],
+   [
+    "RL_knee",
+    0.36,
+    0.0
+   ],
+   [
+    "FL_pitch",
+    0.22,
+    0.0
+   ],
+   [
+    "FR_pitch",
+    0.22,
+    0.0
+   ]
+  ]
+ },
+ {
+  "move": "sit",
+  "verdict": "PASS w/ controller",
+  "open_loop_path_err_mm": 85,
+  "open_loop_fell": false,
+  "residual_mean_pct_bw": 20.5,
+  "residual_peak_pct_bw": 27.9,
+  "hardest_actuators": [
+   [
+    "RL_knee",
+    0.59,
+    0.0
+   ],
+   [
+    "RR_knee",
+    0.59,
+    0.0
+   ],
+   [
+    "FL_pitch",
+    0.16,
+    0.0
+   ],
+   [
+    "FR_pitch",
+    0.16,
+    0.0
+   ]
+  ]
+ },
+ {
+  "move": "lay",
+  "verdict": "PASS",
+  "open_loop_path_err_mm": 39,
+  "open_loop_fell": false,
+  "residual_mean_pct_bw": 61.8,
+  "residual_peak_pct_bw": 86.7,
+  "hardest_actuators": [
+   [
+    "FL_knee",
+    0.73,
+    0.0
+   ],
+   [
+    "FR_knee",
+    0.72,
+    0.0
+   ],
+   [
+    "RR_knee",
+    0.58,
+    0.0
+   ],
+   [
+    "RL_knee",
+    0.55,
+    0.0
+   ]
+  ]
+ },
+ {
+  "move": "walk",
+  "verdict": "NEEDS WORK",
+  "open_loop_path_err_mm": 1201,
+  "open_loop_fell": true,
+  "residual_mean_pct_bw": 58.2,
+  "residual_peak_pct_bw": 78.3,
+  "hardest_actuators": [
+   [
+    "FR_knee",
+    1.0,
+    0.0
+   ],
+   [
+    "FR_dist",
+    1.0,
+    0.0
+   ],
+   [
+    "RL_knee",
+    0.69,
+    0.0
+   ],
+   [
+    "FL_knee",
+    0.64,
+    0.0
+   ]
+  ]
+ },
+ {
+  "move": "happy",
+  "verdict": "NEEDS WORK",
+  "open_loop_path_err_mm": 889,
+  "open_loop_fell": true,
+  "residual_mean_pct_bw": 45.7,
+  "residual_peak_pct_bw": 70.7,
+  "hardest_actuators": [
+   [
+    "FR_knee",
+    1.0,
+    0.1
+   ],
+   [
+    "FR_dist",
+    1.0,
+    0.1
+   ],
+   [
+    "neck_tilt",
+    1.0,
+    0.1
+   ],
+   [
+    "neck_lift",
+    0.94,
+    0.0
+   ]
+  ]
+ },
+ {
+  "move": "gallop",
+  "verdict": "NEEDS WORK",
+  "open_loop_path_err_mm": 8627,
+  "open_loop_fell": true,
+  "residual_mean_pct_bw": 196.6,
+  "residual_peak_pct_bw": 496.1,
+  "hardest_actuators": [
+   [
+    "FR_pitch",
+    1.0,
+    14.2
+   ],
+   [
+    "FR_knee",
+    1.0,
+    12.6
+   ],
+   [
+    "FR_dist",
+    1.0,
+    1.7
+   ],
+   [
+    "FL_abd",
+    1.0,
+    2.0
+   ]
+  ]
+ },
+ {
+  "move": "sweep",
+  "verdict": "NEEDS WORK",
+  "open_loop_path_err_mm": 13263,
+  "open_loop_fell": true,
+  "residual_mean_pct_bw": 199.0,
+  "residual_peak_pct_bw": 499.2,
+  "hardest_actuators": [
+   [
+    "FR_abd",
+    1.0,
+    0.8
+   ],
+   [
+    "FR_pitch",
+    1.0,
+    11.5
+   ],
+   [
+    "FR_knee",
+    1.0,
+    11.5
+   ],
+   [
+    "FR_dist",
+    1.0,
+    3.2
+   ]
+  ]
+ },
+ {
+  "move": "hop",
+  "verdict": "NEEDS WORK",
+  "open_loop_path_err_mm": 381,
+  "open_loop_fell": false,
+  "residual_mean_pct_bw": 41.3,
+  "residual_peak_pct_bw": 222.3,
+  "hardest_actuators": [
+   [
+    "RR_knee",
+    1.0,
+    1.3
+   ],
+   [
+    "RL_knee",
+    1.0,
+    1.2
+   ],
+   [
+    "spine_s2",
+    1.0,
+    1.7
+   ],
+   [
+    "neck_lift",
+    1.0,
+    3.5
+   ]
+  ]
+ },
+ {
+  "move": "jump",
+  "verdict": "NEEDS WORK",
+  "open_loop_path_err_mm": 882,
+  "open_loop_fell": false,
+  "residual_mean_pct_bw": 50.0,
+  "residual_peak_pct_bw": 276.9,
+  "hardest_actuators": [
+   [
+    "FR_pitch",
+    1.0,
+    1.1
+   ],
+   [
+    "FR_knee",
+    1.0,
+    3.5
+   ],
+   [
+    "FR_dist",
+    1.0,
+    0.2
+   ],
+   [
+    "FL_abd",
+    1.0,
+    0.6
+   ]
+  ]
+ },
+ {
+  "move": "flip",
+  "verdict": "NEEDS WORK",
+  "open_loop_path_err_mm": 370,
+  "open_loop_fell": false,
+  "residual_mean_pct_bw": 52.4,
+  "residual_peak_pct_bw": 304.6,
+  "hardest_actuators": [
+   [
+    "FR_pitch",
+    1.0,
+    2.0
+   ],
+   [
+    "FL_pitch",
+    1.0,
+    2.0
+   ],
+   [
+    "RR_knee",
+    1.0,
+    0.4
+   ],
+   [
+    "RL_knee",
+    1.0,
+    0.5
+   ]
+  ]
+ },
+ {
+  "move": "stairs",
+  "verdict": "NEEDS WORK",
+  "open_loop_path_err_mm": 767,
+  "open_loop_fell": false,
+  "residual_mean_pct_bw": 195.0,
+  "residual_peak_pct_bw": 480.6,
+  "hardest_actuators": [
+   [
+    "FR_pitch",
+    1.0,
+    11.1
+   ],
+   [
+    "FR_knee",
+    1.0,
+    25.4
+   ],
+   [
+    "FR_dist",
+    1.0,
+    1.1
+   ],
+   [
+    "FL_pitch",
+    1.0,
+    5.2
+   ]
+  ]
+ },
+ {
+  "move": "couch",
+  "verdict": "NEEDS WORK",
+  "open_loop_path_err_mm": 1046,
+  "open_loop_fell": false,
+  "residual_mean_pct_bw": 64.6,
+  "residual_peak_pct_bw": 201.1,
+  "hardest_actuators": [
+   [
+    "FR_pitch",
+    1.0,
+    1.7
+   ],
+   [
+    "FR_knee",
+    1.0,
+    0.4
+   ],
+   [
+    "FL_pitch",
+    1.0,
+    1.9
+   ],
+   [
+    "FL_knee",
+    1.0,
+    0.4
+   ]
+  ]
+ },
+ {
+  "move": "pounce",
+  "verdict": "NEEDS WORK",
+  "open_loop_path_err_mm": 512,
+  "open_loop_fell": false,
+  "residual_mean_pct_bw": 45.8,
+  "residual_peak_pct_bw": 208.7,
+  "hardest_actuators": [
+   [
+    "RR_abd",
+    1.0,
+    0.9
+   ],
+   [
+    "RR_knee",
+    1.0,
+    0.5
+   ],
+   [
+    "RL_abd",
+    1.0,
+    1.0
+   ],
+   [
+    "RL_knee",
+    1.0,
+    0.5
+   ]
+  ]
+ },
+ {
+  "move": "tgrab",
+  "verdict": "PASS",
+  "open_loop_path_err_mm": 9,
+  "open_loop_fell": false,
+  "residual_mean_pct_bw": 4.2,
+  "residual_peak_pct_bw": 6.4,
+  "hardest_actuators": [
+   [
+    "RR_knee",
+    0.36,
+    0.0
+   ],
+   [
+    "RL_knee",
+    0.36,
+    0.0
+   ],
+   [
+    "FL_abd",
+    0.27,
+    0.0
+   ],
+   [
+    "FR_abd",
+    0.27,
+    0.0
+   ]
+  ]
+ }
+]

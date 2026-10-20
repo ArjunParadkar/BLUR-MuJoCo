@@ -1,0 +1,213 @@
+{
+ "actuators": [
+  {
+   "name": "FR_abd",
+   "target": "FR_abd",
+   "kind": "4015 hollow gimbal 16:1",
+   "tendon": false,
+   "limit": 3.8
+  },
+  {
+   "name": "FR_pitch",
+   "target": "FR_pitch",
+   "kind": "2806.5 1300KV 16:1",
+   "tendon": false,
+   "limit": 4.0
+  },
+  {
+   "name": "FR_knee",
+   "target": "FR_knee",
+   "kind": "2806.5 1300KV 16:1",
+   "tendon": false,
+   "limit": 4.0
+  },
+  {
+   "name": "FR_dist",
+   "target": "FR_dist",
+   "kind": "2806.5 1300KV 16:1",
+   "tendon": false,
+   "limit": 4.0
+  },
+  {
+   "name": "FL_abd",
+   "target": "FL_abd",
+   "kind": "4015 hollow gimbal 16:1",
+   "tendon": false,
+   "limit": 3.8
+  },
+  {
+   "name": "FL_pitch",
+   "target": "FL_pitch",
+   "kind": "2806.5 1300KV 16:1",
+   "tendon": false,
+   "limit": 4.0
+  },
+  {
+   "name": "FL_knee",
+   "target": "FL_knee",
+   "kind": "2806.5 1300KV 16:1",
+   "tendon": false,
+   "limit": 4.0
+  },
+  {
+   "name": "FL_dist",
+   "target": "FL_dist",
+   "kind": "2806.5 1300KV 16:1",
+   "tendon": false,
+   "limit": 4.0
+  },
+  {
+   "name": "RR_abd",
+   "target": "RR_abd",
+   "kind": "4015 hollow gimbal 16:1",
+   "tendon": false,
+   "limit": 3.8
+  },
+  {
+   "name": "RR_pitch",
+   "target": "RR_pitch",
+   "kind": "2806.5 1300KV 16:1",
+   "tendon": false,
+   "limit": 4.0
+  },
+  {
+   "name": "RR_knee",
+   "target": "RR_knee",
+   "kind": "2806.5 1300KV 16:1",
+   "tendon": false,
+   "limit": 4.0
+  },
+  {
+   "name": "RR_dist",
+   "target": "RR_dist",
+   "kind": "2806.5 1300KV 16:1",
+   "tendon": false,
+   "limit": 4.0
+  },
+  {
+   "name": "RL_abd",
+   "target": "RL_abd",
+   "kind": "4015 hollow gimbal 16:1",
+   "tendon": false,
+   "limit": 3.8
+  },
+  {
+   "name": "RL_pitch",
+   "target": "RL_pitch",
+   "kind": "2806.5 1300KV 16:1",
+   "tendon": false,
+   "limit": 4.0
+  },
+  {
+   "name": "RL_knee",
+   "target": "RL_knee",
+   "kind": "2806.5 1300KV 16:1",
+   "tendon": false,
+   "limit": 4.0
+  },
+  {
+   "name": "RL_dist",
+   "target": "RL_dist",
+   "kind": "2806.5 1300KV 16:1",
+   "tendon": false,
+   "limit": 4.0
+  },
+  {
+   "name": "spine_s1",
+   "target": "spine_s1",
+   "kind": "4015 hollow gimbal 16:1",
+   "tendon": false,
+   "limit": 3.8
+  },
+  {
+   "name": "spine_twist",
+   "target": "spine_twist",
+   "kind": "4015 hollow gimbal 16:1",
+   "tendon": false,
+   "limit": 3.8
+  },
+  {
+   "name": "spine_s2",
+   "target": "spine_s2",
+   "kind": "4015 hollow gimbal 16:1",
+   "tendon": false,
+   "limit": 3.8
+  },
+  {
+   "name": "tail_winch_pitch",
+   "target": "tail_pitch_cable",
+   "kind": "2204 winch",
+   "tendon": true,
+   "limit": 160
+  },
+  {
+   "name": "tail_winch_yaw",
+   "target": "tail_yaw_cable",
+   "kind": "2204 winch",
+   "tendon": true,
+   "limit": 160
+  },
+  {
+   "name": "neck_lift",
+   "target": "neck_lift",
+   "kind": "2204 260KV 16:1",
+   "tendon": false,
+   "limit": 0.8
+  },
+  {
+   "name": "neck_pan",
+   "target": "neck_pan",
+   "kind": "2204 260KV 16:1",
+   "tendon": false,
+   "limit": 0.8
+  },
+  {
+   "name": "neck_tilt",
+   "target": "neck_tilt",
+   "kind": "2204 260KV 16:1",
+   "tendon": false,
+   "limit": 0.8
+  },
+  {
+   "name": "jaw",
+   "target": "jaw",
+   "kind": "2204 260KV 16:1",
+   "tendon": false,
+   "limit": 0.8
+  },
+  {
+   "name": "gripper",
+   "target": "finger0",
+   "kind": "N20 lead screw",
+   "tendon": false,
+   "limit": 0.3
+  }
+ ],
+ "scene_of": {
+  "jump": "table",
+  "stairs": "stairs",
+  "couch": "couch",
+  "pounce": "pounce",
+  "tgrab": "tailgrab"
+ },
+ "moves": [
+  "stand",
+  "sit",
+  "lay",
+  "a",
+  "b",
+  "c",
+  "d",
+  "walk",
+  "gallop",
+  "couch",
+  "hop",
+  "happy",
+  "stairs",
+  "sweep",
+  "flip",
+  "pounce",
+  "tgrab",
+  "jump"
+ ]
+}
